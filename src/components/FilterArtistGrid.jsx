@@ -110,10 +110,10 @@ export default function FilterArtistGrid({ artists = dummyArtists }) {
   return (
     <div className="bg-[#F5F0E6]">
       <div className="max-w-[1400px] mx-auto px-12 py-8">
-        {/* Page header - updated to match screenshot */}
+        {/* Page header - updated to match screenshot
         <h1 className="text-center text-6xl font-medium mb-8 uppercase font-['Bruno_Ace_SC','Arial']">
           Artwork
-        </h1>
+        </h1> */}
         
         {/* Interactive Map - replaces static map image */}
         <InteractiveMap 
@@ -124,18 +124,6 @@ export default function FilterArtistGrid({ artists = dummyArtists }) {
         {/* Filter sections - responsive layout */}
         <div className="flex justify-center mb-24">
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-32 w-full max-w-6xl">
-            {/* Clear filters button */}
-            {hasActiveFilters && (
-              <div className="flex justify-center lg:justify-start mb-4 lg:mb-0 lg:absolute lg:top-0 lg:right-0">
-                <button
-                  onClick={clearAllFilters}
-                  className="px-4 py-0 text-sm font-light bg-gray-100 text-gray-700 border border-gray-300 rounded-md hover:bg-gray-200 transition-all font-['Source_Serif_4','serif']"
-                >
-                  Clear All Filters
-                </button>
-              </div>
-            )}
-
             {/* Location filters */}
             <div className="min-w-[250px] flex-1">
               <h2 className="text-2xl font-normal mb-6 uppercase font-['Bruno_Ace_SC','Arial']">Location</h2>
