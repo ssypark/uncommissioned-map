@@ -112,7 +112,7 @@ export default function FilterArtistGrid({ artists = dummyArtists }) {
       <div className="max-w-[1400px] mx-auto px-12 py-8">
         {/* Page header - updated to match screenshot
         <h1 className="text-center text-6xl font-medium mb-8 uppercase font-['Bruno_Ace_SC','Arial']">
-          Artwork
+          Artwor!!
         </h1> */}
         
         {/* Interactive Map - replaces static map image */}
