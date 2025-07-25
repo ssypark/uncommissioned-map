@@ -23,7 +23,14 @@ const FilterButton = ({ label, isActive, onClick, darkMode = false }) => (
   </button>
 );
 
-export default function FilterArtistGrid({ artists: artistsProp = artists, darkMode = false }) {
+export default function FilterArtistGrid({ artists: artistsProp = artists, darkMode: darkModeProp }) {
+  // Check URL parameter for dark mode
+  const urlParams = new URLSearchParams(window.location.search);
+  const darkModeFromURL = urlParams.get('darkMode') === 'true';
+  
+  // Use prop if provided, otherwise use URL parameter
+  const darkMode = darkModeProp !== undefined ? darkModeProp : darkModeFromURL;
+
   // 1) Track selected filters
   const [selected, setSelected] = useState({
     location: new Set(),
