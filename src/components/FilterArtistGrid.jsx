@@ -145,8 +145,8 @@ export default function FilterArtistGrid({ artists: artistsProp = artists }) {
             
             {/* Location Filters */}
             <div>
-              <h3 className="text-lg font-medium mb-4 font-['Source_Serif_4','serif'] text-gray-800 text-center uppercase tracking-wider">
-                Location
+              <h3 className="text-lg font-medium mb-4 font-['Source_Serif_4','serif'] text-left  tracking-wider" style={{color: '#B42C2C'}}>
+                location
               </h3>
               <div className="flex flex-wrap gap-2 justify-start">
                 {filterOptions.location.map(location => (
@@ -162,8 +162,8 @@ export default function FilterArtistGrid({ artists: artistsProp = artists }) {
 
             {/* Medium Filters */}
             <div>
-              <h3 className="text-lg font-medium mb-4 font-['Source_Serif_4','serif'] text-gray-800 text-center uppercase tracking-wider">
-                Medium
+              <h3 className="text-lg font-medium mb-4 font-['Source_Serif_4','serif'] text-left  tracking-wider" style={{color: '#B42C2C'}}>
+                medium
               </h3>
               <div className="flex flex-wrap gap-2 justify-start">
                 {filterOptions.medium.map(medium => (
@@ -179,8 +179,8 @@ export default function FilterArtistGrid({ artists: artistsProp = artists }) {
 
             {/* Curator Filters */}
             <div>
-              <h3 className="text-lg font-medium mb-4 font-['Source_Serif_4','serif'] text-gray-800 text-center uppercase tracking-wider">
-                Curator
+              <h3 className="text-lg font-medium mb-4 font-['Source_Serif_4','serif'] text-left  tracking-wider" style={{color: '#B42C2C'}}>
+                curator
               </h3>
               <div className="flex flex-wrap gap-2 justify-start">
                 {filterOptions.curator.map(curator => (
