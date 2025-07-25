@@ -105,7 +105,7 @@ export const artists = [
     artworkTitle: "Untitled",
     location: "Germany",
     coordinates: { lat: 52.5200, lng: 13.4050 }, // Berlin coordinates
-    medium: ["Installation", "Public Art"],
+    medium: ["Installation"], // Removed "Public Art"
     curator: "",
     thumbnailURL: "https://placehold.co/300x300?text=Enno+Haar"
   },
@@ -295,7 +295,7 @@ export const artists = [
     artworkTitle: "Untitled",
     location: "Germany",
     coordinates: { lat: 52.52, lng: 13.405 }, // Berlin coordinates
-    medium: ["Site-specific", "Installation"],
+    medium: ["Installation"], // Removed "Site-specific"
     curator: "",
     thumbnailURL: "https://placehold.co/300x300?text=Peter+Behrbohm"
   },
@@ -325,7 +325,7 @@ export const artists = [
     artworkTitle: "Untitled",
     location: "South Africa",
     coordinates: { lat: -26.2041, lng: 28.0473 }, // Johannesburg coordinates
-    medium: ["Street Art", "Site-specific"],
+    medium: ["Street Art"], // Removed "Site-specific"
     curator: "",
     thumbnailURL: "https://placehold.co/300x300?text=r1"
   },
@@ -365,7 +365,7 @@ export const artists = [
     artworkTitle: "Untitled",
     location: "USA",
     coordinates: { lat: 41.7406, lng: -74.0833 }, // New Paltz coordinates
-    medium: ["Collective", "Ecological"],
+    medium: ["Ecological"], // Removed "Collective"
     curator: "",
     thumbnailURL: "https://placehold.co/300x300?text=Spurse+Matthew+Friday"
   },

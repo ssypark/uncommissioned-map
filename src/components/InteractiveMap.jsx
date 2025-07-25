@@ -28,7 +28,7 @@ const InteractiveMap = ({ artists, filteredArtists }) => {
     : filteredArtists || [];
 
   return (
-    <div className="w-full h-[400px] mb-12 border border-gray-300 rounded-lg overflow-hidden">
+    <div className="w-full h-[400px] mb-12 border border-gray-300 overflow-hidden">
       <MapContainer
         center={[20, 0]}
         zoom={2}
