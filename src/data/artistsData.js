@@ -81,13 +81,13 @@ export const artists = [
   },
   {
     id: 9,
-    artistName: "Deng Yufeng",
-    artworkTitle: "Untitled",
+    artistName: "Yufeng Deng",
+    artworkTitle: "Smuggled Journey",
     location: "China",
-    coordinates: { lat: 39.9042, lng: 116.4074 }, // Beijing coordinates
-    medium: ["Conceptual", "Interdisciplinary"],
+    coordinates: { lat: 39.9042, lng: 116.4074 }, // Beijing coordinates (Chaoyang District)
+    medium: ["Conceptual", "Performance", "Social Practice"],
     curator: "",
-    thumbnailURL: "https://placehold.co/300x300?text=Deng+Yufeng"
+    thumbnailURL: "https://placehold.co/300x300?text=Yufeng+Deng"
   },
   {
     id: 10,
@@ -448,7 +448,58 @@ export const artists = [
     medium: ["Mixed Media", "Textile"], // Added "Textile"
     curator: "",
     thumbnailURL: "https://placehold.co/300x300?text=Zohreh+Solati"
+  },
+  {
+    id: 46,
+    artistName: "Iris Buchholz Chocolate",
+    artworkTitle: "kialuela (kikongo: spiral)",
+    location: "Angola",
+    coordinates: { lat: -8.8390, lng: 13.2894 }, // Luanda coordinates
+    medium: ["Performance", "Installation", "Social Practice"],
+    curator: "",
+    thumbnailURL: "https://placehold.co/300x300?text=Iris+Buchholz+Chocolate"
+  },
+  {
+    id: 47,
+    artistName: "Mathieu Tremblin",
+    artworkTitle: "Inscripcions",
+    location: "France",
+    coordinates: { lat: 48.5734, lng: 7.7521 }, // Strasbourg coordinates
+    medium: ["Installation", "Performance", "Conceptual"],
+    curator: "",
+    thumbnailURL: "https://placehold.co/300x300?text=Mathieu+Tremblin"
+  },
+  {
+    id: 48,
+    artistName: "Libor Novotny",
+    artworkTitle: "Untitled",
+    location: "Czech Republic",
+    coordinates: { lat: 49.8209, lng: 18.2625 }, // Ostrava coordinates
+    medium: ["Installation", "Conceptual", "Street Art"],
+    curator: "",
+    thumbnailURL: "https://placehold.co/300x300?text=Libor+Novotny"
+  },
+  {
+    id: 49,
+    artistName: "Erfan Ghiasi",
+    artworkTitle: "Improvisation of a Qanun",
+    location: "Iran",
+    coordinates: { lat: 35.6892, lng: 51.3890 }, // Tehran coordinates
+    medium: ["Performance", "Sound Art", "Conceptual"],
+    curator: "",
+    thumbnailURL: "https://placehold.co/300x300?text=Erfan+Ghiasi"
+  },
+  {
+    id: 50,
+    artistName: "Heimprofi",
+    artworkTitle: "Untitled",
+    location: "Netherlands",
+    coordinates: { lat: 51.9692, lng: 5.8997 }, // Wageningen area coordinates (between the two proposed locations)
+    medium: ["Installation", "Textile", "Conceptual"],
+    curator: "",
+    thumbnailURL: "https://placehold.co/300x300?text=Heimprofi"
   }
+
 ];
 
 // Helper functions for getting unique values
