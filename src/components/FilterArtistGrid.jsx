@@ -1,6 +1,7 @@
-import React, { useState, useMemo } from "react";
-import { artists as dummyArtists } from "../data/artistsData";
+import React, { useState, useMemo } from 'react';
+import { useNavigate } from 'react-router-dom';
 import InteractiveMap from './InteractiveMap';
+import { artists } from '../data/artistsData';
 
 // Filter button component for reusability - updating style to match screenshot
 const FilterButton = ({ label, isActive, onClick }) => (
@@ -17,7 +18,9 @@ const FilterButton = ({ label, isActive, onClick }) => (
   </button>
 );
 
-export default function FilterArtistGrid({ artists = dummyArtists }) {
+export default function FilterArtistGrid({ artists: artistsProp = artists }) {
+  const navigate = useNavigate();
+
   // 1) Track selected filters
   const [selected, setSelected] = useState({
     location: new Set(),
@@ -36,66 +39,51 @@ export default function FilterArtistGrid({ artists = dummyArtists }) {
   const getRegion = (country) => {
     const regionMap = {
       "USA": "North America",
-      "Canada": "North America", 
+      "Canada": "North America",
       "Mexico": "North America",
       "Netherlands": "Europe",
-      "France": "Europe",
       "Germany": "Europe",
+      "France": "Europe",
       "Russia": "Europe",
+      "Belarus": "Europe",
+      "Iran": "Asia",
       "China": "Asia",
-      "Japan": "Asia",
       "Australia": "Australia",
       "South Africa": "Africa"
-      // Add more mappings as needed
     };
-    
-    return regionMap[country] || "Other";
+    return regionMap[country] || country;
   };
 
   // 4) Memoized filtering
   const filtered = useMemo(() => {
-    return artists.filter(artist => {
-      // Location filtering - check if any selected region matches artist's region
-      const locationMatch = () => {
-        if (selected.location.size === 0) return true;
-        const artistRegion = getRegion(artist.location);
-        return selected.location.has(artistRegion);
-      };
+    return artistsProp.filter(artist => {
+      const locationMatch = selected.location.size === 0 || 
+        selected.location.has(getRegion(artist.location));
       
-      // Medium filtering - check if any selected medium matches artist's mediums
-      const mediumMatch = () => {
-        if (selected.medium.size === 0) return true;
-        return artist.medium.some(m => selected.medium.has(m));
-      };
+      const mediumMatch = selected.medium.size === 0 || 
+        artist.medium.some(m => selected.medium.has(m));
       
-      // Curator filtering - check if selected curator matches artist's curator
-      const curatorMatch = () => {
-        if (selected.curator.size === 0) return true; 
-        return selected.curator.has(artist.curator);
-      };
+      const curatorMatch = selected.curator.size === 0 || 
+        selected.curator.has(artist.curator);
       
-      return locationMatch() && mediumMatch() && curatorMatch();
+      return locationMatch && mediumMatch && curatorMatch;
     });
-  }, [artists, selected]);
+  }, [artistsProp, selected]);
 
-  // 4) Toggle filter function
+  // 5) Toggle filter function
   const toggle = (filterType, value) => {
     setSelected(prev => {
       const newSelected = { ...prev };
-      const currentSet = new Set(newSelected[filterType]);
-      
-      if (currentSet.has(value)) {
-        currentSet.delete(value);
+      if (newSelected[filterType].has(value)) {
+        newSelected[filterType].delete(value);
       } else {
-        currentSet.add(value);
+        newSelected[filterType].add(value);
       }
-      
-      newSelected[filterType] = currentSet;
       return newSelected;
     });
   };
 
-  // 5) Clear all filters function
+  // 6) Clear all filters function
   const clearAllFilters = () => {
     setSelected({
       location: new Set(),
@@ -104,217 +92,117 @@ export default function FilterArtistGrid({ artists = dummyArtists }) {
     });
   };
 
-  // 6) Check if any filters are active
+  // 7) Check if any filters are active
   const hasActiveFilters = selected.location.size > 0 || selected.medium.size > 0 || selected.curator.size > 0;
 
+  const handleArtistClick = (artistId) => {
+    navigate(`/artist/${artistId}`);
+  };
+
   return (
-    <div className="bg-[#F5F0E6]">
-      <div className="max-w-[1400px] mx-auto px-12 py-8">
-        {/* Page header - updated to match screenshot
-        <h1 className="text-center text-6xl font-medium mb-8 uppercase font-['Bruno_Ace_SC','Arial']">
-          Artwor!!
-        </h1> */}
+    <div className="bg-[#FAF7F0] min-h-screen">
+      <div className="p-6 max-w-7xl mx-auto">
         
-        {/* Interactive Map - replaces static map image */}
-        <InteractiveMap 
-          artists={artists} 
-          filteredArtists={filtered} 
-        />
-        
-        {/* Filter sections - responsive layout */}
-        <div className="flex justify-center mb-24">
-          <div className="flex flex-col lg:flex-row gap-8 lg:gap-32 w-full max-w-6xl">
-            {/* Location filters */}
-            <div className="min-w-[250px] flex-1">
-              <h2 className="text-2xl font-normal mb-6 uppercase font-['Bruno_Ace_SC','Arial']">Location</h2>
-              <div className="flex flex-wrap gap-2">
-                <FilterButton
-                  key="North America"
-                  label="North America"
-                  isActive={selected.location.has("North America")}
-                  onClick={() => toggle("location", "North America")}
-                />
-                <FilterButton
-                  key="South America"
-                  label="South America"
-                  isActive={selected.location.has("South America")}
-                  onClick={() => toggle("location", "South America")}
-                />
-                <FilterButton
-                  key="Europe"
-                  label="Europe"
-                  isActive={selected.location.has("Europe")}
-                  onClick={() => toggle("location", "Europe")}
-                />
-                <FilterButton
-                  key="Africa"
-                  label="Africa"
-                  isActive={selected.location.has("Africa")}
-                  onClick={() => toggle("location", "Africa")}
-                />
-                <FilterButton
-                  key="Asia"
-                  label="Asia"
-                  isActive={selected.location.has("Asia")}
-                  onClick={() => toggle("location", "Asia")}
-                />
-                <FilterButton
-                  key="Australia"
-                  label="Australia"
-                  isActive={selected.location.has("Australia")}
-                  onClick={() => toggle("location", "Australia")}
-                />
-              </div>
+        {/* Map */}
+        <div className="mb-8">
+          <InteractiveMap artists={artistsProp} filteredArtists={filtered} />
+        </div>
+
+        {/* Filter Controls */}
+        <div className="mb-8 space-y-6">
+          
+          {/* Clear All Button */}
+          {hasActiveFilters && (
+            <div className="flex justify-end">
+              <button
+                onClick={clearAllFilters}
+                className="text-sm text-red-600 hover:underline font-['Source_Serif_4','serif']"
+              >
+                Clear all filters
+              </button>
             </div>
-            
-            {/* Medium filters */}
-            <div className="min-w-[250px] flex-1">
-              <h2 className="text-2xl font-normal mb-6 uppercase font-['Bruno_Ace_SC','Arial']">Medium</h2>
-              <div className="flex flex-wrap gap-2">
+          )}
+
+          {/* Location Filters */}
+          <div>
+            <h3 className="text-lg font-medium mb-3 font-['Source_Serif_4','serif'] text-gray-800">
+              Filter by Location
+            </h3>
+            <div className="flex flex-wrap gap-2">
+              {filterOptions.location.map(location => (
                 <FilterButton
-                  key="Installation"
-                  label="Installation"
-                  isActive={selected.medium.has("Installation")}
-                  onClick={() => toggle("medium", "Installation")}
+                  key={location}
+                  label={location}
+                  isActive={selected.location.has(location)}
+                  onClick={() => toggle('location', location)}
                 />
-                <FilterButton
-                  key="Performance"
-                  label="Performance"
-                  isActive={selected.medium.has("Performance")}
-                  onClick={() => toggle("medium", "Performance")}
-                />
-                <FilterButton
-                  key="Sculpture"
-                  label="Sculpture"
-                  isActive={selected.medium.has("Sculpture")}
-                  onClick={() => toggle("medium", "Sculpture")}
-                />
-                <FilterButton
-                  key="Mixed Media"
-                  label="Mixed Media"
-                  isActive={selected.medium.has("Mixed Media")}
-                  onClick={() => toggle("medium", "Mixed Media")}
-                />
-                <FilterButton
-                  key="Photography"
-                  label="Photography"
-                  isActive={selected.medium.has("Photography")}
-                  onClick={() => toggle("medium", "Photography")}
-                />
-                <FilterButton
-                  key="Video"
-                  label="Video"
-                  isActive={selected.medium.has("Video")}
-                  onClick={() => toggle("medium", "Video")}
-                />
-                <FilterButton
-                  key="Digital Media"
-                  label="Digital Media"
-                  isActive={selected.medium.has("Digital Media")}
-                  onClick={() => toggle("medium", "Digital Media")}
-                />
-                <FilterButton
-                  key="Social Practice"
-                  label="Social Practice"
-                  isActive={selected.medium.has("Social Practice")}
-                  onClick={() => toggle("medium", "Social Practice")}
-                />
-                <FilterButton
-                  key="Conceptual"
-                  label="Conceptual"
-                  isActive={selected.medium.has("Conceptual")}
-                  onClick={() => toggle("medium", "Conceptual")}
-                />
-                <FilterButton
-                  key="Interdisciplinary"
-                  label="Interdisciplinary"
-                  isActive={selected.medium.has("Interdisciplinary")}
-                  onClick={() => toggle("medium", "Interdisciplinary")}
-                />
-                <FilterButton
-                  key="Textile"
-                  label="Textile"
-                  isActive={selected.medium.has("Textile")}
-                  onClick={() => toggle("medium", "Textile")}
-                />
-                <FilterButton
-                  key="Drawing"
-                  label="Drawing"
-                  isActive={selected.medium.has("Drawing")}
-                  onClick={() => toggle("medium", "Drawing")}
-                />
-              </div>
+              ))}
             </div>
-            
-            {/* Curator filters */}
-            <div className="min-w-[200px] flex-1">
-              <h2 className="text-2xl font-normal mb-6 uppercase font-['Bruno_Ace_SC','Arial']">Curator</h2>
-              <div className="flex flex-wrap gap-2">
+          </div>
+
+          {/* Medium Filters */}
+          <div>
+            <h3 className="text-lg font-medium mb-3 font-['Source_Serif_4','serif'] text-gray-800">
+              Filter by Medium
+            </h3>
+            <div className="flex flex-wrap gap-2">
+              {filterOptions.medium.map(medium => (
                 <FilterButton
-                  key="Sebastian"
-                  label="Sebastian"
-                  isActive={selected.curator.has("Sebastian")}
-                  onClick={() => toggle("curator", "Sebastian")}
+                  key={medium}
+                  label={medium}
+                  isActive={selected.medium.has(medium)}
+                  onClick={() => toggle('medium', medium)}
                 />
+              ))}
+            </div>
+          </div>
+
+          {/* Curator Filters */}
+          <div>
+            <h3 className="text-lg font-medium mb-3 font-['Source_Serif_4','serif'] text-gray-800">
+              Filter by Curator
+            </h3>
+            <div className="flex flex-wrap gap-2">
+              {filterOptions.curator.map(curator => (
                 <FilterButton
-                  key="Miko"
-                  label="Miko"
-                  isActive={selected.curator.has("Miko")}
-                  onClick={() => toggle("curator", "Miko")}
+                  key={curator}
+                  label={curator}
+                  isActive={selected.curator.has(curator)}
+                  onClick={() => toggle('curator', curator)}
                 />
-                <FilterButton
-                  key="LaRissa"
-                  label="LaRissa"
-                  isActive={selected.curator.has("LaRissa")}
-                  onClick={() => toggle("curator", "LaRissa")}
-                />
-                <FilterButton
-                  key="Marek"
-                  label="Marek"
-                  isActive={selected.curator.has("Marek")}
-                  onClick={() => toggle("curator", "Marek")}
-                />
-                <FilterButton
-                  key="Taylor"
-                  label="Taylor"
-                  isActive={selected.curator.has("Taylor")}
-                  onClick={() => toggle("curator", "Taylor")}
-                />
-              </div>
+              ))}
             </div>
           </div>
         </div>
-        
-        {/* Results counter */}
-        <div className="text-center mb-8">
-          <p className="text-sm font-['Source_Serif_4','serif'] text-gray-600">
-            Showing {filtered.length} of {artists.length} artworks
-            {hasActiveFilters && (
-              <button 
-                onClick={clearAllFilters}
-                className="ml-4 text-red-600 underline hover:no-underline"
-              >
-                Clear filters
-              </button>
-            )}
+
+        {/* Results count */}
+        <div className="mb-4">
+          <p className="text-sm text-gray-600 font-['Source_Serif_4','serif']">
+            Showing {filtered.length} of {artistsProp.length} artists
           </p>
         </div>
 
-        {/* Artist grid - responsive with fewer columns on smaller screens */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-x-8 gap-y-12 mt-8">
+        {/* Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {filtered.map(artist => (
-            <div key={artist.id} className="mb-4">
-              <div className="w-full aspect-square bg-white mb-2 overflow-hidden border border-gray-200">
+            <div 
+              key={artist.id} 
+              className="cursor-pointer hover:opacity-80 transition-opacity"
+              onClick={() => handleArtistClick(artist.id)}
+            >
+              <div className="aspect-square bg-gray-100 overflow-hidden mb-3">
                 <img 
-                  src={artist.thumbnailURL}
-                  alt={`${artist.artworkTitle} by ${artist.artistName}`}
-                  className="w-full h-full object-cover grayscale" 
+                  src={artist.thumbnailURL} 
+                  alt={artist.artworkTitle}
+                  className="w-full h-full object-cover hover:scale-105 transition-transform"
                 />
               </div>
-              <p className="text-sm leading-6 font-['Source_Serif_4','serif']">
-                {artist.artworkTitle}<br/>
-                {artist.artistName}
-              </p>
+              
+              <div className="space-y-1">
+                <h3 className="font-medium text-sm font-['Source_Serif_4','serif']">{artist.artistName}</h3>
+                <p className="text-xs text-gray-600 italic font-['Source_Serif_4','serif']">{artist.artworkTitle}</p>
+                <p className="text-xs text-gray-500 font-['Source_Serif_4','serif']">{artist.location}</p>
+              </div>
             </div>
           ))}
         </div>

@@ -23,8 +23,9 @@ const redIcon = new L.Icon({
 
 const InteractiveMap = ({ artists, filteredArtists }) => {
   // Show pins only for filtered artists, or all if no filters
-  const visibleArtists = filteredArtists.length === artists.length ? 
-    artists : filteredArtists;
+  const visibleArtists = (filteredArtists?.length === artists?.length)
+    ? artists || []
+    : filteredArtists || [];
 
   return (
     <div className="w-full h-[400px] mb-12 border border-gray-300 rounded-lg overflow-hidden">

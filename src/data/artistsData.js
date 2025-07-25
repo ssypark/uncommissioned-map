@@ -1,126 +1,36 @@
 export const artists = [
   {
     id: 1,
-    artistName: "Keioui Keijaun Thomas",
-    artworkTitle: "Untitled",
-    location: "USA",
-    coordinates: { lat: 40.7128, lng: -74.0060 }, // NYC coordinates
-    medium: ["Performance"],
-    curator: "",
-    thumbnailURL: "https://placehold.co/300x300?text=Keioui+Keijaun+Thomas"
-  },
-  {
-    id: 2,
-    artistName: "Harmen de Hoop",
-    artworkTitle: "Untitled",
-    location: "Netherlands",
-    coordinates: { lat: 52.3676, lng: 4.9041 }, // Amsterdam coordinates
-    medium: ["Mixed Media"],
-    curator: "",
-    thumbnailURL: "https://placehold.co/300x300?text=Harmen+de+Hoop"
-  },
-  {
-    id: 3,
-    artistName: "Mark Jenkins",
-    artworkTitle: "Untitled",
-    location: "USA",
-    coordinates: { lat: 34.0522, lng: -118.2437 }, // LA coordinates
-    medium: ["Sculpture"],
-    curator: "",
-    thumbnailURL: "https://placehold.co/300x300?text=Mark+Jenkins"
-  },
-  {
-    id: 4,
-    artistName: "Pamela Karimi",
-    artworkTitle: "Untitled",
-    location: "USA",
-    coordinates: { lat: 37.7749, lng: -122.4194 }, // SF coordinates
-    medium: ["Installation"],
-    curator: "",
-    thumbnailURL: "https://placehold.co/300x300?text=Pamela+Karimi"
-  },
-  {
-    id: 5,
     artistName: "Alicia Eggert",
     artworkTitle: "Untitled",
     location: "USA",
-    coordinates: { lat: 41.8781, lng: -87.6298 }, // Chicago coordinates
-    medium: ["Installation"],
+    coordinates: { lat: 32.7767, lng: -96.7970 }, // Dallas coordinates
+    medium: ["Installation", "Social Practice"],
     curator: "",
     thumbnailURL: "https://placehold.co/300x300?text=Alicia+Eggert"
   },
   {
-    id: 6,
-    artistName: "Leon Reid IV",
+    id: 2,
+    artistName: "Arzhel Prioul",
     artworkTitle: "Untitled",
-    location: "USA",
-    coordinates: { lat: 40.7128, lng: -74.0060 }, // NYC coordinates
+    location: "France",
+    coordinates: { lat: 48.1173, lng: -1.6778 }, // Rennes coordinates
     medium: ["Mixed Media"],
     curator: "",
-    thumbnailURL: "https://placehold.co/300x300?text=Leon+Reid+IV"
+    thumbnailURL: "https://placehold.co/300x300?text=Arzhel+Prioul"
   },
   {
-    id: 7,
-    artistName: "Igor Ponosov",
-    artworkTitle: "Untitled",
-    location: "Russia",
-    coordinates: { lat: 55.7558, lng: 37.6173 }, // Moscow coordinates
-    medium: ["Installation"],
-    curator: "",
-    thumbnailURL: "https://placehold.co/300x300?text=Igor+Ponosov"
-  },
-  {
-    id: 8,
-    artistName: "Pablo Delgado",
-    artworkTitle: "Untitled",
-    location: "Mexico",
-    coordinates: { lat: 19.4326, lng: -99.1332 }, // Mexico City coordinates
-    medium: ["Mixed Media"],
-    curator: "",
-    thumbnailURL: "https://placehold.co/300x300?text=Pablo+Delgado"
-  },
-  {
-    id: 9,
-    artistName: "Yok and Sheryo",
+    id: 3,
+    artistName: "Azadeh Shladovsky",
     artworkTitle: "Untitled",
     location: "USA",
     coordinates: { lat: 34.0522, lng: -118.2437 }, // LA coordinates
-    medium: ["Sculpture"],
+    medium: ["Mixed Media"],
     curator: "",
-    thumbnailURL: "https://placehold.co/300x300?text=Yok+and+Sheryo"
+    thumbnailURL: "https://placehold.co/300x300?text=Azadeh+Shladovsky"
   },
   {
-    id: 10,
-    artistName: "Sasan & Saman Oskouei",
-    artworkTitle: "Untitled",
-    location: "USA",
-    coordinates: { lat: 37.7749, lng: -122.4194 }, // SF coordinates
-    medium: ["Sculpture"],
-    curator: "",
-    thumbnailURL: "https://placehold.co/300x300?text=Sasan+and+Saman+Oskouei"
-  },
-  {
-    id: 11,
-    artistName: "M Lamar",
-    artworkTitle: "Untitled",
-    location: "USA",
-    coordinates: { lat: 40.7128, lng: -74.0060 }, // NYC coordinates
-    medium: ["Performance"],
-    curator: "",
-    thumbnailURL: "https://placehold.co/300x300?text=M+Lamar"
-  },
-  {
-    id: 12,
-    artistName: "Moko Fukuyama",
-    artworkTitle: "Untitled",
-    location: "USA",
-    coordinates: { lat: 37.7749, lng: -122.4194 }, // SF coordinates
-    medium: ["Installation", "Digital Media"],
-    curator: "",
-    thumbnailURL: "https://placehold.co/300x300?text=Moko+Fukuyama"
-  },
-  {
-    id: 13,
+    id: 4,
     artistName: "Catherine Young",
     artworkTitle: "Untitled",
     location: "Australia",
@@ -130,67 +40,57 @@ export const artists = [
     thumbnailURL: "https://placehold.co/300x300?text=Catherine+Young"
   },
   {
-    id: 14,
-    artistName: "Shirin Mohammed",
+    id: 5,
+    artistName: "Chulayarnnon Siriphol",
+    artworkTitle: "Untitled",
+    location: "Thailand",
+    coordinates: { lat: 13.7563, lng: 100.5018 }, // Bangkok coordinates
+    medium: ["Multidisciplinary", "Film"],
+    curator: "",
+    thumbnailURL: "https://placehold.co/300x300?text=Chulayarnnon+Siriphol"
+  },
+  {
+    id: 6,
+    artistName: "Coco Bergholm",
     artworkTitle: "Untitled",
     location: "Germany",
-    coordinates: { lat: 52.5200, lng: 13.4050 }, // Berlin coordinates
-    medium: ["Installation"],
-    curator: "",
-    thumbnailURL: "https://placehold.co/300x300?text=Shirin+Mohammed"
-  },
-  {
-    id: 15,
-    artistName: "Mathieu Tremblin",
-    artworkTitle: "Untitled",
-    location: "France",
-    coordinates: { lat: 48.8566, lng: 2.3522 }, // Paris coordinates
+    coordinates: { lat: 52.52, lng: 13.405 }, // Berlin coordinates
     medium: ["Mixed Media"],
     curator: "",
-    thumbnailURL: "https://placehold.co/300x300?text=Mathieu+Tremblin"
+    thumbnailURL: "https://placehold.co/300x300?text=Coco+Bergholm"
   },
   {
-    id: 16,
-    artistName: "Ruben Rojas",
+    id: 7,
+    artistName: "Danielle Firoozi",
     artworkTitle: "Untitled",
-    location: "USA",
-    coordinates: { lat: 34.0522, lng: -118.2437 }, // LA coordinates
-    medium: ["Installation", "Sculpture"],
+    location: "Mexico",
+    coordinates: { lat: 19.4326, lng: -99.1332 }, // Mexico City coordinates
+    medium: ["Mixed Media", "Sculpture"],
     curator: "",
-    thumbnailURL: "https://placehold.co/300x300?text=Ruben+Rojas"
+    thumbnailURL: "https://placehold.co/300x300?text=Danielle+Firoozi"
   },
   {
-    id: 17,
-    artistName: "Recycle Group",
+    id: 8,
+    artistName: "Deana Kolencikova",
     artworkTitle: "Untitled",
     location: "France",
-    coordinates: { lat: 48.8566, lng: 2.3522 }, // Paris coordinates
-    medium: ["Installation"],
+    coordinates: { lat: 48.5734, lng: 7.7521 }, // Strasbourg coordinates
+    medium: ["Installation", "Performance", "Photography"],
     curator: "",
-    thumbnailURL: "https://placehold.co/300x300?text=Recycle+Group"
+    thumbnailURL: "https://placehold.co/300x300?text=Deana+Kolencikova"
   },
   {
-    id: 18,
-    artistName: "Julian Ties",
+    id: 9,
+    artistName: "Deng Yufeng",
     artworkTitle: "Untitled",
-    location: "USA",
-    coordinates: { lat: 40.7128, lng: -74.0060 }, // NYC coordinates
-    medium: ["Installation", "Performance"],
+    location: "China",
+    coordinates: { lat: 39.9042, lng: 116.4074 }, // Beijing coordinates
+    medium: ["Conceptual", "Interdisciplinary"],
     curator: "",
-    thumbnailURL: "https://placehold.co/300x300?text=Julian+Ties"
+    thumbnailURL: "https://placehold.co/300x300?text=Deng+Yufeng"
   },
   {
-    id: 19,
-    artistName: "Stephanie Brown",
-    artworkTitle: "Untitled",
-    location: "USA",
-    coordinates: { lat: 37.7749, lng: -122.4194 }, // SF coordinates
-    medium: ["Photography", "Mixed Media"],
-    curator: "",
-    thumbnailURL: "https://placehold.co/300x300?text=Stephanie+Brown"
-  },
-  {
-    id: 20,
+    id: 10,
     artistName: "Derzu Campos",
     artworkTitle: "Untitled",
     location: "Mexico",
@@ -200,87 +100,217 @@ export const artists = [
     thumbnailURL: "https://placehold.co/300x300?text=Derzu+Campos"
   },
   {
-    id: 21,
-    artistName: "Cao Shu",
+    id: 11,
+    artistName: "Enno Haar",
     artworkTitle: "Untitled",
-    location: "China",
-    coordinates: { lat: 39.9042, lng: 116.4074 }, // Beijing coordinates
-    medium: ["Installation", "Digital Media"],
+    location: "Germany",
+    coordinates: { lat: 52.5200, lng: 13.4050 }, // Berlin coordinates
+    medium: ["Installation", "Public Art"],
     curator: "",
-    thumbnailURL: "https://placehold.co/300x300?text=Cao+Shu"
+    thumbnailURL: "https://placehold.co/300x300?text=Enno+Haar"
   },
   {
-    id: 22,
-    artistName: "Njabulo Hlophe",
+    id: 12,
+    artistName: "Escif",
     artworkTitle: "Untitled",
-    location: "South Africa",
-    coordinates: { lat: -30.5595, lng: 22.9375 }, // South Africa coordinates
-    medium: ["Installation", "Sculpture"],
+    location: "Spain",
+    coordinates: { lat: 39.4699, lng: -0.3763 }, // Valencia coordinates
+    medium: ["Mural", "Conceptual"],
     curator: "",
-    thumbnailURL: "https://placehold.co/300x300?text=Njabulo+Hlophe"
+    thumbnailURL: "https://placehold.co/300x300?text=Escif"
   },
   {
-    id: 23,
-    artistName: "Fiona Chang",
+    id: 13,
+    artistName: "Esther Yi-Chun LIN",
+    artworkTitle: "Untitled",
+    location: "Taiwan",
+    coordinates: { lat: 25.033, lng: 121.5654 }, // Taipei coordinates
+    medium: ["Mixed Media"],
+    curator: "",
+    thumbnailURL: "https://placehold.co/300x300?text=Esther+Yi-Chun+LIN"
+  },
+  {
+    id: 14,
+    artistName: "Fabian Williams",
     artworkTitle: "Untitled",
     location: "USA",
-    coordinates: { lat: 40.7128, lng: -74.0060 }, // NYC coordinates
-    medium: ["Conceptual", "Social Practice"],
+    coordinates: { lat: 33.749, lng: -84.388 }, // Atlanta coordinates
+    medium: ["Mixed Media"],
     curator: "",
-    thumbnailURL: "https://placehold.co/300x300?text=Fiona+Chang"
+    thumbnailURL: "https://placehold.co/300x300?text=Fabian+Williams"
   },
   {
-    id: 24,
-    artistName: "Jerry Guo",
+    id: 15,
+    artistName: "Fiona Yun-Jui Chang",
     artworkTitle: "Untitled",
     location: "USA",
-    coordinates: { lat: 37.7749, lng: -122.4194 }, // SF coordinates
-    medium: ["Installation", "Performance"],
+    coordinates: { lat: 34.0522, lng: -118.2437 }, // Los Angeles coordinates
+    medium: ["Mixed Media"],
     curator: "",
-    thumbnailURL: "https://placehold.co/300x300?text=Jerry+Guo"
+    thumbnailURL: "https://placehold.co/300x300?text=Fiona+Yun-Jui+Chang"
   },
   {
-    id: 25,
-    artistName: "Yu Mingjing",
+    id: 16,
+    artistName: "Hana Al Saadi",
     artworkTitle: "Untitled",
-    location: "China",
-    coordinates: { lat: 31.2304, lng: 121.4737 }, // Shanghai coordinates
-    medium: ["Performance"],
+    location: "Qatar",
+    coordinates: { lat: 25.2879, lng: 51.5615 }, // Qatar coordinates from the data
+    medium: ["Painting"],
     curator: "",
-    thumbnailURL: "https://placehold.co/300x300?text=Yu+Mingjing"
+    thumbnailURL: "https://placehold.co/300x300?text=Hana+Al+Saadi"
   },
   {
-    id: 26,
-    artistName: "Azadeh Shladovsky",
+    id: 17,
+    artistName: "Harmen de Hoop",
+    artworkTitle: "Untitled",
+    location: "Switzerland",
+    coordinates: { lat: 47.3515, lng: 7.9144 }, // Olten coordinates
+    medium: ["Installation"],
+    curator: "",
+    thumbnailURL: "https://placehold.co/300x300?text=Harmen+de+Hoop"
+  },
+  {
+    id: 18,
+    artistName: "Jason deCaires Taylor",
+    artworkTitle: "Untitled",
+    location: "United Kingdom",
+    coordinates: { lat: 51.3168, lng: 0.8919 }, // Faversham, Kent coordinates
+    medium: ["Sculpture", "Installation"],
+    curator: "",
+    thumbnailURL: "https://placehold.co/300x300?text=Jason+deCaires+Taylor"
+  },
+  {
+    id: 19,
+    artistName: "Jeffrey Meris",
     artworkTitle: "Untitled",
     location: "USA",
     coordinates: { lat: 40.7128, lng: -74.0060 }, // NYC coordinates
     medium: ["Mixed Media"],
     curator: "",
-    thumbnailURL: "https://placehold.co/300x300?text=Azadeh+Shladovsky"
+    thumbnailURL: "https://placehold.co/300x300?text=Jeffrey+Meris"
   },
   {
-    id: 27,
-    artistName: "Luisa Mendoza",
+    id: 20,
+    artistName: "Jenny Nijenhuis",
+    artworkTitle: "Untitled",
+    location: "South Africa",
+    coordinates: { lat: -34.0522, lng: 23.0449 }, // Knysna area coordinates
+    medium: ["Sculpture", "Installation"],
+    curator: "",
+    thumbnailURL: "https://placehold.co/300x300?text=Jenny+Nijenhuis"
+  },
+  {
+    id: 21,
+    artistName: "Jodae",
+    artworkTitle: "Untitled",
+    location: "South Korea",
+    coordinates: { lat: 37.5665, lng: 126.978 }, // Seoul coordinates
+    medium: ["Painting"],
+    curator: "",
+    thumbnailURL: "https://placehold.co/300x300?text=Jodae"
+  },
+  {
+    id: 22,
+    artistName: "Julian Ties",
+    artworkTitle: "Untitled",
+    location: "USA",
+    coordinates: { lat: 40.7128, lng: -74.0060 }, // New York coordinates
+    medium: ["Installation"],
+    curator: "",
+    thumbnailURL: "https://placehold.co/300x300?text=Julian+Ties"
+  },
+  {
+    id: 23,
+    artistName: "Kara Rooney",
     artworkTitle: "Untitled",
     location: "Mexico",
     coordinates: { lat: 19.4326, lng: -99.1332 }, // Mexico City coordinates
-    medium: ["Installation", "Mixed Media"],
+    medium: ["Performance", "Conceptual"],
     curator: "",
-    thumbnailURL: "https://placehold.co/300x300?text=Luisa+Mendoza"
+    thumbnailURL: "https://placehold.co/300x300?text=Kara+Rooney"
+  },
+  {
+    id: 24,
+    artistName: "Leon Reid",
+    artworkTitle: "Untitled",
+    location: "USA",
+    coordinates: { lat: 40.6782, lng: -73.9442 }, // Brooklyn coordinates
+    medium: ["Installation"],
+    curator: "",
+    thumbnailURL: "https://placehold.co/300x300?text=Leon+Reid"
+  },
+  {
+    id: 25,
+    artistName: "Majid Haghighi",
+    artworkTitle: "Untitled",
+    location: "Iran",
+    coordinates: { lat: 35.6892, lng: 51.389 }, // Tehran coordinates
+    medium: ["Mixed Media"],
+    curator: "",
+    thumbnailURL: "https://placehold.co/300x300?text=Majid+Haghighi"
+  },
+  {
+    id: 26,
+    artistName: "Mayela Rodriguez",
+    artworkTitle: "Untitled",
+    location: "USA",
+    coordinates: { lat: 34.1478, lng: -118.1445 }, // Pasadena coordinates
+    medium: ["Mixed Media"],
+    curator: "",
+    thumbnailURL: "https://placehold.co/300x300?text=Mayela+Rodriguez"
+  },
+  {
+    id: 27,
+    artistName: "Mayssa Fattouh",
+    artworkTitle: "Untitled",
+    location: "Lebanon",
+    coordinates: { lat: 33.8938, lng: 35.5018 }, // Beirut coordinates
+    medium: ["Curatorial", "Installation"],
+    curator: "",
+    thumbnailURL: "https://placehold.co/300x300?text=Mayssa+Fattouh"
   },
   {
     id: 28,
-    artistName: "Zhang Beichen",
+    artistName: "Nina Katchadourian",
     artworkTitle: "Untitled",
-    location: "China",
-    coordinates: { lat: 39.9042, lng: 116.4074 }, // Beijing coordinates
-    medium: ["Photography", "Installation"],
+    location: "USA",
+    coordinates: { lat: 40.6782, lng: -73.9442 }, // Brooklyn coordinates
+    medium: ["Mixed Media"],
     curator: "",
-    thumbnailURL: "https://placehold.co/300x300?text=Zhang+Beichen"
+    thumbnailURL: "https://placehold.co/300x300?text=Nina+Katchadourian"
   },
   {
     id: 29,
+    artistName: "Nung-Hsin Hu",
+    artworkTitle: "Untitled",
+    location: "Taiwan",
+    coordinates: { lat: 24.1477, lng: 120.6736 }, // Taichung coordinates
+    medium: ["Interdisciplinary"],
+    curator: "",
+    thumbnailURL: "https://placehold.co/300x300?text=Nung-Hsin+Hu"
+  },
+  {
+    id: 30,
+    artistName: "Peter Behrbohm",
+    artworkTitle: "Untitled",
+    location: "Germany",
+    coordinates: { lat: 52.52, lng: 13.405 }, // Berlin coordinates
+    medium: ["Site-specific", "Installation"],
+    curator: "",
+    thumbnailURL: "https://placehold.co/300x300?text=Peter+Behrbohm"
+  },
+  {
+    id: 31,
+    artistName: "Petra Hudcova",
+    artworkTitle: "Untitled",
+    location: "Czech Republic",
+    coordinates: { lat: 50.0755, lng: 14.4378 }, // Prague coordinates
+    medium: ["Mixed Media"],
+    curator: "",
+    thumbnailURL: "https://placehold.co/300x300?text=Petra+Hudcova"
+  },
+  {
+    id: 32,
     artistName: "Pia & David",
     artworkTitle: "Untitled",
     location: "Mexico",
@@ -290,64 +320,134 @@ export const artists = [
     thumbnailURL: "https://placehold.co/300x300?text=Pia+and+David"
   },
   {
-    id: 30,
-    artistName: "Majid Karimi",
-    artworkTitle: "Untitled",
-    location: "Iran",
-    coordinates: { lat: 35.6892, lng: 51.3890 }, // Tehran coordinates
-    medium: ["Sculpture"],
-    curator: "",
-    thumbnailURL: "https://placehold.co/300x300?text=Majid+Karimi"
-  },
-  {
-    id: 31,
-    artistName: "Bazinato",
-    artworkTitle: "Untitled",
-    location: "Belarus",
-    coordinates: { lat: 53.9045, lng: 27.5590 }, // Minsk coordinates
-    medium: ["Installation", "Mixed Media"],
-    curator: "",
-    thumbnailURL: "https://placehold.co/300x300?text=Bazinato"
-  },
-  {
-    id: 32,
-    artistName: "Laura Magnusson",
-    artworkTitle: "Untitled",
-    location: "Canada",
-    coordinates: { lat: 45.4215, lng: -75.6972 }, // Ottawa coordinates
-    medium: ["Video", "Interdisciplinary"],
-    curator: "",
-    thumbnailURL: "https://placehold.co/300x300?text=Laura+Magnusson"
-  },
-  {
     id: 33,
-    artistName: "Justin Gignac",
+    artistName: "r1.",
     artworkTitle: "Untitled",
-    location: "USA",
-    coordinates: { lat: 40.7128, lng: -74.0060 }, // NYC coordinates
-    medium: ["Mixed Media"],
+    location: "South Africa",
+    coordinates: { lat: -26.2041, lng: 28.0473 }, // Johannesburg coordinates
+    medium: ["Street Art", "Site-specific"],
     curator: "",
-    thumbnailURL: "https://placehold.co/300x300?text=Justin+Gignac"
+    thumbnailURL: "https://placehold.co/300x300?text=r1"
   },
   {
     id: 34,
-    artistName: "Keef Kross",
+    artistName: "Recycle Group",
     artworkTitle: "Untitled",
-    location: "USA",
-    coordinates: { lat: 34.0522, lng: -118.2437 }, // LA coordinates
-    medium: ["Drawing"],
+    location: "France",
+    coordinates: { lat: 48.8566, lng: 2.3522 }, // Paris coordinates
+    medium: ["Installation"],
     curator: "",
-    thumbnailURL: "https://placehold.co/300x300?text=Keef+Kross"
+    thumbnailURL: "https://placehold.co/300x300?text=Recycle+Group"
   },
   {
     id: 35,
-    artistName: "Nansi Guevara",
+    artistName: "Sherko Abbas",
+    artworkTitle: "Untitled",
+    location: "Iraq",
+    coordinates: { lat: 35.5568, lng: 45.4329 }, // Sulaymaniyah coordinates
+    medium: ["Mixed Media"],
+    curator: "",
+    thumbnailURL: "https://placehold.co/300x300?text=Sherko+Abbas"
+  },
+  {
+    id: 36,
+    artistName: "Siri Tolander",
+    artworkTitle: "Untitled",
+    location: "Sweden",
+    coordinates: { lat: 59.3293, lng: 18.0686 }, // Stockholm coordinates
+    medium: ["Mixed Media"],
+    curator: "",
+    thumbnailURL: "https://placehold.co/300x300?text=Siri+Tolander"
+  },
+  {
+    id: 37,
+    artistName: "Spurse, Matthew Friday",
     artworkTitle: "Untitled",
     location: "USA",
-    coordinates: { lat: 37.7749, lng: -122.4194 }, // SF coordinates
-    medium: ["Textile"],
+    coordinates: { lat: 41.7406, lng: -74.0833 }, // New Paltz coordinates
+    medium: ["Collective", "Ecological"],
     curator: "",
-    thumbnailURL: "https://placehold.co/300x300?text=Nansi+Guevara"
+    thumbnailURL: "https://placehold.co/300x300?text=Spurse+Matthew+Friday"
+  },
+  {
+    id: 38,
+    artistName: "Stephanie Brown",
+    artworkTitle: "Untitled",
+    location: "USA",
+    coordinates: { lat: 33.749, lng: -84.388 }, // Atlanta coordinates
+    medium: ["Mixed Media", "Photography"],
+    curator: "",
+    thumbnailURL: "https://placehold.co/300x300?text=Stephanie+Brown"
+  },
+  {
+    id: 39,
+    artistName: "Strijdom van der Merwe",
+    artworkTitle: "Untitled",
+    location: "South Africa",
+    coordinates: { lat: -33.9321, lng: 18.8602 }, // Stellenbosch coordinates
+    medium: ["Land Art", "Ephemeral"],
+    curator: "",
+    thumbnailURL: "https://placehold.co/300x300?text=Strijdom+van+der+Merwe"
+  },
+  {
+    id: 40,
+    artistName: "Terrick Gutierrez",
+    artworkTitle: "Untitled",
+    location: "USA",
+    coordinates: { lat: 34.0522, lng: -118.2437 }, // Los Angeles coordinates
+    medium: ["Mixed Media"],
+    curator: "",
+    thumbnailURL: "https://placehold.co/300x300?text=Terrick+Gutierrez"
+  },
+  {
+    id: 41,
+    artistName: "Vhils",
+    artworkTitle: "Untitled",
+    location: "Portugal",
+    coordinates: { lat: 38.7223, lng: -9.1393 }, // Lisbon coordinates
+    medium: ["Street Art", "Sculpture"],
+    curator: "",
+    thumbnailURL: "https://placehold.co/300x300?text=Vhils"
+  },
+  {
+    id: 42,
+    artistName: "Wanzhuo Cheng",
+    artworkTitle: "Untitled",
+    location: "China",
+    coordinates: { lat: 22.5431, lng: 114.0579 }, // Shenzhen coordinates
+    medium: ["Mixed Media"],
+    curator: "",
+    thumbnailURL: "https://placehold.co/300x300?text=Wanzhuo+Cheng"
+  },
+  {
+    id: 43,
+    artistName: "Yannos Majestikos",
+    artworkTitle: "Untitled",
+    location: "Democratic Republic of Congo",
+    coordinates: { lat: -4.4419, lng: 15.2663 }, // Kinshasa coordinates
+    medium: ["Performance", "Visual Art"],
+    curator: "",
+    thumbnailURL: "https://placehold.co/300x300?text=Yannos+Majestikos"
+  },
+  {
+    id: 44,
+    artistName: "Yu Mingjing",
+    artworkTitle: "Untitled",
+    location: "China",
+    coordinates: { lat: 30.5728, lng: 104.0668 }, // Sichuan coordinates
+    medium: ["Performance"],
+    curator: "",
+    thumbnailURL: "https://placehold.co/300x300?text=Yu+Mingjing"
+  },
+  {
+    id: 45,
+    artistName: "Zohreh Solati",
+    artworkTitle: "Untitled",
+    location: "Iran",
+    coordinates: { lat: 35.6892, lng: 51.3890 }, // Tehran coordinates
+    medium: ["Mixed Media"],
+    curator: "",
+    thumbnailURL: "https://placehold.co/300x300?text=Zohreh+Solati"
   }
 ];
 

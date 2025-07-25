@@ -1,37 +1,12 @@
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
-
-# build
-/dist
-/build
-.vite
-
-# testing
-/coverage
-
-# local env files
+node_modules/
 .env
-.env.*.local
-
-# system files
-.DS_Store
-Thumbs.db
-
-# IDEs
-.vscode
-.idea
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-
-# logs
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-pnpm-debug.log*
-
-# misc
-*.local
+.DS_Store
+build/
+dist/
