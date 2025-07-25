@@ -18,6 +18,11 @@
   filter: grayscale(100%) contrast(1.1) brightness(0.9);
 }
 
+/* Grayscale effect for embedded maps */
+.grayscale-tiles {
+  filter: grayscale(100%) contrast(1.1) brightness(0.9) !important;
+}
+
 /* Ensure markers stay colored */
 .leaflet-marker-icon,
 .leaflet-marker-shadow {

@@ -1,15 +1,18 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import FilterArtistGrid from './components/FilterArtistGrid';
-import { ArtistPage } from './components/ArtistPage';
+import EmbedMap from './components/EmbedMap';
+import './index.css';
 
 function App() {
   return (
     <Router>
-      <Routes>
-        <Route path="/" element={<FilterArtistGrid />} />
-        <Route path="/artist/:artistId" element={<ArtistPage />} />
-      </Routes>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<FilterArtistGrid />} />
+          <Route path="/embed-map" element={<EmbedMap />} />
+        </Routes>
+      </div>
     </Router>
   );
 }
