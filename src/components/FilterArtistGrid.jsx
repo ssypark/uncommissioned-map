@@ -148,7 +148,7 @@ export default function FilterArtistGrid({ artists: artistsProp = artists }) {
   };
 
   return (
-    <div className="bg-[#FAF7F0] min-h-screen">
+    <div className="bg-[#F7F2E8] min-h-screen">
       <div className="p-6 max-w-7xl mx-auto">
         
         {/* Map */}
@@ -235,7 +235,7 @@ export default function FilterArtistGrid({ artists: artistsProp = artists }) {
             <div 
               key={artist.id} 
               className="cursor-pointer hover:opacity-80 transition-opacity"
-              onClick={() => handleArtistClick(artist)} // Pass full artist object
+              onClick={() => handleArtistClick(artist)}
             >
               <div className="aspect-square bg-gray-100 overflow-hidden mb-3">
                 <img 
