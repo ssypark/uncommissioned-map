@@ -1,5 +1,4 @@
 import React, { useState, useMemo } from 'react';
-import { useNavigate } from 'react-router-dom';
 import InteractiveMap from './InteractiveMap';
 import { artists } from '../data/artistsData';
 
@@ -10,16 +9,18 @@ const FilterButton = ({ label, isActive, onClick }) => (
     className={`
       px-3 py-1 rounded-md border text-sm font-light transition-all font-['Source_Serif_4','serif']
       ${isActive 
-        ? "bg-red-600 text-white border-red-600" 
+        ? "text-white" 
         : "bg-white text-gray-500 border-gray-400 hover:border-gray-600"}
     `}
+    style={isActive ? {backgroundColor: '#B42C2C', borderColor: '#B42C2C'} : {}}
   >
     {label}
   </button>
 );
 
 export default function FilterArtistGrid({ artists: artistsProp = artists }) {
-  const navigate = useNavigate();
+  // Remove the navigate hook since we're going to external URLs
+  // const navigate = useNavigate();
 
   // 1) Track selected filters
   const [selected, setSelected] = useState({
@@ -46,6 +47,7 @@ export default function FilterArtistGrid({ artists: artistsProp = artists }) {
       "Mural", 
       "Painting", 
       "Street Art", 
+      "Textile",
       "Curatorial", 
       "Ecological", 
       "Land Art", 
@@ -126,8 +128,23 @@ export default function FilterArtistGrid({ artists: artistsProp = artists }) {
   // 7) Check if any filters are active
   const hasActiveFilters = selected.location.size > 0 || selected.medium.size > 0 || selected.curator.size > 0;
 
-  const handleArtistClick = (artistId) => {
-    navigate(`/artist/${artistId}`);
+  // Updated handleArtistClick for external Framer URLs
+  const handleArtistClick = (artist) => {
+    // Convert artist name to URL-friendly slug
+    const artistSlug = artist.artistName
+      .toLowerCase()
+      .replace(/[^a-z0-9\s-]/g, '') // Remove special characters
+      .replace(/\s+/g, '-') // Replace spaces with hyphens
+      .replace(/-+/g, '-') // Replace multiple hyphens with single
+      .trim();
+    
+    // Base URL for your Framer website
+    const baseUrl = "https://uncommissioned.art";
+    
+    // Navigate to the artist page
+    window.open(`${baseUrl}/artistpage/${artistSlug}`, '_blank'); // Opens in new tab
+    // OR use this for same tab:
+    // window.location.href = `${baseUrl}/artistpage/${artistSlug}`;
   };
 
   return (
@@ -196,15 +213,16 @@ export default function FilterArtistGrid({ artists: artistsProp = artists }) {
           </div>
         </div>
 
-        {/* Results count and Clear filters - Centered */}
-        <div className="mb-6 text-center">
-          <p className="text-sm text-gray-600 font-['Source_Serif_4','serif'] mb-2">
-            Showing {filtered.length} of {artistsProp.length} artworks
+        {/* Results count and Clear filters - Same line */}
+        <div className="mb-6 flex justify-center items-center gap-4">
+          <p className="text-sm text-gray-600 font-['Source_Serif_4','serif']">
+            Showing {filtered.length} of {artistsProp.length} artists
           </p>
           {hasActiveFilters && (
             <button
               onClick={clearAllFilters}
-              className="text-sm text-red-600 hover:underline font-['Source_Serif_4','serif']"
+              className="text-sm hover:underline font-['Source_Serif_4','serif']"
+              style={{color: '#B42C2C'}}
             >
               Clear filters
             </button>
@@ -217,7 +235,7 @@ export default function FilterArtistGrid({ artists: artistsProp = artists }) {
             <div 
               key={artist.id} 
               className="cursor-pointer hover:opacity-80 transition-opacity"
-              onClick={() => handleArtistClick(artist.id)}
+              onClick={() => handleArtistClick(artist)} // Pass full artist object
             >
               <div className="aspect-square bg-gray-100 overflow-hidden mb-3">
                 <img 

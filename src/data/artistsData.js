@@ -95,7 +95,7 @@ export const artists = [
     artworkTitle: "Untitled",
     location: "Mexico",
     coordinates: { lat: 19.4326, lng: -99.1332 }, // Mexico City coordinates
-    medium: ["Photography", "Video"],
+    medium: ["Photography", "Video", "Textile"], // Added "Textile"
     curator: "",
     thumbnailURL: "https://placehold.co/300x300?text=Derzu+Campos"
   },
@@ -225,7 +225,7 @@ export const artists = [
     artworkTitle: "Untitled",
     location: "Mexico",
     coordinates: { lat: 19.4326, lng: -99.1332 }, // Mexico City coordinates
-    medium: ["Performance", "Conceptual"],
+    medium: ["Performance", "Conceptual", "Textile"], // Added "Textile"
     curator: "",
     thumbnailURL: "https://placehold.co/300x300?text=Kara+Rooney"
   },
@@ -325,7 +325,7 @@ export const artists = [
     artworkTitle: "Untitled",
     location: "South Africa",
     coordinates: { lat: -26.2041, lng: 28.0473 }, // Johannesburg coordinates
-    medium: ["Street Art"], // Removed "Site-specific"
+    medium: ["Street Art", "Textile"], // Added "Textile"
     curator: "",
     thumbnailURL: "https://placehold.co/300x300?text=r1"
   },
@@ -445,7 +445,7 @@ export const artists = [
     artworkTitle: "Untitled",
     location: "Iran",
     coordinates: { lat: 35.6892, lng: 51.3890 }, // Tehran coordinates
-    medium: ["Mixed Media"],
+    medium: ["Mixed Media", "Textile"], // Added "Textile"
     curator: "",
     thumbnailURL: "https://placehold.co/300x300?text=Zohreh+Solati"
   }
