@@ -3,25 +3,27 @@ import InteractiveMap from './InteractiveMap';
 import { artists } from '../data/artistsData';
 
 // Filter button component for reusability
-const FilterButton = ({ label, isActive, onClick }) => (
+const FilterButton = ({ label, isActive, onClick, darkMode = false }) => (
   <button
     onClick={onClick}
-    className={`
-      px-3 py-1 rounded-md border text-sm font-light transition-all font-['Source_Serif_4','serif']
-      ${isActive 
-        ? "text-white" 
-        : "bg-white text-gray-500 border-gray-400 hover:border-gray-600"}
-    `}
+    className={`px-3 py-1 text-sm rounded-full transition-colors font-['Source_Serif_4','serif'] ${
+      isActive 
+        ? 'text-white' 
+        : darkMode 
+          ? 'text-white hover:text-[#B42C2C]' 
+          : 'text-gray-700 hover:text-[#B42C2C]'
+    } ${
+      darkMode 
+        ? `border ${isActive ? 'bg-[#B42C2C] border-[#B42C2C]' : 'border-white hover:border-[#B42C2C]'}` 
+        : `border ${isActive ? 'bg-[#B42C2C] border-[#B42C2C]' : 'border-gray-300 hover:border-[#B42C2C]'}`
+    }`}
     style={isActive ? {backgroundColor: '#B42C2C', borderColor: '#B42C2C'} : {}}
   >
     {label}
   </button>
 );
 
-export default function FilterArtistGrid({ artists: artistsProp = artists }) {
-  // Remove the navigate hook since we're going to external URLs
-  // const navigate = useNavigate();
-
+export default function FilterArtistGrid({ artists: artistsProp = artists, darkMode = false }) {
   // 1) Track selected filters
   const [selected, setSelected] = useState({
     location: new Set(),
@@ -148,21 +150,21 @@ export default function FilterArtistGrid({ artists: artistsProp = artists }) {
   };
 
   return (
-    <div className="bg-[#F7F2E8] min-h-screen">
+    <div className={`min-h-screen ${darkMode ? 'bg-black' : 'bg-[#F7F2E8]'}`}>
       <div className="p-6 max-w-7xl mx-auto">
         
         {/* Map */}
         <div className="mb-12">
-          <InteractiveMap artists={artistsProp} filteredArtists={filtered} />
+          <InteractiveMap artists={artistsProp} filteredArtists={filtered} darkMode={darkMode} />
         </div>
 
-        {/* Filter Controls - 3 Column Layout */}
+        {/* Filters */}
         <div className="mb-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-6xl mx-auto">
             
             {/* Location Filters */}
             <div>
-              <h3 className="text-lg font-medium mb-4 font-['Source_Serif_4','serif'] text-left  tracking-wider" style={{color: '#B42C2C'}}>
+              <h3 className="text-lg font-medium mb-4 font-['Source_Serif_4','serif'] text-left tracking-wider" style={{color: '#B42C2C'}}>
                 location
               </h3>
               <div className="flex flex-wrap gap-2 justify-start">
@@ -172,6 +174,7 @@ export default function FilterArtistGrid({ artists: artistsProp = artists }) {
                     label={location}
                     isActive={selected.location.has(location)}
                     onClick={() => toggle('location', location)}
+                    darkMode={darkMode}
                   />
                 ))}
               </div>
@@ -179,7 +182,7 @@ export default function FilterArtistGrid({ artists: artistsProp = artists }) {
 
             {/* Medium Filters */}
             <div>
-              <h3 className="text-lg font-medium mb-4 font-['Source_Serif_4','serif'] text-left  tracking-wider" style={{color: '#B42C2C'}}>
+              <h3 className="text-lg font-medium mb-4 font-['Source_Serif_4','serif'] text-left tracking-wider" style={{color: '#B42C2C'}}>
                 medium
               </h3>
               <div className="flex flex-wrap gap-2 justify-start">
@@ -189,6 +192,7 @@ export default function FilterArtistGrid({ artists: artistsProp = artists }) {
                     label={medium}
                     isActive={selected.medium.has(medium)}
                     onClick={() => toggle('medium', medium)}
+                    darkMode={darkMode}
                   />
                 ))}
               </div>
@@ -196,7 +200,7 @@ export default function FilterArtistGrid({ artists: artistsProp = artists }) {
 
             {/* Curator Filters */}
             <div>
-              <h3 className="text-lg font-medium mb-4 font-['Source_Serif_4','serif'] text-left  tracking-wider" style={{color: '#B42C2C'}}>
+              <h3 className="text-lg font-medium mb-4 font-['Source_Serif_4','serif'] text-left tracking-wider" style={{color: '#B42C2C'}}>
                 curator
               </h3>
               <div className="flex flex-wrap gap-2 justify-start">
@@ -206,6 +210,7 @@ export default function FilterArtistGrid({ artists: artistsProp = artists }) {
                     label={curator}
                     isActive={selected.curator.has(curator)}
                     onClick={() => toggle('curator', curator)}
+                    darkMode={darkMode}
                   />
                 ))}
               </div>
@@ -213,9 +218,9 @@ export default function FilterArtistGrid({ artists: artistsProp = artists }) {
           </div>
         </div>
 
-        {/* Results count and Clear filters - Same line */}
+        {/* Results count and Clear filters */}
         <div className="mb-6 flex justify-center items-center gap-4">
-          <p className="text-sm text-gray-600 font-['Source_Serif_4','serif']">
+          <p className={`text-sm font-['Source_Serif_4','serif'] ${darkMode ? 'text-[#95989A]' : 'text-gray-600'}`}>
             Showing {filtered.length} of {artistsProp.length} artists
           </p>
           {hasActiveFilters && (
@@ -237,7 +242,7 @@ export default function FilterArtistGrid({ artists: artistsProp = artists }) {
               className="cursor-pointer hover:opacity-80 transition-opacity"
               onClick={() => handleArtistClick(artist)}
             >
-              <div className="aspect-square bg-gray-100 overflow-hidden mb-3">
+              <div className={`aspect-square overflow-hidden mb-3 ${darkMode ? 'bg-white border border-white' : 'bg-gray-100'}`}>
                 <img 
                   src={artist.thumbnailURL} 
                   alt={artist.artworkTitle}
@@ -246,9 +251,15 @@ export default function FilterArtistGrid({ artists: artistsProp = artists }) {
               </div>
               
               <div className="space-y-1">
-                <h3 className="font-medium text-sm font-['Source_Serif_4','serif']">{artist.artistName}</h3>
-                <p className="text-xs text-gray-600 italic font-['Source_Serif_4','serif']">{artist.artworkTitle}</p>
-                <p className="text-xs text-gray-500 font-['Source_Serif_4','serif']">{artist.location}</p>
+                <h3 className={`font-medium text-sm font-['Source_Serif_4','serif'] ${darkMode ? 'text-white' : 'text-black'}`}>
+                  {artist.artistName}
+                </h3>
+                <p className="text-xs italic font-['Source_Serif_4','serif']" style={{color: '#95989A'}}>
+                  {artist.artworkTitle}
+                </p>
+                <p className="text-xs font-['Source_Serif_4','serif']" style={{color: '#95989A'}}>
+                  {artist.location}
+                </p>
               </div>
             </div>
           ))}

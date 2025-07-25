@@ -11,37 +11,38 @@ L.Icon.Default.mergeOptions({
   shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
 });
 
-// Create a custom red marker using CSS
+// Create a custom red marker using CSS (updated to match AllArtistsMap)
 const createRedMarker = () => {
   return L.divIcon({
     className: 'custom-red-marker',
     html: `
       <div style="
         background-color: #B42C2C;
-        width: 25px;
-        height: 25px;
+        width: 20px;
+        height: 20px;
         border-radius: 50% 50% 50% 0;
-        border: 3px solid #fff;
+        border: 2px solid #fff;
         transform: rotate(-45deg);
         box-shadow: 0 2px 5px rgba(0,0,0,0.3);
         position: relative;
-        filter: none !important;
+        cursor: pointer;
+        transition: all 0.2s ease;
       ">
         <div style="
           position: absolute;
           top: 50%;
           left: 50%;
-          width: 8px;
-          height: 8px;
+          width: 6px;
+          height: 6px;
           background-color: #fff;
           border-radius: 50%;
           transform: translate(-50%, -50%) rotate(45deg);
         "></div>
       </div>
     `,
-    iconSize: [25, 25],
-    iconAnchor: [12, 24],
-    popupAnchor: [1, -24]
+    iconSize: [20, 20],
+    iconAnchor: [10, 20],
+    popupAnchor: [1, -20]
   });
 };
 
