@@ -26,16 +26,21 @@ export default function EmbedMap() {
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
-    const artistName = params.get("artist");
+    const artistSlug = params.get("artist");
     
-    // Find artist by name (flexible matching)
-    const artist = artists.find(a =>
-      a.artistName.toLowerCase().replace(/[^a-z0-9\s-]/g, '').replace(/\s+/g, '-')
-        === artistName?.toLowerCase()
-    );
+    // Find artist by matching the slug
+    const artist = artists.find(a => {
+      const generatedSlug = a.artistName
+        .toLowerCase()
+        .replace(/[^a-z0-9\s-]/g, '')
+        .replace(/\s+/g, '-')
+        .replace(/-+/g, '-')
+        .trim();
+      return generatedSlug === artistSlug;
+    });
 
     if (!artist || !artist.coordinates) {
-      console.log("Artist not found or no coordinates:", artistName);
+      console.log("Artist not found or no coordinates:", artistSlug);
       return;
     }
 
@@ -48,10 +53,9 @@ export default function EmbedMap() {
       zoomControl: true
     }).setView([lat, lng], 8);
 
-    // Add grayscale tiles to match your design
+    // Add grayscale tiles
     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-      attribution: "&copy; OpenStreetMap contributors",
-      className: "grayscale-tiles"
+      attribution: "&copy; OpenStreetMap contributors"
     }).addTo(map);
 
     // Add marker with popup
@@ -73,13 +77,18 @@ export default function EmbedMap() {
   }, []);
 
   return (
-    <div style={{ width: "100%", height: "100%", minHeight: "300px" }}>
+    <div style={{ 
+      width: "100%", 
+      height: "100vh", 
+      background: "#F7F2E8",
+      padding: "0",
+      margin: "0"
+    }}>
       <div
         ref={mapRef}
         style={{ 
           width: "100%", 
-          height: "100%", 
-          borderRadius: "8px",
+          height: "100%",
           filter: "grayscale(100%) contrast(1.1) brightness(0.9)"
         }}
         className="grayscale-map-tiles"
