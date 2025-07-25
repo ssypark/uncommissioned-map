@@ -231,7 +231,7 @@ export const artists = [
   },
   {
     id: 24,
-    artistName: "Leon Reid",
+    artistName: "Leon Reid IV",
     artworkTitle: "Untitled",
     location: "USA",
     coordinates: { lat: 40.6782, lng: -73.9442 }, // Brooklyn coordinates
