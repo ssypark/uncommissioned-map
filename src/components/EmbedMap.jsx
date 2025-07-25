@@ -70,6 +70,9 @@ export default function EmbedMap() {
 
     const { lat, lng } = artist.coordinates;
     
+    // Check if it's mobile (screen width < 768px)
+    const isMobile = window.innerWidth < 768;
+    
     // Create map
     const map = L.map(mapRef.current, {
       scrollWheelZoom: false,
@@ -80,13 +83,15 @@ export default function EmbedMap() {
     // Add grayscale tiles with custom class
     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
       attribution: "&copy; OpenStreetMap contributors",
-      className: "grayscale-tiles" // Apply grayscale only to tiles
+      className: "grayscale-tiles"
     }).addTo(map);
 
     // Add marker with custom red icon
-    L.marker([lat, lng], { icon: createRedMarker() })
-      .addTo(map)
-      .bindPopup(`
+    const marker = L.marker([lat, lng], { icon: createRedMarker() }).addTo(map);
+    
+    // Only add popup and open it on desktop
+    if (!isMobile) {
+      marker.bindPopup(`
         <div style="text-align: center; font-family: 'Source Serif 4', serif;">
           <h3 style="margin: 0; font-size: 14px; font-weight: 500; color: #B42C2C;">${artist.artistName}</h3>
           <p style="margin: 4px 0 0 0; font-size: 12px; color: #666; font-style: italic;">${artist.artworkTitle}</p>
@@ -94,6 +99,7 @@ export default function EmbedMap() {
         </div>
       `)
       .openPopup();
+    }
 
     // Cleanup function
     return () => {
