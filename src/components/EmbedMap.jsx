@@ -11,15 +11,39 @@ L.Icon.Default.mergeOptions({
   shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
 });
 
-// Custom red marker to match your brand
-const redIcon = new L.Icon({
-  iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
-  shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
-  iconSize: [25, 41],
-  iconAnchor: [12, 41],
-  popupAnchor: [1, -34],
-  shadowSize: [41, 41]
-});
+// Create a custom red marker using CSS
+const createRedMarker = () => {
+  return L.divIcon({
+    className: 'custom-red-marker',
+    html: `
+      <div style="
+        background-color: #B42C2C;
+        width: 25px;
+        height: 25px;
+        border-radius: 50% 50% 50% 0;
+        border: 3px solid #fff;
+        transform: rotate(-45deg);
+        box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+        position: relative;
+        filter: none !important;
+      ">
+        <div style="
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 8px;
+          height: 8px;
+          background-color: #fff;
+          border-radius: 50%;
+          transform: translate(-50%, -50%) rotate(45deg);
+        "></div>
+      </div>
+    `,
+    iconSize: [25, 25],
+    iconAnchor: [12, 24],
+    popupAnchor: [1, -24]
+  });
+};
 
 export default function EmbedMap() {
   const mapRef = useRef(null);
@@ -53,17 +77,18 @@ export default function EmbedMap() {
       zoomControl: true
     }).setView([lat, lng], 8);
 
-    // Add grayscale tiles
+    // Add grayscale tiles with custom class
     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-      attribution: "&copy; OpenStreetMap contributors"
+      attribution: "&copy; OpenStreetMap contributors",
+      className: "grayscale-tiles" // Apply grayscale only to tiles
     }).addTo(map);
 
-    // Add marker with popup
-    L.marker([lat, lng], { icon: redIcon })
+    // Add marker with custom red icon
+    L.marker([lat, lng], { icon: createRedMarker() })
       .addTo(map)
       .bindPopup(`
         <div style="text-align: center; font-family: 'Source Serif 4', serif;">
-          <h3 style="margin: 0; font-size: 14px; font-weight: 500;">${artist.artistName}</h3>
+          <h3 style="margin: 0; font-size: 14px; font-weight: 500; color: #B42C2C;">${artist.artistName}</h3>
           <p style="margin: 4px 0 0 0; font-size: 12px; color: #666; font-style: italic;">${artist.artworkTitle}</p>
           <p style="margin: 2px 0 0 0; font-size: 12px; color: #999;">${artist.location}</p>
         </div>
@@ -88,10 +113,8 @@ export default function EmbedMap() {
         ref={mapRef}
         style={{ 
           width: "100%", 
-          height: "100%",
-          filter: "grayscale(100%) contrast(1.1) brightness(0.9)"
+          height: "100%"
         }}
-        className="grayscale-map-tiles"
       />
     </div>
   );
