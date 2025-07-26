@@ -50,6 +50,19 @@ const InteractiveMap = ({ artists, filteredArtists }) => {
     ? artists || []
     : filteredArtists || [];
 
+  // Handle artist click - same logic as FilterArtistGrid
+  const handleArtistClick = (artist) => {
+    const artistSlug = artist.artistName
+      .toLowerCase()
+      .replace(/[^a-z0-9\s-]/g, '') // Remove special characters
+      .replace(/\s+/g, '-') // Replace spaces with hyphens
+      .replace(/-+/g, '-') // Replace multiple hyphens with single
+      .trim();
+    
+    const baseUrl = "https://uncommissioned.art";
+    window.open(`${baseUrl}/artistpage/${artistSlug}`, '_blank');
+  };
+
   return (
     <div className="w-full h-[400px] mb-12 border border-gray-300 overflow-hidden">
       <MapContainer
@@ -65,7 +78,7 @@ const InteractiveMap = ({ artists, filteredArtists }) => {
           className="grayscale-map-tiles"
         />
         
-        {/* Artist markers - now using consistent style */}
+        {/* Artist markers - now clickable */}
         {visibleArtists.map(artist => (
           artist.coordinates && (
             <Marker
@@ -74,13 +87,19 @@ const InteractiveMap = ({ artists, filteredArtists }) => {
               icon={redIcon}
             >
               <Popup>
-                <div className="text-sm font-['Source_Serif_4','serif']">
+                <div 
+                  className="text-sm font-['Source_Serif_4','serif'] cursor-pointer hover:opacity-80 transition-opacity"
+                  onClick={() => handleArtistClick(artist)}
+                >
                   <strong style={{color: '#B42C2C'}}>{artist.artistName}</strong><br/>
                   <em>{artist.artworkTitle}</em><br/>
                   {artist.location}<br/>
                   <span className="text-gray-600">
                     {artist.medium.join(', ')}
-                  </span>
+                  </span><br/>
+                  <small className="text-blue-600 underline mt-2 block">
+                    Click to view artist page
+                  </small>
                 </div>
               </Popup>
             </Marker>
