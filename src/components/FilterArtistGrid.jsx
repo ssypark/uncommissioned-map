@@ -6,7 +6,7 @@ import { artists } from '../data/artistsData';
 const FilterButton = ({ label, isActive, onClick, darkMode = false }) => (
   <button
     onClick={onClick}
-    className={`px-3 py-1 text-sm rounded-full transition-colors font-['Source_Serif_4','serif'] ${
+    className={`px-3 py-1 text-sm rounded-md transition-colors font-['Source_Serif_4','serif'] ${
       isActive 
         ? 'text-white' 
         : darkMode 
@@ -15,7 +15,7 @@ const FilterButton = ({ label, isActive, onClick, darkMode = false }) => (
     } ${
       darkMode 
         ? `border ${isActive ? 'bg-[#B42C2C] border-[#B42C2C]' : 'border-white hover:border-[#B42C2C]'}` 
-        : `border ${isActive ? 'bg-[#B42C2C] border-[#B42C2C]' : 'border-gray-300 hover:border-[#B42C2C]'}`
+        : `border ${isActive ? 'bg-[#B42C2C] border-[#B42C2C]' : 'border-black hover:border-[#B42C2C]'}`
     }`}
     style={isActive ? {backgroundColor: '#B42C2C', borderColor: '#B42C2C'} : {}}
   >
