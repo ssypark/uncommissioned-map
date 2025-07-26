@@ -61,12 +61,14 @@ export default function FilterArtistGrid({ artists: artistsProp = artists, darkM
       "Ecological", 
       "Land Art", 
       "Ephemeral", 
-      "Visual Art"
+      "Sound-based",
+      "Tech-enabled",  // For AR and technology-based works
+     
     ],
     curator: ["Sebastian", "Miko", "LaRissa", "Marek", "Taylor"]
   };
 
-  // 3) Country to region mapping (removed South American countries)
+  // 3) Country to region mapping
   const getRegion = (country) => {
     const regionMap = {
       "USA": "North America",
@@ -79,6 +81,7 @@ export default function FilterArtistGrid({ artists: artistsProp = artists, darkM
       "Switzerland": "Europe",
       "Czech Republic": "Europe",
       "Sweden": "Europe",
+      "Netherlands": "Europe",    // Added for Heimprofi
       "Lebanon": "Middle East",
       "Iraq": "Middle East",
       "Iran": "Middle East",
@@ -89,6 +92,7 @@ export default function FilterArtistGrid({ artists: artistsProp = artists, darkM
       "South Korea": "Asia",
       "South Africa": "Africa",
       "Democratic Republic of Congo": "Africa",
+      "Angola": "Africa",         // Added for Iris Buchholz Chocolate
       "Australia": "Australia"
     };
     return regionMap[country] || "Other";

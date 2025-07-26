@@ -2,9 +2,9 @@ export const artists = [
   {
     id: 1,
     artistName: "Alicia Eggert",
-    artworkTitle: "Untitled",
+    artworkTitle: "NOW/NEVER", // Updated from "Untitled"
     location: "USA",
-    coordinates: { lat: 32.7767, lng: -96.7970 }, // Dallas coordinates
+    coordinates: { lat: 32.7767, lng: -96.7970 },
     medium: ["Installation", "Social Practice"],
     curator: "",
     thumbnailURL: "https://placehold.co/300x300?text=Alicia+Eggert"
@@ -12,9 +12,9 @@ export const artists = [
   {
     id: 2,
     artistName: "Arzhel Prioul",
-    artworkTitle: "Untitled",
+    artworkTitle: "Do Not Disturb", // Updated from "Untitled"
     location: "France",
-    coordinates: { lat: 48.1173, lng: -1.6778 }, // Rennes coordinates
+    coordinates: { lat: 48.1173, lng: -1.6778 },
     medium: ["Mixed Media"],
     curator: "",
     thumbnailURL: "https://placehold.co/300x300?text=Arzhel+Prioul"
@@ -22,9 +22,9 @@ export const artists = [
   {
     id: 3,
     artistName: "Azadeh Shladovsky",
-    artworkTitle: "Untitled",
+    artworkTitle: "Sidewalk Sale", // Updated from "Untitled"
     location: "USA",
-    coordinates: { lat: 34.0522, lng: -118.2437 }, // LA coordinates
+    coordinates: { lat: 34.0522, lng: -118.2437 },
     medium: ["Mixed Media"],
     curator: "",
     thumbnailURL: "https://placehold.co/300x300?text=Azadeh+Shladovsky"
@@ -32,9 +32,9 @@ export const artists = [
   {
     id: 4,
     artistName: "Catherine Young",
-    artworkTitle: "Untitled",
+    artworkTitle: "Deep Sea Mining Claw Machine", // Updated from "Untitled"
     location: "Australia",
-    coordinates: { lat: -33.8688, lng: 151.2093 }, // Sydney coordinates
+    coordinates: { lat: -33.8688, lng: 151.2093 },
     medium: ["Installation"],
     curator: "",
     thumbnailURL: "https://placehold.co/300x300?text=Catherine+Young"
@@ -42,9 +42,9 @@ export const artists = [
   {
     id: 5,
     artistName: "Chulayarnnon Siriphol",
-    artworkTitle: "Untitled",
+    artworkTitle: "Monument to the Fourth International", // Updated from "Untitled"
     location: "Thailand",
-    coordinates: { lat: 13.7563, lng: 100.5018 }, // Bangkok coordinates
+    coordinates: { lat: 13.7563, lng: 100.5018 },
     medium: ["Multidisciplinary", "Film"],
     curator: "",
     thumbnailURL: "https://placehold.co/300x300?text=Chulayarnnon+Siriphol"
@@ -72,9 +72,9 @@ export const artists = [
   {
     id: 8,
     artistName: "Deana Kolencikova",
-    artworkTitle: "Untitled",
+    artworkTitle: "Mirage", // Updated from "Untitled"
     location: "France",
-    coordinates: { lat: 48.5734, lng: 7.7521 }, // Strasbourg coordinates
+    coordinates: { lat: 48.5734, lng: 7.7521 },
     medium: ["Installation", "Performance", "Photography"],
     curator: "",
     thumbnailURL: "https://placehold.co/300x300?text=Deana+Kolencikova"
@@ -102,19 +102,19 @@ export const artists = [
   {
     id: 11,
     artistName: "Enno Haar",
-    artworkTitle: "Untitled",
+    artworkTitle: "Urban Rescue", // Updated from "Untitled"
     location: "Germany",
-    coordinates: { lat: 52.5200, lng: 13.4050 }, // Berlin coordinates
-    medium: ["Installation"], // Removed "Public Art"
+    coordinates: { lat: 52.5200, lng: 13.4050 },
+    medium: ["Installation"],
     curator: "",
     thumbnailURL: "https://placehold.co/300x300?text=Enno+Haar"
   },
   {
     id: 12,
     artistName: "Escif",
-    artworkTitle: "Untitled",
+    artworkTitle: "British Garden", // Updated from "Untitled"
     location: "Spain",
-    coordinates: { lat: 39.4699, lng: -0.3763 }, // Valencia coordinates
+    coordinates: { lat: 39.4699, lng: -0.3763 },
     medium: ["Mural", "Conceptual"],
     curator: "",
     thumbnailURL: "https://placehold.co/300x300?text=Escif"
@@ -152,9 +152,9 @@ export const artists = [
   {
     id: 16,
     artistName: "Hana Al Saadi",
-    artworkTitle: "Untitled",
+    artworkTitle: "Dress Code Series", // Updated from "Untitled"
     location: "Qatar",
-    coordinates: { lat: 25.2879, lng: 51.5615 }, // Qatar coordinates from the data
+    coordinates: { lat: 25.2879, lng: 51.5615 },
     medium: ["Painting"],
     curator: "",
     thumbnailURL: "https://placehold.co/300x300?text=Hana+Al+Saadi"
@@ -162,9 +162,9 @@ export const artists = [
   {
     id: 17,
     artistName: "Harmen de Hoop",
-    artworkTitle: "Untitled",
+    artworkTitle: "Progress", // Updated from "Untitled"
     location: "Switzerland",
-    coordinates: { lat: 47.3515, lng: 7.9144 }, // Olten coordinates
+    coordinates: { lat: 47.3515, lng: 7.9144 },
     medium: ["Installation"],
     curator: "",
     thumbnailURL: "https://placehold.co/300x300?text=Harmen+de+Hoop"
@@ -172,9 +172,9 @@ export const artists = [
   {
     id: 18,
     artistName: "Jason deCaires Taylor",
-    artworkTitle: "Untitled",
+    artworkTitle: "Golden Siren", // Updated from "Untitled"
     location: "United Kingdom",
-    coordinates: { lat: 51.3168, lng: 0.8919 }, // Faversham, Kent coordinates
+    coordinates: { lat: 51.3168, lng: 0.8919 },
     medium: ["Sculpture", "Installation"],
     curator: "",
     thumbnailURL: "https://placehold.co/300x300?text=Jason+deCaires+Taylor"
@@ -182,9 +182,9 @@ export const artists = [
   {
     id: 19,
     artistName: "Jeffrey Meris",
-    artworkTitle: "Untitled",
+    artworkTitle: "We Once Told Tales By Fire And The Quiet Drop Of Rain", // Updated from "Untitled"
     location: "USA",
-    coordinates: { lat: 40.7128, lng: -74.0060 }, // NYC coordinates
+    coordinates: { lat: 40.7128, lng: -74.0060 },
     medium: ["Mixed Media"],
     curator: "",
     thumbnailURL: "https://placehold.co/300x300?text=Jeffrey+Meris"
@@ -192,9 +192,9 @@ export const artists = [
   {
     id: 20,
     artistName: "Jenny Nijenhuis",
-    artworkTitle: "Untitled",
+    artworkTitle: "Echo", // Updated from "Untitled"
     location: "South Africa",
-    coordinates: { lat: -34.0522, lng: 23.0449 }, // Knysna area coordinates
+    coordinates: { lat: -34.0522, lng: 23.0449 },
     medium: ["Sculpture", "Installation"],
     curator: "",
     thumbnailURL: "https://placehold.co/300x300?text=Jenny+Nijenhuis"
@@ -202,9 +202,9 @@ export const artists = [
   {
     id: 21,
     artistName: "Jodae",
-    artworkTitle: "Untitled",
+    artworkTitle: "Pieces of Luck", // Updated from "Untitled"
     location: "South Korea",
-    coordinates: { lat: 37.5665, lng: 126.978 }, // Seoul coordinates
+    coordinates: { lat: 37.5665, lng: 126.978 },
     medium: ["Painting"],
     curator: "",
     thumbnailURL: "https://placehold.co/300x300?text=Jodae"
@@ -212,9 +212,9 @@ export const artists = [
   {
     id: 22,
     artistName: "Julian Ties",
-    artworkTitle: "Untitled",
+    artworkTitle: "Edge States", // Updated from "Untitled"
     location: "USA",
-    coordinates: { lat: 40.7128, lng: -74.0060 }, // New York coordinates
+    coordinates: { lat: 40.7128, lng: -74.0060 },
     medium: ["Installation"],
     curator: "",
     thumbnailURL: "https://placehold.co/300x300?text=Julian+Ties"
@@ -222,19 +222,19 @@ export const artists = [
   {
     id: 23,
     artistName: "Kara Rooney",
-    artworkTitle: "Untitled",
+    artworkTitle: "Todo Estaba Previsto", // Updated from "Untitled"
     location: "Mexico",
-    coordinates: { lat: 19.4326, lng: -99.1332 }, // Mexico City coordinates
-    medium: ["Performance", "Conceptual", "Textile"], // Added "Textile"
+    coordinates: { lat: 19.4326, lng: -99.1332 },
+    medium: ["Performance", "Conceptual", "Textile"],
     curator: "",
     thumbnailURL: "https://placehold.co/300x300?text=Kara+Rooney"
   },
   {
     id: 24,
     artistName: "Leon Reid IV",
-    artworkTitle: "Untitled",
+    artworkTitle: "Of a Free Will", // Updated from "Untitled"
     location: "USA",
-    coordinates: { lat: 40.6782, lng: -73.9442 }, // Brooklyn coordinates
+    coordinates: { lat: 40.6782, lng: -73.9442 },
     medium: ["Installation"],
     curator: "",
     thumbnailURL: "https://placehold.co/300x300?text=Leon+Reid"
@@ -242,9 +242,9 @@ export const artists = [
   {
     id: 25,
     artistName: "Majid Haghighi",
-    artworkTitle: "Untitled",
+    artworkTitle: "Spec.99", // Updated from "Untitled"
     location: "Iran",
-    coordinates: { lat: 35.6892, lng: 51.389 }, // Tehran coordinates
+    coordinates: { lat: 35.6892, lng: 51.389 },
     medium: ["Mixed Media"],
     curator: "",
     thumbnailURL: "https://placehold.co/300x300?text=Majid+Haghighi"
@@ -252,9 +252,9 @@ export const artists = [
   {
     id: 26,
     artistName: "Mayela Rodriguez",
-    artworkTitle: "Untitled",
+    artworkTitle: "HyperCare!", // Updated from "Untitled"
     location: "USA",
-    coordinates: { lat: 34.1478, lng: -118.1445 }, // Pasadena coordinates
+    coordinates: { lat: 34.1478, lng: -118.1445 },
     medium: ["Mixed Media"],
     curator: "",
     thumbnailURL: "https://placehold.co/300x300?text=Mayela+Rodriguez"
@@ -262,9 +262,9 @@ export const artists = [
   {
     id: 27,
     artistName: "Mayssa Fattouh",
-    artworkTitle: "Untitled",
+    artworkTitle: "The Beginning of Memory", // Updated from "Untitled"
     location: "Lebanon",
-    coordinates: { lat: 33.8938, lng: 35.5018 }, // Beirut coordinates
+    coordinates: { lat: 33.8938, lng: 35.5018 },
     medium: ["Curatorial", "Installation"],
     curator: "",
     thumbnailURL: "https://placehold.co/300x300?text=Mayssa+Fattouh"
@@ -272,9 +272,9 @@ export const artists = [
   {
     id: 28,
     artistName: "Nina Katchadourian",
-    artworkTitle: "Untitled",
+    artworkTitle: "Perfect Shot", // Updated from "Untitled"
     location: "USA",
-    coordinates: { lat: 40.6782, lng: -73.9442 }, // Brooklyn coordinates
+    coordinates: { lat: 40.6782, lng: -73.9442 },
     medium: ["Mixed Media"],
     curator: "",
     thumbnailURL: "https://placehold.co/300x300?text=Nina+Katchadourian"
@@ -302,9 +302,9 @@ export const artists = [
   {
     id: 31,
     artistName: "Petra Hudcova",
-    artworkTitle: "Untitled",
+    artworkTitle: "Alternative Cartography", // Updated from "Untitled"
     location: "Czech Republic",
-    coordinates: { lat: 50.0755, lng: 14.4378 }, // Prague coordinates
+    coordinates: { lat: 50.0755, lng: 14.4378 },
     medium: ["Mixed Media"],
     curator: "",
     thumbnailURL: "https://placehold.co/300x300?text=Petra+Hudcova"
@@ -312,9 +312,9 @@ export const artists = [
   {
     id: 32,
     artistName: "Pia & David",
-    artworkTitle: "Untitled",
+    artworkTitle: "Ríos de Vida", // Updated from "Untitled"
     location: "Mexico",
-    coordinates: { lat: 19.4326, lng: -99.1332 }, // Mexico City coordinates
+    coordinates: { lat: 19.4326, lng: -99.1332 },
     medium: ["Installation", "Performance"],
     curator: "",
     thumbnailURL: "https://placehold.co/300x300?text=Pia+and+David"
@@ -332,19 +332,19 @@ export const artists = [
   {
     id: 34,
     artistName: "Recycle Group",
-    artworkTitle: "Untitled",
+    artworkTitle: "No Way Guide", // Updated from "Untitled"
     location: "France",
-    coordinates: { lat: 48.8566, lng: 2.3522 }, // Paris coordinates
-    medium: ["Installation"],
+    coordinates: { lat: 48.8566, lng: 2.3522 },
+    medium: ["Tech-enabled"], // Changed from "Installation" to match AR/tech nature
     curator: "",
     thumbnailURL: "https://placehold.co/300x300?text=Recycle+Group"
   },
   {
     id: 35,
     artistName: "Sherko Abbas",
-    artworkTitle: "Untitled",
+    artworkTitle: "Phantom Museum", // Updated from "Untitled"
     location: "Iraq",
-    coordinates: { lat: 35.5568, lng: 45.4329 }, // Sulaymaniyah coordinates
+    coordinates: { lat: 35.5568, lng: 45.4329 },
     medium: ["Mixed Media"],
     curator: "",
     thumbnailURL: "https://placehold.co/300x300?text=Sherko+Abbas"
@@ -362,10 +362,10 @@ export const artists = [
   {
     id: 37,
     artistName: "Spurse, Matthew Friday",
-    artworkTitle: "Untitled",
+    artworkTitle: "Carbon Harvest", // Updated from "Untitled"
     location: "USA",
-    coordinates: { lat: 41.7406, lng: -74.0833 }, // New Paltz coordinates
-    medium: ["Ecological"], // Removed "Collective"
+    coordinates: { lat: 41.7406, lng: -74.0833 },
+    medium: ["Ecological"],
     curator: "",
     thumbnailURL: "https://placehold.co/300x300?text=Spurse+Matthew+Friday"
   },
@@ -392,9 +392,9 @@ export const artists = [
   {
     id: 40,
     artistName: "Terrick Gutierrez",
-    artworkTitle: "Untitled",
+    artworkTitle: "Why Is There A Liquor Store On Almost Every Corner?", // Updated from "Untitled"
     location: "USA",
-    coordinates: { lat: 34.0522, lng: -118.2437 }, // Los Angeles coordinates
+    coordinates: { lat: 34.0522, lng: -118.2437 },
     medium: ["Mixed Media"],
     curator: "",
     thumbnailURL: "https://placehold.co/300x300?text=Terrick+Gutierrez"
@@ -412,20 +412,20 @@ export const artists = [
   {
     id: 42,
     artistName: "Wanzhuo Cheng",
-    artworkTitle: "Untitled",
+    artworkTitle: "/pop/", // Updated from "Untitled"
     location: "China",
-    coordinates: { lat: 22.5431, lng: 114.0579 }, // Shenzhen coordinates
-    medium: ["Mixed Media"],
+    coordinates: { lat: 22.5431, lng: 114.0579 },
+    medium: ["Tech-enabled"], // Changed from "Mixed Media" to match interactive tech nature
     curator: "",
     thumbnailURL: "https://placehold.co/300x300?text=Wanzhuo+Cheng"
   },
   {
     id: 43,
     artistName: "Yannos Majestikos",
-    artworkTitle: "Untitled",
+    artworkTitle: "Yé", // Updated from "Untitled"
     location: "Democratic Republic of Congo",
-    coordinates: { lat: -4.4419, lng: 15.2663 }, // Kinshasa coordinates
-    medium: ["Performance", "Visual Art"],
+    coordinates: { lat: -4.4419, lng: 15.2663 },
+    medium: ["Performance", "Mixed Media"], // Changed "Visual Art" to "Mixed Media"
     curator: "",
     thumbnailURL: "https://placehold.co/300x300?text=Yannos+Majestikos"
   },
@@ -442,10 +442,10 @@ export const artists = [
   {
     id: 45,
     artistName: "Zohreh Solati",
-    artworkTitle: "Untitled",
+    artworkTitle: "How We Became Us", // Updated from "Untitled"
     location: "Iran",
-    coordinates: { lat: 35.6892, lng: 51.3890 }, // Tehran coordinates
-    medium: ["Mixed Media", "Textile"], // Added "Textile"
+    coordinates: { lat: 35.6892, lng: 51.3890 },
+    medium: ["Mixed Media", "Textile"],
     curator: "",
     thumbnailURL: "https://placehold.co/300x300?text=Zohreh+Solati"
   },
@@ -484,8 +484,8 @@ export const artists = [
     artistName: "Erfan Ghiasi",
     artworkTitle: "Improvisation of a Qanun",
     location: "Iran",
-    coordinates: { lat: 35.6892, lng: 51.3890 }, // Tehran coordinates
-    medium: ["Performance", "Sound Art", "Conceptual"],
+    coordinates: { lat: 35.6892, lng: 51.3890 },
+    medium: ["Performance", "Sound-based", "Conceptual"], // Changed "Sound Art" to "Sound-based"
     curator: "",
     thumbnailURL: "https://placehold.co/300x300?text=Erfan+Ghiasi"
   },
