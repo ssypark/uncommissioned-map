@@ -422,10 +422,10 @@ export const artists = [
   {
     id: 43,
     artistName: "Yannos Majestikos",
-    artworkTitle: "Yé", // Updated from "Untitled"
-    location: "Democratic Republic of Congo",
-    coordinates: { lat: -4.4419, lng: 15.2663 },
-    medium: ["Performance", "Mixed Media"], // Changed "Visual Art" to "Mixed Media"
+    artworkTitle: "Yé",
+    location: "France", // Changed from "Democratic Republic of Congo"
+    coordinates: { lat: 48.8566, lng: 2.3522 }, // Changed to Paris coordinates
+    medium: ["Performance", "Mixed Media"],
     curator: "",
     thumbnailURL: "https://placehold.co/300x300?text=Yannos+Majestikos"
   },
