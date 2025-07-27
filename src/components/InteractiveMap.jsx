@@ -69,7 +69,7 @@ const InteractiveMap = ({ artists, filteredArtists }) => {
         center={[20, 0]}
         zoom={2}
         style={{ height: '100%', width: '100%' }}
-        scrollWheelZoom={true}
+        scrollWheelZoom={false}
       >
         {/* Grayscale OpenStreetMap tiles */}
         <TileLayer

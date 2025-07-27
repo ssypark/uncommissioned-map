@@ -36,12 +36,15 @@ export default function EmbedMap() {
 
     const { lat, lng } = artist.coordinates;
     
-    // Create map with moderate zoom to accommodate larger circle
+    // Check if it's mobile (screen width < 768px)
+    const isMobile = window.innerWidth < 768;
+    
+    // Create map with different zoom for mobile vs desktop
     const map = L.map(mapRef.current, {
       scrollWheelZoom: false,
       dragging: true,
       zoomControl: true
-    }).setView([lat, lng], 13);
+    }).setView([lat, lng], isMobile ? 10 : 13); // Zoomed out more on mobile
 
     // Add grayscale tiles with custom class
     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
