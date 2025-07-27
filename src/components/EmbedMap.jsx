@@ -11,41 +11,6 @@ L.Icon.Default.mergeOptions({
   shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
 });
 
-// Create a custom red marker using CSS (updated to match AllArtistsMap)
-const createRedMarker = () => {
-  return L.divIcon({
-    className: 'custom-red-marker',
-    html: `
-      <div style="
-        background-color: #B42C2C;
-        width: 20px;
-        height: 20px;
-        border-radius: 50% 50% 50% 0;
-        border: 2px solid #fff;
-        transform: rotate(-45deg);
-        box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-        position: relative;
-        cursor: pointer;
-        transition: all 0.2s ease;
-      ">
-        <div style="
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          width: 6px;
-          height: 6px;
-          background-color: #fff;
-          border-radius: 50%;
-          transform: translate(-50%, -50%) rotate(45deg);
-        "></div>
-      </div>
-    `,
-    iconSize: [20, 20],
-    iconAnchor: [10, 20],
-    popupAnchor: [1, -20]
-  });
-};
-
 export default function EmbedMap() {
   const mapRef = useRef(null);
 
@@ -74,12 +39,12 @@ export default function EmbedMap() {
     // Check if it's mobile (screen width < 768px)
     const isMobile = window.innerWidth < 768;
     
-    // Create map
+    // Create map with aggressive zoom (12-13 shows neighborhood level detail)
     const map = L.map(mapRef.current, {
       scrollWheelZoom: false,
       dragging: true,
       zoomControl: true
-    }).setView([lat, lng], 8);
+    }).setView([lat, lng], 12); // Changed from 8 to 12 for more aggressive zoom
 
     // Add grayscale tiles with custom class
     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
@@ -87,16 +52,24 @@ export default function EmbedMap() {
       className: "grayscale-tiles"
     }).addTo(map);
 
-    // Add marker with custom red icon
-    const marker = L.marker([lat, lng], { icon: createRedMarker() }).addTo(map);
+    // Create a circle instead of a pin (approximately 5 block radius)
+    // ~400 meters radius = roughly 5 city blocks
+    const circle = L.circle([lat, lng], {
+      color: '#B42C2C',
+      fillColor: '#B42C2C',
+      fillOpacity: 0.3,
+      radius: 400, // 400 meters = ~5 block radius
+      weight: 2
+    }).addTo(map);
     
     // Only add popup and open it on desktop
     if (!isMobile) {
-      marker.bindPopup(`
+      circle.bindPopup(`
         <div style="text-align: center; font-family: 'Source Serif 4', serif;">
           <h3 style="margin: 0; font-size: 14px; font-weight: 500; color: #B42C2C;">${artist.artistName}</h3>
           <p style="margin: 4px 0 0 0; font-size: 12px; color: #666; font-style: italic;">${artist.artworkTitle}</p>
           <p style="margin: 2px 0 0 0; font-size: 12px; color: #999;">${artist.location}</p>
+          <p style="margin: 4px 0 0 0; font-size: 11px; color: #999;">Approximate location</p>
         </div>
       `)
       .openPopup();
