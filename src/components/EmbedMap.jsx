@@ -39,12 +39,12 @@ export default function EmbedMap() {
     // Check if it's mobile (screen width < 768px)
     const isMobile = window.innerWidth < 768;
     
-    // Create map with aggressive zoom (12-13 shows neighborhood level detail)
+    // Create map with moderate zoom to accommodate larger circle
     const map = L.map(mapRef.current, {
       scrollWheelZoom: false,
       dragging: true,
       zoomControl: true
-    }).setView([lat, lng], 12); // Changed from 8 to 12 for more aggressive zoom
+    }).setView([lat, lng], 11); // Reduced zoom to show larger area
 
     // Add grayscale tiles with custom class
     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
@@ -52,14 +52,14 @@ export default function EmbedMap() {
       className: "grayscale-tiles"
     }).addTo(map);
 
-    // Create a circle instead of a pin (approximately 5 block radius)
-    // ~400 meters radius = roughly 5 city blocks
+    // Create a large circle like Airbnb (covers multiple neighborhoods)
+    // ~2000 meters radius = covers several neighborhoods/districts
     const circle = L.circle([lat, lng], {
       color: '#B42C2C',
       fillColor: '#B42C2C',
-      fillOpacity: 0.3,
-      radius: 400, // 400 meters = ~5 block radius
-      weight: 2
+      fillOpacity: 0.2, // More transparent for larger area
+      radius: 2000, // 2km radius = much larger area like Airbnb
+      weight: 3 // Slightly thicker border for visibility
     }).addTo(map);
     
     // Only add popup and open it on desktop
@@ -69,7 +69,7 @@ export default function EmbedMap() {
           <h3 style="margin: 0; font-size: 14px; font-weight: 500; color: #B42C2C;">${artist.artistName}</h3>
           <p style="margin: 4px 0 0 0; font-size: 12px; color: #666; font-style: italic;">${artist.artworkTitle}</p>
           <p style="margin: 2px 0 0 0; font-size: 12px; color: #999;">${artist.location}</p>
-          <p style="margin: 4px 0 0 0; font-size: 11px; color: #999;">Approximate location</p>
+          <p style="margin: 4px 0 0 0; font-size: 11px; color: #999;">General area</p>
         </div>
       `)
       .openPopup();
