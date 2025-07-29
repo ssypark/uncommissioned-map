@@ -2,6 +2,7 @@ import React from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
+import customPin from '../assets/un-pin.svg'; // Import your custom pin
 
 // Fix for default markers in React-Leaflet
 delete L.Icon.Default.prototype._getIconUrl;
@@ -11,37 +12,12 @@ L.Icon.Default.mergeOptions({
   shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
 });
 
-// Custom red marker icon - updated to match AllArtistsMap style
-const redIcon = L.divIcon({
-  className: 'custom-red-marker',
-  html: `
-    <div style="
-      background-color: #B42C2C;
-      width: 20px;
-      height: 20px;
-      border-radius: 50% 50% 50% 0;
-      border: 2px solid #fff;
-      transform: rotate(-45deg);
-      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-      position: relative;
-      cursor: pointer;
-      transition: all 0.2s ease;
-    ">
-      <div style="
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 6px;
-        height: 6px;
-        background-color: #fff;
-        border-radius: 50%;
-        transform: translate(-50%, -50%) rotate(45deg);
-      "></div>
-    </div>
-  `,
-  iconSize: [20, 20],
-  iconAnchor: [10, 20],
-  popupAnchor: [1, -20]
+// Custom icon using your SVG
+const customIcon = L.icon({
+  iconUrl: customPin,
+  iconSize: [24, 27], // Adjust size to match your pin proportions (width, height)
+  iconAnchor: [12, 27], // Point where the pin touches the ground [x, y]
+  popupAnchor: [0, -27], // Where popup appears relative to icon
 });
 
 const InteractiveMap = ({ artists, filteredArtists }) => {
@@ -78,13 +54,13 @@ const InteractiveMap = ({ artists, filteredArtists }) => {
           className="grayscale-map-tiles"
         />
         
-        {/* Artist markers - now clickable */}
+        {/* Artist markers - now using custom pin */}
         {visibleArtists.map(artist => (
           artist.coordinates && (
             <Marker
               key={artist.id}
               position={[artist.coordinates.lat, artist.coordinates.lng]}
-              icon={redIcon}
+              icon={customIcon} // Changed from redIcon to customIcon
             >
               <Popup>
                 <div 
