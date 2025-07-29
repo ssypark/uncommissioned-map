@@ -161,7 +161,13 @@ export default function FilterArtistGrid({ artists: artistsProp = artists, darkM
   };
 
   return (
-    <div className={`${darkMode ? 'bg-black' : 'bg-[#F7F2E8]'}`}>
+    <div 
+      className={`${darkMode ? 'bg-black' : 'bg-[#F7F2E8]'}`}
+      style={{ 
+        overflow: 'hidden',
+        height: 'fit-content' 
+      }}
+    >
       <div className="p-6 max-w-7xl mx-auto">
         
         {/* Map */}
@@ -246,7 +252,7 @@ export default function FilterArtistGrid({ artists: artistsProp = artists, darkM
         </div>
 
         {/* Grid */}
-        <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {filtered.map(artist => (
             <div 
               key={artist.id} 
@@ -262,13 +268,13 @@ export default function FilterArtistGrid({ artists: artistsProp = artists, darkM
               </div>
               
               <div className="space-y-1">
-                <h3 className={`font-medium text-sm font-['Source_Serif_4','serif'] ${darkMode ? 'text-white' : 'text-black'}`}>
+                <h3 className={`font-medium text-xs sm:text-sm md:text-base xl:text-lg font-['Source_Serif_4','serif'] ${darkMode ? 'text-white' : 'text-black'}`}>
                   {artist.artistName}
                 </h3>
-                <p className="text-xs italic font-['Source_Serif_4','serif']" style={{color: '#95989A'}}>
+                <p className="text-xs sm:text-xs md:text-sm xl:text-base italic font-['Source_Serif_4','serif']" style={{color: '#95989A'}}>
                   {artist.artworkTitle}
                 </p>
-                <p className="text-xs font-['Source_Serif_4','serif']" style={{color: '#95989A'}}>
+                <p className="text-xs sm:text-xs md:text-sm xl:text-base font-['Source_Serif_4','serif']" style={{color: '#95989A'}}>
                   {artist.location}
                 </p>
               </div>
