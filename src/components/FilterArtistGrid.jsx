@@ -168,7 +168,7 @@ export default function FilterArtistGrid({ artists: artistsProp = artists, darkM
         height: 'fit-content' 
       }}
     >
-      <div className="p-6 max-w-7xl mx-auto">
+      <div className="p-4 max-w-7xl mx-auto"> {/* Reduced from p-6 to p-4 */}
         
         {/* Map */}
         <div className="mb-12">
@@ -237,14 +237,14 @@ export default function FilterArtistGrid({ artists: artistsProp = artists, darkM
 
         {/* Results count and Clear filters */}
         <div className="mb-6 flex justify-center items-center gap-4">
-          <p className={`text-sm font-['Source_Serif_4','serif'] ${darkMode ? 'text-[#95989A]' : 'text-gray-600'}`}>
+          <p className={`font-['Source_Serif_4','serif'] ${darkMode ? 'text-[#95989A]' : 'text-gray-600'}`} style={{fontSize: '16px', lineHeight: '32px'}}>
             Showing {filtered.length} of {artistsProp.length} artists
           </p>
           {hasActiveFilters && (
             <button
               onClick={clearAllFilters}
-              className="text-sm hover:underline font-['Source_Serif_4','serif']"
-              style={{color: '#B42C2C'}}
+              className="hover:underline font-['Source_Serif_4','serif']"
+              style={{color: '#B42C2C', fontSize: '16px', lineHeight: '32px'}}
             >
               Clear filters
             </button>
@@ -268,13 +268,13 @@ export default function FilterArtistGrid({ artists: artistsProp = artists, darkM
               </div>
               
               <div className="space-y-1">
-                <h3 className={`font-medium text-xs sm:text-sm md:text-base xl:text-lg font-['Source_Serif_4','serif'] ${darkMode ? 'text-white' : 'text-black'}`}>
+                <h3 className={`font-medium font-['Source_Serif_4','serif'] ${darkMode ? 'text-white' : 'text-black'}`} style={{fontSize: '20px', lineHeight: '32px'}}>
                   {artist.artistName}
                 </h3>
-                <p className="text-xs sm:text-xs md:text-sm xl:text-base italic font-['Source_Serif_4','serif']" style={{color: '#95989A'}}>
+                <p className="italic font-['Source_Serif_4','serif']" style={{color: '#95989A', fontSize: '16px', lineHeight: '16px'}}>
                   {artist.artworkTitle}
                 </p>
-                <p className="text-xs sm:text-xs md:text-sm xl:text-base font-['Source_Serif_4','serif']" style={{color: '#95989A'}}>
+                <p className="font-['Source_Serif_4','serif']" style={{color: '#95989A', fontSize: '16px', lineHeight: '16px'}}>
                   {artist.location}
                 </p>
               </div>
