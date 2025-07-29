@@ -52,13 +52,13 @@ export default function EmbedMap() {
       className: "grayscale-tiles"
     }).addTo(map);
 
-    // Create a large circle like Airbnb (covers multiple neighborhoods)
-    // ~2000 meters radius = covers several neighborhoods/districts
+    // Create a circle like Airbnb (covers nearby area)
+    // ~500 meters radius = covers immediate neighborhood area
     const circle = L.circle([lat, lng], {
       color: '#B42C2C',
       fillColor: '#B42C2C',
       fillOpacity: 0.2,
-      radius: 2000,
+      radius: 500, // Changed from 2000 to 500 meters (0.5km)
       weight: 3
     }).addTo(map);
 
