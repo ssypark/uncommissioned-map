@@ -39,11 +39,14 @@ const InteractiveMap = ({ artists, filteredArtists }) => {
     window.open(`${baseUrl}/artistpage/${artistSlug}`, '_blank');
   };
 
+  // Check if mobile
+  const isMobile = typeof window !== 'undefined' && window.innerWidth < 768;
+
   return (
-    <div className="w-full h-[400px] mb-12 border border-gray-300 overflow-hidden">
+    <div className="w-full h-[300px] md:h-[400px] mb-12 border border-gray-300 overflow-hidden">
       <MapContainer
         center={[20, 0]}
-        zoom={2}
+        zoom={isMobile ? 1 : 2} // More zoomed out on mobile
         style={{ height: '100%', width: '100%' }}
         scrollWheelZoom={false}
       >

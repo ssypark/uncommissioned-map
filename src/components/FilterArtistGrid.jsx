@@ -161,7 +161,7 @@ export default function FilterArtistGrid({ artists: artistsProp = artists, darkM
   };
 
   return (
-    <div className={`min-h-screen ${darkMode ? 'bg-black' : 'bg-[#F7F2E8]'}`}>
+    <div className={`${darkMode ? 'bg-black' : 'bg-[#F7F2E8]'}`}>
       <div className="p-6 max-w-7xl mx-auto">
         
         {/* Map */}
