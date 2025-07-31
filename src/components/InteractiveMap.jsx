@@ -49,12 +49,16 @@ const InteractiveMap = ({ artists, filteredArtists }) => {
         zoom={isMobile ? 1 : 2} // More zoomed out on mobile
         style={{ height: '100%', width: '100%' }}
         scrollWheelZoom={false}
+        worldCopyJump={false} // Prevents jumping between world copies
+        maxBounds={[[-90, -180], [90, 180]]} // Limits map to single world view
+        maxBoundsViscosity={1.0} // Makes bounds hard (prevents panning outside)
       >
         {/* Grayscale OpenStreetMap tiles */}
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           className="grayscale-map-tiles"
+          noWrap={true} // Prevents tile wrapping
         />
         
         {/* Artist markers - now using custom pin */}
