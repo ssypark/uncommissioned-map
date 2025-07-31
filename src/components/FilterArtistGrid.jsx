@@ -160,10 +160,11 @@ export default function FilterArtistGrid({ artists: artistsProp = artists, darkM
 
   return (
     <div 
-      className={`${darkMode ? 'bg-black' : 'bg-[#F7F2E8]'}`}
+      className={`${darkMode ? 'bg-black' : 'bg-[#F7F2E8]'} font-['Source_Serif_4','serif']`}
       style={{ 
         overflow: 'hidden',
-        height: 'fit-content' 
+        height: 'fit-content',
+        fontFamily: "'Source Serif 4', serif" // Explicit fallback
       }}
     >
       <div className="p-4 max-w-7xl mx-auto"> {/* Reduced from p-6 to p-4 */}
