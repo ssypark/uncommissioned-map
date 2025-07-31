@@ -45,7 +45,7 @@ export const artists = [
     artworkTitle: "Monument to the Fourth International", // Updated from "Untitled"
     location: "Thailand",
     coordinates: { lat: 13.7563, lng: 100.5018 },
-    medium: ["Multidisciplinary", "Film"],
+    medium: ["Film", "Installation"],
     curator: "",
     thumbnailURL: "https://placehold.co/300x300?text=Chulayarnnon+Siriphol"
   },
@@ -285,7 +285,7 @@ export const artists = [
     artworkTitle: "Untitled",
     location: "Taiwan",
     coordinates: { lat: 24.1477, lng: 120.6736 }, // Taichung coordinates
-    medium: ["Interdisciplinary"],
+    medium: ["Installation", "Social Practice"],
     curator: "",
     thumbnailURL: "https://placehold.co/300x300?text=Nung-Hsin+Hu"
   },

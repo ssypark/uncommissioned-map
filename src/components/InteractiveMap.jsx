@@ -43,31 +43,31 @@ const InteractiveMap = ({ artists, filteredArtists }) => {
   const isMobile = typeof window !== 'undefined' && window.innerWidth < 768;
 
   return (
-    <div className="w-full h-[300px] md:h-[400px] mb-12 border border-gray-300 overflow-hidden">
+    <div className="w-full aspect-square sm:aspect-[2/1] mb-12 border border-gray-300 overflow-hidden">
       <MapContainer
         center={[20, 0]}
-        zoom={isMobile ? 1 : 2} // More zoomed out on mobile
+        zoom={isMobile ? 0 : 2}
         style={{ height: '100%', width: '100%' }}
         scrollWheelZoom={false}
         worldCopyJump={false} // Prevents jumping between world copies
-        maxBounds={[[-90, -180], [90, 180]]} // Limits map to single world view
+        maxBounds={[[-85, -180], [85, 180]]} // Limits map bounds (slightly less than full world to prevent edge issues)
         maxBoundsViscosity={1.0} // Makes bounds hard (prevents panning outside)
+        minZoom={1} // Prevents zooming out too far
+        maxZoom={10} // Limits maximum zoom
       >
-        {/* Grayscale OpenStreetMap tiles */}
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           className="grayscale-map-tiles"
-          noWrap={true} // Prevents tile wrapping
         />
         
-        {/* Artist markers - now using custom pin */}
+        {/* Artist markers */}
         {visibleArtists.map(artist => (
           artist.coordinates && (
             <Marker
               key={artist.id}
               position={[artist.coordinates.lat, artist.coordinates.lng]}
-              icon={customIcon} // Changed from redIcon to customIcon
+              icon={customIcon}
             >
               <Popup>
                 <div 
@@ -81,7 +81,7 @@ const InteractiveMap = ({ artists, filteredArtists }) => {
                     {artist.medium.join(', ')}
                   </span><br/>
                   <small className="text-blue-600 underline mt-2 block">
-                    Click to view artist page
+                    View artist page
                   </small>
                 </div>
               </Popup>
