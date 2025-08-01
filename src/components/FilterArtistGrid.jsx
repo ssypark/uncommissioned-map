@@ -263,6 +263,8 @@ export default function FilterArtistGrid({ artists: artistsProp = artists, darkM
                   src={artist.thumbnailURL} 
                   alt={artist.artworkTitle}
                   className="w-full h-full object-cover hover:scale-105 transition-transform grayscale"
+                  loading="lazy"
+                  decoding="async"
                 />
                 {/* Red Overlay on Hover - Default visible on mobile */}
                 <div className="absolute inset-0 bg-[#B42C2C] flex items-center justify-center opacity-70 md:opacity-0 md:group-hover:opacity-70 transition-opacity duration-300">
