@@ -7,7 +7,7 @@ export const artists = [
     coordinates: { lat: 32.7767, lng: -96.7970 },
     medium: ["Installation", "Social Practice"],
     curator: "",
-    thumbnailURL: "/src/assets/artist-photos/alicia_eggert.jpg"
+    thumbnailURL: "/artist-photos/alicia_eggert.jpg"
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ export const artists = [
     coordinates: { lat: 48.1173, lng: -1.6778 },
     medium: ["Mixed Media"],
     curator: "",
-    thumbnailURL: "/src/assets/artist-photos/arzhel_prioul.jpg"
+    thumbnailURL: "/artist-photos/arzhel_prioul.jpg"
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ export const artists = [
     coordinates: { lat: 34.0522, lng: -118.2437 },
     medium: ["Mixed Media"],
     curator: "",
-    thumbnailURL: "/src/assets/artist-photos/azadeh_shladovsky.jpg"
+    thumbnailURL: "/artist-photos/azadeh_shladovsky.jpg"
   },
   {
     id: 4,
@@ -37,7 +37,7 @@ export const artists = [
     coordinates: { lat: -33.8688, lng: 151.2093 },
     medium: ["Installation"],
     curator: "",
-    thumbnailURL: "/src/assets/artist-photos/catherine_young.jpg"
+    thumbnailURL: "/artist-photos/catherine_young.jpg"
   },
   {
     id: 5,
@@ -47,7 +47,7 @@ export const artists = [
     coordinates: { lat: 13.7563, lng: 100.5018 },
     medium: ["Film", "Installation"],
     curator: "",
-    thumbnailURL: "/src/assets/artist-photos/chulayarnnon_siriphol.jpg"
+    thumbnailURL: "/artist-photos/chulayarnnon_siriphol.jpg"
   },
   {
     id: 6,
@@ -57,7 +57,7 @@ export const artists = [
     coordinates: { lat: 52.52, lng: 13.405 },
     medium: ["Mixed Media"],
     curator: "",
-    thumbnailURL: "/src/assets/artist-photos/coco_bergholm.jpg"
+    thumbnailURL: "/artist-photos/coco_bergholm.jpg"
   },
   {
     id: 7,
@@ -67,7 +67,7 @@ export const artists = [
     coordinates: { lat: 19.4326, lng: -99.1332 },
     medium: ["Mixed Media", "Sculpture"],
     curator: "",
-    thumbnailURL: "/src/assets/artist-photos/danielle_firoozi.jpeg"
+    thumbnailURL: "/artist-photos/danielle_firoozi.jpeg"
   },
   {
     id: 8,
@@ -77,7 +77,7 @@ export const artists = [
     coordinates: { lat: 48.5734, lng: 7.7521 },
     medium: ["Installation", "Performance", "Photography"],
     curator: "",
-    thumbnailURL: "/src/assets/artist-photos/deana_kolencikova.jpg"
+    thumbnailURL: "/artist-photos/deana_kolencikova.jpg"
   },
   {
     id: 9,
@@ -87,7 +87,7 @@ export const artists = [
     coordinates: { lat: 39.9042, lng: 116.4074 },
     medium: ["Conceptual", "Performance", "Social Practice"],
     curator: "",
-    thumbnailURL: "/src/assets/artist-photos/yufeng_deng2.jpeg"
+    thumbnailURL: "/artist-photos/yufeng_deng2.jpeg"
   },
   {
     id: 10,
@@ -97,7 +97,7 @@ export const artists = [
     coordinates: { lat: 19.4326, lng: -99.1332 },
     medium: ["Photography", "Video", "Textile"],
     curator: "",
-    thumbnailURL: "/src/assets/artist-photos/derzu_campos.jpg"
+    thumbnailURL: "/artist-photos/derzu_campos.jpg"
   },
   {
     id: 11,
@@ -107,7 +107,7 @@ export const artists = [
     coordinates: { lat: 52.5200, lng: 13.4050 },
     medium: ["Installation"],
     curator: "",
-    thumbnailURL: "/src/assets/artist-photos/enno_haar.jpg"
+    thumbnailURL: "/artist-photos/enno_haar.jpg"
   },
   {
     id: 12,
@@ -117,7 +117,7 @@ export const artists = [
     coordinates: { lat: 39.4699, lng: -0.3763 },
     medium: ["Mural", "Conceptual"],
     curator: "",
-    thumbnailURL: "/src/assets/artist-photos/escif.jpg"
+    thumbnailURL: "/artist-photos/escif.jpg"
   },
   {
     id: 13,
@@ -127,7 +127,7 @@ export const artists = [
     coordinates: { lat: 25.033, lng: 121.5654 },
     medium: ["Mixed Media"],
     curator: "",
-    thumbnailURL: "/src/assets/artist-photos/esther_lin.jpg"
+    thumbnailURL: "/artist-photos/esther_lin.jpg"
   },
   {
     id: 14,
@@ -137,7 +137,7 @@ export const artists = [
     coordinates: { lat: 33.749, lng: -84.388 },
     medium: ["Mixed Media"],
     curator: "",
-    thumbnailURL: "/src/assets/artist-photos/fabianwilliams.png"
+    thumbnailURL: "/artist-photos/fabianwilliams.png"
   },
   {
     id: 15,
@@ -147,7 +147,7 @@ export const artists = [
     coordinates: { lat: 34.0522, lng: -118.2437 },
     medium: ["Mixed Media"],
     curator: "",
-    thumbnailURL: "/src/assets/artist-photos/fiona-chang.jpg"
+    thumbnailURL: "/artist-photos/fiona-chang.jpg"
   },
   {
     id: 16,
@@ -157,7 +157,7 @@ export const artists = [
     coordinates: { lat: 25.2879, lng: 51.5615 },
     medium: ["Painting"],
     curator: "",
-    thumbnailURL: "/src/assets/artist-photos/han_alsaadi.jpg"
+    thumbnailURL: "/artist-photos/han_alsaadi.jpg"
   },
   {
     id: 17,
@@ -167,7 +167,7 @@ export const artists = [
     coordinates: { lat: 47.3515, lng: 7.9144 },
     medium: ["Installation"],
     curator: "",
-    thumbnailURL: "/src/assets/artist-photos/harmen_de_hoop.jpg"
+    thumbnailURL: "/artist-photos/harmen_de_hoop.jpg"
   },
   {
     id: 18,
@@ -177,7 +177,7 @@ export const artists = [
     coordinates: { lat: 51.3168, lng: 0.8919 },
     medium: ["Sculpture", "Installation"],
     curator: "",
-    thumbnailURL: "/src/assets/artist-photos/jason_taylor.jpg"
+    thumbnailURL: "/artist-photos/jason_taylor.jpg"
   },
   {
     id: 19,
@@ -187,7 +187,7 @@ export const artists = [
     coordinates: { lat: 40.7128, lng: -74.0060 },
     medium: ["Mixed Media"],
     curator: "",
-    thumbnailURL: "/src/assets/artist-photos/jeffrey_meris.webp"
+    thumbnailURL: "/artist-photos/jeffrey_meris.webp"
   },
   {
     id: 20,
@@ -197,7 +197,7 @@ export const artists = [
     coordinates: { lat: -34.0522, lng: 23.0449 },
     medium: ["Sculpture", "Installation"],
     curator: "",
-    thumbnailURL: "/src/assets/artist-photos/jenny_nijenhuis1.jpg"
+    thumbnailURL: "/artist-photos/jenny_nijenhuis1.jpg"
   },
   {
     id: 21,
@@ -207,7 +207,7 @@ export const artists = [
     coordinates: { lat: 37.5665, lng: 126.978 },
     medium: ["Painting"],
     curator: "",
-    thumbnailURL: "/src/assets/artist-photos/jodae.jpeg"
+    thumbnailURL: "/artist-photos/jodae.jpeg"
   },
   {
     id: 22,
@@ -217,7 +217,7 @@ export const artists = [
     coordinates: { lat: 40.7128, lng: -74.0060 },
     medium: ["Installation"],
     curator: "",
-    thumbnailURL: "/src/assets/artist-photos/julian_ties.jpg"
+    thumbnailURL: "/artist-photos/julian_ties.jpg"
   },
   {
     id: 23,
@@ -227,7 +227,7 @@ export const artists = [
     coordinates: { lat: 19.4326, lng: -99.1332 },
     medium: ["Performance", "Conceptual", "Textile"],
     curator: "",
-    thumbnailURL: "/src/assets/artist-photos/kara_rooney1.jpg"
+    thumbnailURL: "/artist-photos/kara_rooney1.jpg"
   },
   {
     id: 24,
@@ -237,7 +237,7 @@ export const artists = [
     coordinates: { lat: 40.6782, lng: -73.9442 },
     medium: ["Installation"],
     curator: "",
-    thumbnailURL: "/src/assets/artist-photos/leon_reid.jpg"
+    thumbnailURL: "/artist-photos/leon_reid.jpg"
   },
   {
     id: 25,
@@ -247,7 +247,7 @@ export const artists = [
     coordinates: { lat: 35.6892, lng: 51.389 },
     medium: ["Mixed Media"],
     curator: "",
-    thumbnailURL: "/src/assets/artist-photos/majid_haghighi.jpg"
+    thumbnailURL: "/artist-photos/majid_haghighi.jpg"
   },
   {
     id: 26,
@@ -257,7 +257,7 @@ export const artists = [
     coordinates: { lat: 34.1478, lng: -118.1445 },
     medium: ["Mixed Media"],
     curator: "",
-    thumbnailURL: "/src/assets/artist-photos/mayela_rodriguez.png"
+    thumbnailURL: "/artist-photos/mayela_rodriguez.png"
   },
   {
     id: 27,
@@ -267,7 +267,7 @@ export const artists = [
     coordinates: { lat: 33.8938, lng: 35.5018 },
     medium: ["Curatorial", "Installation"],
     curator: "",
-    thumbnailURL: "/src/assets/artist-photos/mayssa_fattouh.jpeg"
+    thumbnailURL: "/artist-photos/mayssa_fattouh.jpeg"
   },
   {
     id: 28,
@@ -277,7 +277,7 @@ export const artists = [
     coordinates: { lat: 40.6782, lng: -73.9442 },
     medium: ["Mixed Media"],
     curator: "",
-    thumbnailURL: "/src/assets/artist-photos/nina_katchadourian.jpg"
+    thumbnailURL: "/artist-photos/nina_katchadourian.jpg"
   },
   {
     id: 29,
@@ -287,7 +287,7 @@ export const artists = [
     coordinates: { lat: 24.1477, lng: 120.6736 },
     medium: ["Installation", "Social Practice"],
     curator: "",
-    thumbnailURL: "/src/assets/artist-photos/nung-hsinhu.jpeg"
+    thumbnailURL: "/artist-photos/nung-hsinhu.jpeg"
   },
   {
     id: 30,
@@ -297,7 +297,7 @@ export const artists = [
     coordinates: { lat: 52.52, lng: 13.405 },
     medium: ["Installation"],
     curator: "",
-    thumbnailURL: "/src/assets/artist-photos/peter_behrbohm.jpg"
+    thumbnailURL: "/artist-photos/peter_behrbohm.jpg"
   },
   {
     id: 31,
@@ -307,7 +307,7 @@ export const artists = [
     coordinates: { lat: 50.0755, lng: 14.4378 },
     medium: ["Mixed Media"],
     curator: "",
-    thumbnailURL: "/src/assets/artist-photos/petra_hudcova2.jpg"
+    thumbnailURL: "/artist-photos/petra_hudcova2.jpg"
   },
   {
     id: 32,
@@ -317,7 +317,7 @@ export const artists = [
     coordinates: { lat: 19.4326, lng: -99.1332 },
     medium: ["Installation", "Performance"],
     curator: "",
-    thumbnailURL: "/src/assets/artist-photos/pia_david.jpg"
+    thumbnailURL: "/artist-photos/pia_david.jpg"
   },
   {
     id: 33,
@@ -327,7 +327,7 @@ export const artists = [
     coordinates: { lat: -26.2041, lng: 28.0473 },
     medium: ["Street Art", "Textile"],
     curator: "",
-    thumbnailURL: "/src/assets/artist-photos/r1.jpg"
+    thumbnailURL: "/artist-photos/r1.jpg"
   },
   {
     id: 34,
@@ -337,7 +337,7 @@ export const artists = [
     coordinates: { lat: 48.8566, lng: 2.3522 },
     medium: ["Tech-enabled"],
     curator: "",
-    thumbnailURL: "/src/assets/artist-photos/recyclegroup.jpg"
+    thumbnailURL: "/artist-photos/recyclegroup.jpg"
   },
   {
     id: 35,
@@ -347,7 +347,7 @@ export const artists = [
     coordinates: { lat: 35.5568, lng: 45.4329 },
     medium: ["Mixed Media"],
     curator: "",
-    thumbnailURL: "/src/assets/artist-photos/sherko_abbas.jpg"
+    thumbnailURL: "/artist-photos/sherko_abbas.jpg"
   },
   {
     id: 36,
@@ -357,7 +357,7 @@ export const artists = [
     coordinates: { lat: 59.3293, lng: 18.0686 },
     medium: ["Mixed Media"],
     curator: "",
-    thumbnailURL: "/src/assets/artist-photos/siri_tolander.jpg"
+    thumbnailURL: "/artist-photos/siri_tolander.jpg"
   },
   {
     id: 37,
@@ -367,7 +367,7 @@ export const artists = [
     coordinates: { lat: 41.7406, lng: -74.0833 },
     medium: ["Ecological"],
     curator: "",
-    thumbnailURL: "/src/assets/artist-photos/matthew_friday.jpg"
+    thumbnailURL: "/artist-photos/matthew_friday.jpg"
   },
   {
     id: 38,
@@ -377,7 +377,7 @@ export const artists = [
     coordinates: { lat: 33.749, lng: -84.388 },
     medium: ["Mixed Media", "Photography"],
     curator: "",
-    thumbnailURL: "/src/assets/artist-photos/stephanie_brown.jpg"
+    thumbnailURL: "/artist-photos/stephanie_brown.jpg"
   },
   {
     id: 39,
@@ -387,7 +387,7 @@ export const artists = [
     coordinates: { lat: -33.9321, lng: 18.8602 },
     medium: ["Land Art", "Ephemeral"],
     curator: "",
-    thumbnailURL: "/src/assets/artist-photos/strijdom_van_der_merwe.jpg"
+    thumbnailURL: "/artist-photos/strijdom_van_der_merwe.jpg"
   },
   {
     id: 40,
@@ -397,7 +397,7 @@ export const artists = [
     coordinates: { lat: 34.0522, lng: -118.2437 },
     medium: ["Mixed Media"],
     curator: "",
-    thumbnailURL: "/src/assets/artist-photos/terrick_gutierrez.jpg"
+    thumbnailURL: "/artist-photos/terrick_gutierrez.jpg"
   },
   {
     id: 41,
@@ -407,7 +407,7 @@ export const artists = [
     coordinates: { lat: 38.7223, lng: -9.1393 },
     medium: ["Street Art", "Sculpture"],
     curator: "",
-    thumbnailURL: "/src/assets/artist-photos/vhils.jpg"
+    thumbnailURL: "/artist-photos/vhils.jpg"
   },
   {
     id: 42,
@@ -417,7 +417,7 @@ export const artists = [
     coordinates: { lat: 22.5431, lng: 114.0579 },
     medium: ["Tech-enabled"],
     curator: "",
-    thumbnailURL: "/src/assets/artist-photos/wanzhuo_cheng.jpg"
+    thumbnailURL: "/artist-photos/wanzhuo_cheng.jpg"
   },
   {
     id: 43,
@@ -427,7 +427,7 @@ export const artists = [
     coordinates: { lat: 48.8566, lng: 2.3522 },
     medium: ["Performance", "Mixed Media"],
     curator: "",
-    thumbnailURL: "/src/assets/artist-photos/yannos_majestikos.jpg"
+    thumbnailURL: "/artist-photos/yannos_majestikos.jpg"
   },
   {
     id: 44,
@@ -437,7 +437,7 @@ export const artists = [
     coordinates: { lat: 30.5728, lng: 104.0668 },
     medium: ["Performance"],
     curator: "",
-    thumbnailURL: "/src/assets/artist-photos/mingjing_yu.jpg"
+    thumbnailURL: "/artist-photos/mingjing_yu.jpg"
   },
   {
     id: 45,
@@ -447,7 +447,7 @@ export const artists = [
     coordinates: { lat: 35.6892, lng: 51.3890 },
     medium: ["Mixed Media", "Textile"],
     curator: "",
-    thumbnailURL: "/src/assets/artist-photos/zohreh_solati.jpg"
+    thumbnailURL: "/artist-photos/zohreh_solati.jpg"
   },
   {
     id: 46,
@@ -457,7 +457,7 @@ export const artists = [
     coordinates: { lat: -8.8390, lng: 13.2894 },
     medium: ["Performance", "Installation", "Social Practice"],
     curator: "",
-    thumbnailURL: "/src/assets/artist-photos/iris_buchholz_chocolate.jpg"
+    thumbnailURL: "/artist-photos/iris_buchholz_chocolate.jpg"
   },
   {
     id: 47,
@@ -467,7 +467,7 @@ export const artists = [
     coordinates: { lat: 48.5734, lng: 7.7521 },
     medium: ["Installation", "Performance", "Conceptual"],
     curator: "",
-    thumbnailURL: "/src/assets/artist-photos/matheiu_tremblin.jpg"
+    thumbnailURL: "/artist-photos/matheiu_tremblin.jpg"
   },
   {
     id: 48,
@@ -477,7 +477,7 @@ export const artists = [
     coordinates: { lat: 49.8209, lng: 18.2625 },
     medium: ["Installation", "Conceptual", "Street Art"],
     curator: "",
-    thumbnailURL: "/src/assets/artist-photos/libor_novotny.jpg"
+    thumbnailURL: "/artist-photos/libor_novotny.jpg"
   },
   {
     id: 49,
@@ -487,7 +487,7 @@ export const artists = [
     coordinates: { lat: 35.6892, lng: 51.3890 },
     medium: ["Performance", "Sound-based", "Conceptual"],
     curator: "",
-    thumbnailURL: "/src/assets/artist-photos/erfan_ghiasi.jpg"
+    thumbnailURL: "/artist-photos/erfan_ghiasi.jpg"
   },
   {
     id: 50,
@@ -497,7 +497,7 @@ export const artists = [
     coordinates: { lat: 51.9692, lng: 5.8997 },
     medium: ["Installation", "Textile", "Conceptual"],
     curator: "",
-    thumbnailURL: "/src/assets/artist-photos/heimprofi.jpeg"
+    thumbnailURL: "/artist-photos/heimprofi.jpeg"
   }
 ];
 
