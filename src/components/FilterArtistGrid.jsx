@@ -255,15 +255,23 @@ export default function FilterArtistGrid({ artists: artistsProp = artists, darkM
           {filtered.map(artist => (
             <div 
               key={artist.id} 
-              className="cursor-pointer hover:opacity-80 transition-opacity"
+              className="cursor-pointer hover:opacity-80 transition-opacity group"
               onClick={() => handleArtistClick(artist)}
             >
-              <div className={`aspect-square overflow-hidden mb-3 ${darkMode ? 'bg-white border border-white' : 'bg-gray-100'}`}>
+              <div className={`aspect-square overflow-hidden mb-3 relative ${darkMode ? 'bg-white border border-white' : 'bg-gray-100'}`}>
                 <img 
                   src={artist.thumbnailURL} 
                   alt={artist.artworkTitle}
-                  className="w-full h-full object-cover hover:scale-105 transition-transform"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform grayscale"
                 />
+                {/* Red Overlay on Hover - Default visible on mobile */}
+                <div className="absolute inset-0 bg-[#B42C2C] flex items-center justify-center opacity-70 md:opacity-0 md:group-hover:opacity-70 transition-opacity duration-300">
+                  <div className="text-center">
+                    <p className="text-white font-['Source_Serif_4','serif'] text-sm md:text-base font-medium tracking-wider drop-shadow-lg">
+                      WORK IN<br/>PROGRESS
+                    </p>
+                  </div>
+                </div>
               </div>
               
               <div className="space-y-1">
