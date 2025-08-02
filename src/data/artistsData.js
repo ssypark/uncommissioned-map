@@ -498,6 +498,26 @@ export const artists = [
     medium: ["Installation", "Textile", "Conceptual"],
     curator: "",
     thumbnailURL: "/artist-photos/heimprofi.jpeg"
+  },
+    {
+    id: 51,
+    artistName: "Aida Gomez",
+    artworkTitle: "Green Laser Pointer",
+    location: "Spain",
+    coordinates: { lat: 41.4169, lng: 2.1581 }, // Parc del Guinardó, Barcelona coordinates
+    medium: ["Installation", "Conceptual"],
+    curator: "",
+    thumbnailURL: "/artist-photos/aida_gomez.jpg"
+  },
+    {
+    id: 52,
+    artistName: "Nansi Guevara",
+    artworkTitle: "Mashup Digital Collages",
+    location: "USA",
+    coordinates: { lat: 25.9017, lng: -97.4975 }, // Downtown Brownsville, Texas coordinates
+    medium: ["Digital Art", "Installation", "Street Art"],
+    curator: "",
+    thumbnailURL: "/artist-photos/nansi_guevara.jpg"
   }
 ];
 
