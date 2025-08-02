@@ -578,6 +578,16 @@ export const artists = [
     medium: ["Installation", "Social Practice", "Conceptual"],
     curator: "",
     thumbnailURL: "/artist-photos/juan_caicedo.jpg"
+  },
+  {
+    id: 59,
+    artistName: "Hedy Torres",
+    artworkTitle: "Completing Lino's Portrait",
+    location: "USA",
+    coordinates: { lat: 34.0522, lng: -118.2437 }, // Los Angeles, California
+    medium: ["Performance", "Social Practice", "Drawing"],
+    curator: "",
+    thumbnailURL: "/artist-photos/hedy_torres.jpg"
   }
 ];
 
