@@ -502,7 +502,7 @@ export const artists = [
     {
     id: 51,
     artistName: "Aida Gomez",
-    artworkTitle: "Green Laser Pointer",
+    artworkTitle: "Untitled",
     location: "Spain",
     coordinates: { lat: 41.4169, lng: 2.1581 }, // Parc del Guinardó, Barcelona coordinates
     medium: ["Installation", "Conceptual"],
@@ -512,12 +512,22 @@ export const artists = [
     {
     id: 52,
     artistName: "Nansi Guevara",
-    artworkTitle: "Mashup Digital Collages",
+    artworkTitle: "Untitled",
     location: "USA",
     coordinates: { lat: 25.9017, lng: -97.4975 }, // Downtown Brownsville, Texas coordinates
     medium: ["Digital Art", "Installation", "Street Art"],
     curator: "",
     thumbnailURL: "/artist-photos/nansi_guevara.jpg"
+  },
+    {
+    id: 53,
+    artistName: "Nomad Studio",
+    artworkTitle: "Island of Certainty (ISLA DE CERTEZA)",
+    location: "Spain",
+    coordinates: { lat: 42.0543, lng: -3.4825 }, // Parque Natural Sabinares del Arlanza - La Yecla, Castilla y León coordinates
+    medium: ["Installation", "Ephemeral", "Conceptual"],
+    curator: "",
+    thumbnailURL: "/artist-photos/nomad_studio.jpg"
   }
 ];
 
