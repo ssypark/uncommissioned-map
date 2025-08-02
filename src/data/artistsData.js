@@ -12,10 +12,10 @@ export const artists = [
   {
     id: 2,
     artistName: "Arzhel Prioul",
-    artworkTitle: "Do Not Disturb",
+    artworkTitle: "Mixing Gender Icon",
     location: "France",
-    coordinates: { lat: 48.1173, lng: -1.6778 },
-    medium: ["Mixed Media"],
+    coordinates: { lat: 48.1173, lng: -1.6778 }, // Cesson-Sévigné, Brittany
+    medium: ["Installation", "Mixed Media"],
     curator: "",
     thumbnailURL: "/artist-photos/arzhel_prioul.jpg"
   },
