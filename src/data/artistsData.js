@@ -528,6 +528,56 @@ export const artists = [
     medium: ["Installation", "Ephemeral", "Conceptual"],
     curator: "",
     thumbnailURL: "/artist-photos/nomad_studio.jpg"
+  },
+  {
+    id: 54,
+    artistName: "Valentina Guerrero Marín",
+    artworkTitle: "Oktas",
+    location: "Mexico",
+    coordinates: { lat: 19.4326, lng: -99.1332 }, // Historic center of Mexico City coordinates
+    medium: ["Installation", "Conceptual", "Environmental"],
+    curator: "",
+    thumbnailURL: "/artist-photos/valentina_guerrero_marin.jpg"
+  },
+  {
+    id: 55,
+    artistName: "Cannupa Hanska Luger",
+    artworkTitle: "SURVIVA (Durational Performance)",
+    location: "USA",
+    coordinates: { lat: 35.6870, lng: -105.9378 }, // New Mexico coordinates (Santa Fe area)
+    medium: ["Performance", "Conceptual", "Social Practice"],
+    curator: "",
+    thumbnailURL: "/artist-photos/cannupa_hanska_luger.jpg"
+  },
+  {
+    id: 56,
+    artistName: "Odun Orimolade",
+    artworkTitle: "Prescriptions for Rest",
+    location: "Nigeria",
+    coordinates: { lat: 6.5244, lng: 3.3792 }, // Ojota, Lagos coordinates
+    medium: ["Installation", "Social Practice", "Conceptual"],
+    curator: "",
+    thumbnailURL: "/artist-photos/odun_orimolade.jpg"
+  },
+  {
+    id: 57,
+    artistName: "Kweku Okokroko",
+    artworkTitle: "The Iron Clad King Sits atop a high horse",
+    location: "Austria",
+    coordinates: { lat: 48.2082, lng: 16.3738 }, // Vienna coordinates
+    medium: ["Performance", "Literary", "Social Practice"],
+    curator: "",
+    thumbnailURL: "/artist-photos/kweku_okokroko.jpg"
+  },
+  {
+    id: 58,
+    artistName: "Juan Caicedo",
+    artworkTitle: "Resistance Palm",
+    location: "Colombia",
+    coordinates: { lat: 6.2442, lng: -75.5812 }, // Medellín coordinates
+    medium: ["Installation", "Social Practice", "Conceptual"],
+    curator: "",
+    thumbnailURL: "/artist-photos/juan_caicedo.jpg"
   }
 ];
 
