@@ -32,11 +32,11 @@ export default function EmbedMap() {
       .replace(/\s+/g, '-')
       .replace(/-+/g, '-')
       .trim();
+    
     return generatedSlug === artistSlug;
   });
 
   if (!artist || !artist.coordinates) {
-    console.log("Artist not found or no coordinates:", artistSlug);
     return <div>Artist not found</div>;
   }
 
