@@ -432,10 +432,10 @@ export const artists = [
   {
     id: 44,
     artistName: "Yu Mingjing",
-    artworkTitle: "Untitled",
+    artworkTitle: "Third Front Memories",
     location: "China",
-    coordinates: { lat: 30.5728, lng: 104.0668 },
-    medium: ["Performance"],
+    coordinates: { lat: 29.5477, lng: 103.4845 }, // Ledu Town, Mount Emei, Sichuan coordinates
+    medium: ["Performance", "Social Practice", "Video"],
     curator: "",
     thumbnailURL: "/artist-photos/mingjing_yu.jpg"
   },
