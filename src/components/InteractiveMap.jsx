@@ -39,8 +39,14 @@ const InteractiveMap = ({ artists, filteredArtists }) => {
     window.open(`${baseUrl}/artistpage/${artistSlug}`, '_blank');
   };
 
-  // Check if mobile
-  const isMobile = typeof window !== 'undefined' && window.innerWidth < 768;
+  // Remove or modify mobile detection like this:
+  const isMobile = false; // Force desktop view when embedded
+
+  // Or use a more sophisticated detection:
+  // const isMobile = typeof window !== 'undefined' && (
+  //   // Check if we're in an iframe
+  //   window.parent !== window ? false : window.innerWidth < 768
+  // );
 
   return (
     <div className="w-full aspect-square sm:aspect-[2/1] mb-12 border border-gray-300 overflow-hidden">
