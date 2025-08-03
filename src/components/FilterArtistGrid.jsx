@@ -318,7 +318,7 @@ export default function FilterArtistGrid({ artists: artistsProp = artists, darkM
         </div>
 
         {/* Grid */}
-        <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+        <div className="grid grid-cols-[repeat(auto-fit,_minmax(200px,_1fr))] gap-6">
           {filtered.map(artist => (
             <div 
               key={artist.id} 
