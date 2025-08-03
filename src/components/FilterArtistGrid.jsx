@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import InteractiveMap from './InteractiveMap';
 import { artists } from '../data/artistsData';
 
@@ -157,6 +157,26 @@ export default function FilterArtistGrid({ artists: artistsProp = artists, darkM
     // OR use this for same tab:
     // window.location.href = `${baseUrl}/artistpage/${artistSlug}`;
   };
+
+  // Add this useEffect to send height updates to parent frame
+  useEffect(() => {
+    const sendHeightToParent = () => {
+      const height = document.body.scrollHeight;
+      if (window.parent !== window) {
+        window.parent.postMessage({ type: 'resize', height }, '*');
+      }
+    };
+
+    // Send initial height
+    sendHeightToParent();
+
+    // Send height when content changes
+    const observer = new ResizeObserver(sendHeightToParent);
+    observer.observe(document.body);
+
+    // Cleanup
+    return () => observer.disconnect();
+  }, [filtered]); // Re-run when filtered results change
 
   return (
     <div 
