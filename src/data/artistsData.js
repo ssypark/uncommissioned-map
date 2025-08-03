@@ -537,7 +537,7 @@ export const artists = [
     coordinates: { lat: 19.4326, lng: -99.1332 }, // Historic center of Mexico City coordinates
     medium: ["Installation", "Conceptual", "Environmental"],
     curator: "",
-    thumbnailURL: "/artist-photos/valentina_guerrero_marin.jpg"
+    thumbnailURL: "/artist-photos/valentina_marin.jpg"
   },
   {
     id: 55,
@@ -547,7 +547,7 @@ export const artists = [
     coordinates: { lat: 35.6870, lng: -105.9378 }, // New Mexico coordinates (Santa Fe area)
     medium: ["Performance", "Conceptual", "Social Practice"],
     curator: "",
-    thumbnailURL: "/artist-photos/cannupa_hanska_luger.jpg"
+    thumbnailURL: "/artist-photos/cannupa_hanska_luger.png"
   },
   {
     id: 56,
@@ -557,7 +557,7 @@ export const artists = [
     coordinates: { lat: 6.5244, lng: 3.3792 }, // Ojota, Lagos coordinates
     medium: ["Installation", "Social Practice", "Conceptual"],
     curator: "",
-    thumbnailURL: "/artist-photos/odun_orimolade.jpg"
+    thumbnailURL: "/artist-photos/odun_orimolade.jpeg"
   },
   {
     id: 57,
@@ -567,7 +567,7 @@ export const artists = [
     coordinates: { lat: 48.2082, lng: 16.3738 }, // Vienna coordinates
     medium: ["Performance", "Literary", "Social Practice"],
     curator: "",
-    thumbnailURL: "/artist-photos/kweku_okokroko.jpg"
+    thumbnailURL: "/artist-photos/kweku-okokroko.jpg"
   },
   {
     id: 58,
