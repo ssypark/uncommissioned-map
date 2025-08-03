@@ -2,6 +2,22 @@ import React, { useState, useMemo, useEffect } from 'react';
 import InteractiveMap from './InteractiveMap';
 import { artists } from '../data/artistsData';
 
+// Add this FilterButton component
+const FilterButton = ({ label, isActive, onClick, darkMode }) => (
+  <button
+    onClick={onClick}
+    className={`px-3 py-1 text-sm rounded-sm border transition-colors font-['Source_Serif_4','serif'] ${
+      isActive
+        ? 'bg-[#B42C2C] text-white border-[#B42C2C]'
+        : darkMode
+        ? 'bg-transparent text-white border-white hover:bg-white hover:text-black'
+        : 'bg-transparent text-black border-gray-400 hover:bg-[#B42C2C] hover:text-white hover:border-[#B42C2C]'
+    }`}
+  >
+    {label}
+  </button>
+);
+
 // Add this custom hook for auto-resizing
 function useEmbedAutoResize() {
   useEffect(() => {
