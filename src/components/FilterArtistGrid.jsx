@@ -2,28 +2,38 @@ import React, { useState, useMemo, useEffect } from 'react';
 import InteractiveMap from './InteractiveMap';
 import { artists } from '../data/artistsData';
 
-// Filter button component for reusability
-const FilterButton = ({ label, isActive, onClick, darkMode = false }) => (
-  <button
-    onClick={onClick}
-    className={`px-3 py-1 text-sm rounded-md transition-colors font-['Source_Serif_4','serif'] ${
-      isActive 
-        ? 'text-white' 
-        : darkMode 
-          ? 'text-white hover:text-[#B42C2C]' 
-          : 'text-gray-700 hover:text-[#B42C2C]'
-    } ${
-      darkMode 
-        ? `border ${isActive ? 'bg-[#B42C2C] border-[#B42C2C]' : 'border-white hover:border-[#B42C2C]'}` 
-        : `border ${isActive ? 'bg-[#B42C2C] border-[#B42C2C]' : 'border-black hover:border-[#B42C2C]'}`
-    }`}
-    style={isActive ? {backgroundColor: '#B42C2C', borderColor: '#B42C2C'} : {}}
-  >
-    {label}
-  </button>
-);
+// Add this custom hook for auto-resizing
+function useEmbedAutoResize() {
+  useEffect(() => {
+    const sendHeight = () => {
+      const height = document.body.scrollHeight;
+      window.parent.postMessage(
+        { type: "embed-auto-height", height: height },
+        "*"
+      );
+    };
+
+    // Send height on load
+    sendHeight();
+    
+    // Send height whenever layout changes
+    const resizeObserver = new ResizeObserver(sendHeight);
+    resizeObserver.observe(document.body);
+    
+    // Also send height when window resizes (for responsive breakpoints)
+    window.addEventListener('resize', sendHeight);
+    
+    return () => {
+      resizeObserver.disconnect();
+      window.removeEventListener('resize', sendHeight);
+    };
+  }, []);
+}
 
 export default function FilterArtistGrid({ artists: artistsProp = artists, darkMode: darkModeProp }) {
+  // Add the auto-resize hook
+  useEmbedAutoResize();
+
   // Check URL parameter for dark mode
   const urlParams = new URLSearchParams(window.location.search);
   const darkModeFromURL = urlParams.get('darkMode') === 'true';
@@ -158,35 +168,56 @@ export default function FilterArtistGrid({ artists: artistsProp = artists, darkM
     // window.location.href = `${baseUrl}/artistpage/${artistSlug}`;
   };
 
-  // Add this useEffect to send height updates to parent frame
+  // Also trigger height update when filtered results change
   useEffect(() => {
-    const sendHeightToParent = () => {
+    // Small delay to ensure DOM has updated
+    const timer = setTimeout(() => {
       const height = document.body.scrollHeight;
-      if (window.parent !== window) {
-        window.parent.postMessage({ type: 'resize', height }, '*');
-      }
-    };
-
-    // Send initial height
-    sendHeightToParent();
-
-    // Send height when content changes
-    const observer = new ResizeObserver(sendHeightToParent);
-    observer.observe(document.body);
-
-    // Cleanup
-    return () => observer.disconnect();
-  }, [filtered]); // Re-run when filtered results change
+      window.parent.postMessage(
+        { type: "embed-auto-height", height: height },
+        "*"
+      );
+    }, 100);
+    
+    return () => clearTimeout(timer);
+  }, [filtered]); // This runs whenever the filtered results change
 
   return (
     <div 
       className={`${darkMode ? 'bg-black' : 'bg-[#F7F2E8]'} font-['Source_Serif_4','serif']`}
       style={{ 
         overflow: 'hidden',
-        height: 'fit-content',
-        fontFamily: "'Source Serif 4', serif" // Explicit fallback
+        minHeight: '100vh',
+        height: 'auto',
+        fontFamily: "'Source Serif 4', serif",
+        // Hide scrollbars but allow scrolling
+        scrollbarWidth: 'none', // Firefox
+        msOverflowStyle: 'none', // Internet Explorer 10+
       }}
     >
+      <style jsx>{`
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        ::-webkit-scrollbar {
+          display: none;
+        }
+        
+        /* Hide scrollbar for IE, Edge and Firefox */
+        * {
+          -ms-overflow-style: none;  /* IE and Edge */
+          scrollbar-width: none;  /* Firefox */
+        }
+        
+        /* Ensure the body and html also hide scrollbars */
+        body, html {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+        }
+        
+        body::-webkit-scrollbar, html::-webkit-scrollbar {
+          display: none;
+        }
+      `}</style>
+      
       <div className="p-4 max-w-7xl mx-auto"> {/* Reduced from p-6 to p-4 */}
         
         {/* Map */}
