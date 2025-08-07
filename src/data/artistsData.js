@@ -597,7 +597,7 @@ export const artists = [
     coordinates: { lat: 18.9261, lng: -99.2307 }, // Cuernavaca, Morelos (between Cuernavaca and Mexico City)
     medium: ["Installation", "Interactive", "Social Practice"],
     curator: "",
-    thumbnailURL: "/artist-photos/pablo_delgado.jpg"
+    thumbnailURL: "/artist-photos/pablodelgado.jpeg"
   }
 ];
 
