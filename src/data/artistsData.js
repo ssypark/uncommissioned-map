@@ -588,6 +588,16 @@ export const artists = [
     medium: ["Performance", "Social Practice", "Drawing"],
     curator: "",
     thumbnailURL: "/artist-photos/hedy_torres.jpg"
+  },
+  {
+    id: 60,
+    artistName: "Pablo Delgado",
+    artworkTitle: "Telephone Booth Messages",
+    location: "Mexico",
+    coordinates: { lat: 18.9261, lng: -99.2307 }, // Cuernavaca, Morelos (between Cuernavaca and Mexico City)
+    medium: ["Installation", "Interactive", "Social Practice"],
+    curator: "",
+    thumbnailURL: "/artist-photos/pablo_delgado.jpg"
   }
 ];
 
