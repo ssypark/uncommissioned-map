@@ -38,8 +38,9 @@ export default function AllArtistsMap() {
     window.open(`${baseUrl}/artistpage/${artistSlug}`, '_blank');
   };
 
-  // Check if mobile
+  // Better responsive zoom levels to show all countries
   const isMobile = typeof window !== 'undefined' && window.innerWidth < 768;
+  const isTablet = typeof window !== 'undefined' && window.innerWidth >= 768 && window.innerWidth < 1024;
 
   return (
     <div style={{ 
@@ -50,16 +51,16 @@ export default function AllArtistsMap() {
       margin: "0"
     }}>
       <MapContainer
-        center={[30, 20]} // Shifted to focus more on populated areas
-        zoom={isMobile ? 2 : 3} // Increased zoom to reduce repetitive ocean
+        center={[20, 0]} // More centered to show all continents
+        zoom={isMobile ? 1 : isTablet ? 2 : 2} // Lower zoom for better global view
         style={{ height: '100%', width: '100%' }}
-        scrollWheelZoom={true}
+        scrollWheelZoom={false} // Disabled to prevent scroll hijacking
         dragging={true}
         zoomControl={true}
         worldCopyJump={true} // Changed to true to allow world wrapping
-        maxBounds={[[-60, -180], [75, 180]]} // Cropped out extreme polar regions
+        maxBounds={[[-70, -180], [80, 180]]} // Slightly expanded bounds
         maxBoundsViscosity={0.8}
-        minZoom={2} // Increased minimum zoom
+        minZoom={1} // Lower minimum zoom to show full world
         maxZoom={18}
       >
         <TileLayer
