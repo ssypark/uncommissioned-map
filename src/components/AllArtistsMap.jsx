@@ -58,8 +58,8 @@ export default function AllArtistsMap() {
         dragging={true}
         zoomControl={true}
         worldCopyJump={false} // Disabled to prevent world repetition
-        maxBounds={[[-85, -180], [85, 180]]} // Constrain to single world view
-        maxBoundsViscosity={1.0} // Stronger boundary enforcement
+        maxBounds={[[-90, -200], [90, 200]]} // Looser bounds to prevent margins
+        maxBoundsViscosity={0.7} // Slightly looser boundary enforcement
         minZoom={1} // Lower minimum zoom to show full world
         maxZoom={18}
       >
