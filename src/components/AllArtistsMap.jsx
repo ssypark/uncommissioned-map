@@ -48,7 +48,8 @@ export default function AllArtistsMap() {
       height: "100vh", 
       background: "#F7F2E8",
       padding: "0",
-      margin: "0"
+      margin: "0",
+      overflow: "hidden" // Prevent any overflow
     }}>
       <MapContainer
         center={[20, 0]} // More centered to show all continents
@@ -58,8 +59,7 @@ export default function AllArtistsMap() {
         dragging={true}
         zoomControl={true}
         worldCopyJump={false} // Disabled to prevent world repetition
-        maxBounds={[[-90, -200], [90, 200]]} // Looser bounds to prevent margins
-        maxBoundsViscosity={0.7} // Slightly looser boundary enforcement
+        // Remove maxBounds to let map fill naturally
         minZoom={1} // Lower minimum zoom to show full world
         maxZoom={18}
       >
@@ -67,7 +67,7 @@ export default function AllArtistsMap() {
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           className="grayscale-map-tiles"
-          noWrap={true} // Prevent tile wrapping
+          
         />
         
         {/* Artist markers */}
