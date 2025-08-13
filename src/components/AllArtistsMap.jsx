@@ -3,7 +3,7 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import { artists } from "../data/artistsData";
-import customPin from '../assets/un-pin.svg'; // Import your custom pin
+import customPin from '../assets/un-pin.svg';
 
 // Fix for default markers in React-Leaflet
 delete L.Icon.Default.prototype._getIconUrl;
@@ -22,7 +22,7 @@ const customIcon = L.icon({
 });
 
 export default function AllArtistsMap() {
-  // Handle artist click - same logic as InteractiveMap
+  // Handle artist click - navigate to external Framer website
   const handleArtistClick = (artist) => {
     const artistSlug = artist.artistName
       .toLowerCase()
@@ -31,8 +31,11 @@ export default function AllArtistsMap() {
       .replace(/-+/g, '-')
       .trim();
     
-    // Navigate to artwork page
-    window.location.href = `/artwork?artist=${artistSlug}`;
+    // Base URL for your Framer website
+    const baseUrl = "https://uncommissioned.art";
+    
+    // Navigate to the artist page
+    window.open(`${baseUrl}/artistpage/${artistSlug}`, '_blank');
   };
 
   // Check if mobile
@@ -47,16 +50,16 @@ export default function AllArtistsMap() {
       margin: "0"
     }}>
       <MapContainer
-        center={[20, 0]}
-        zoom={isMobile ? 1 : 2}
+        center={[30, 20]} // Shifted to focus more on populated areas
+        zoom={isMobile ? 2 : 3} // Increased zoom to reduce repetitive ocean
         style={{ height: '100%', width: '100%' }}
         scrollWheelZoom={true}
         dragging={true}
         zoomControl={true}
-        worldCopyJump={false}
-        maxBounds={[[-85, -180], [85, 180]]}
-        maxBoundsViscosity={1.0}
-        minZoom={1}
+        worldCopyJump={true} // Changed to true to allow world wrapping
+        maxBounds={[[-60, -180], [75, 180]]} // Cropped out extreme polar regions
+        maxBoundsViscosity={0.8}
+        minZoom={2} // Increased minimum zoom
         maxZoom={18}
       >
         <TileLayer
@@ -74,19 +77,26 @@ export default function AllArtistsMap() {
               icon={customIcon}
             >
               <Popup>
-                <div 
-                  className="text-sm font-['Source_Serif_4','serif'] cursor-pointer hover:opacity-80 transition-opacity"
-                  onClick={() => handleArtistClick(artist)}
-                >
+                <div className="text-sm font-['Source_Serif_4','serif']">
                   <strong style={{color: '#B42C2C'}}>{artist.artistName}</strong><br/>
-                  <em>{artist.artworkTitle}</em><br/>
-                  {artist.location}<br/>
-                  <span className="text-gray-600">
+                  <em style={{color: '#666'}}>{artist.artworkTitle}</em><br/>
+                  <span style={{color: '#999'}}>{artist.location}</span><br/>
+                  <span className="text-gray-600" style={{fontSize: '12px'}}>
                     {artist.medium.join(', ')}
                   </span><br/>
-                  <small className="text-blue-600 underline mt-2 block">
-                    View artwork page
-                  </small>
+                  <button 
+                    onClick={() => handleArtistClick(artist)}
+                    className="text-blue-600 underline mt-2 block cursor-pointer hover:opacity-80 transition-opacity"
+                    style={{
+                      marginTop: '8px', 
+                      background: 'none', 
+                      border: 'none', 
+                      padding: '0',
+                      font: 'inherit'
+                    }}
+                  >
+                    View artwork →
+                  </button>
                 </div>
               </Popup>
             </Marker>
