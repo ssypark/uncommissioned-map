@@ -57,9 +57,9 @@ export default function AllArtistsMap() {
         scrollWheelZoom={false} // Disabled to prevent scroll hijacking
         dragging={true}
         zoomControl={true}
-        worldCopyJump={true} // Changed to true to allow world wrapping
-        maxBounds={[[-70, -180], [80, 180]]} // Slightly expanded bounds
-        maxBoundsViscosity={0.8}
+        worldCopyJump={false} // Disabled to prevent world repetition
+        maxBounds={[[-85, -180], [85, 180]]} // Constrain to single world view
+        maxBoundsViscosity={1.0} // Stronger boundary enforcement
         minZoom={1} // Lower minimum zoom to show full world
         maxZoom={18}
       >
@@ -67,6 +67,7 @@ export default function AllArtistsMap() {
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           className="grayscale-map-tiles"
+          noWrap={true} // Prevent tile wrapping
         />
         
         {/* Artist markers */}
