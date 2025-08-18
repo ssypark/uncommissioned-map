@@ -57,16 +57,16 @@ export default function FilterArtistGrid({ artists: artistsProp = artists, darkM
   // Use prop if provided, otherwise use URL parameter
   const darkMode = darkModeProp !== undefined ? darkModeProp : darkModeFromURL;
 
-  // 1) Track selected filters
+  // 1) Track selected filters - updated to use invisibleThread
   const [selected, setSelected] = useState({
     location: new Set(),
     medium: new Set(),
-    curator: new Set()
+    invisibleThread: new Set()
   });
 
-  // 2) Define filter options to match your actual data
+  // 2) Define filter options - updated with invisibleThread categories
   const filterOptions = {
-    location: ["North America", "Europe", "Middle East", "Asia", "Africa", "Australia"],
+    location: ["North America", "Europe", "Middle East", "Asia", "Africa", "Australia", "South America"],
     medium: [
       "Installation", 
       "Social Practice", 
@@ -86,13 +86,25 @@ export default function FilterArtistGrid({ artists: artistsProp = artists, darkM
       "Land Art", 
       "Ephemeral", 
       "Sound-based",
-      "Tech-enabled",  // For AR and technology-based works
-     
+      "Tech-enabled",
+      "Literary",
+      "Environmental",
+      "Interactive",
+      "Digital Art",
+      "Drawing"
     ],
-    curator: ["Sebastian", "Miko", "LaRissa", "Marek", "Taylor"]
+    invisibleThread: [
+      "Soft Resistance",
+      "Feminist Body", 
+      "Absurd as Method",
+      "You Were Here",
+      "Wild Systems",
+      "(Dis)placement",
+      "Bureaucratic Fantasy"
+    ]
   };
 
-  // 3) Country to region mapping
+  // 3) Country to region mapping - updated with South America
   const getRegion = (country) => {
     const regionMap = {
       "USA": "North America",
@@ -105,7 +117,8 @@ export default function FilterArtistGrid({ artists: artistsProp = artists, darkM
       "Switzerland": "Europe",
       "Czech Republic": "Europe",
       "Sweden": "Europe",
-      "Netherlands": "Europe",    // Added for Heimprofi
+      "Netherlands": "Europe",
+      "Austria": "Europe",
       "Lebanon": "Middle East",
       "Iraq": "Middle East",
       "Iran": "Middle East",
@@ -115,14 +128,16 @@ export default function FilterArtistGrid({ artists: artistsProp = artists, darkM
       "Taiwan": "Asia",
       "South Korea": "Asia",
       "South Africa": "Africa",
-      "Democratic Republic of Congo": "Africa",
-      "Angola": "Africa",         // Added for Iris Buchholz Chocolate
+      "Angola": "Africa",
+      "Nigeria": "Africa",
+      "Colombia": "South America",
+      "South America": "South America",
       "Australia": "Australia"
     };
     return regionMap[country] || "Other";
   };
 
-  // 4) Memoized filtering
+  // 4) Memoized filtering - updated to use invisibleThread
   const filtered = useMemo(() => {
     return artistsProp.filter(artist => {
       const locationMatch = selected.location.size === 0 || 
@@ -131,14 +146,14 @@ export default function FilterArtistGrid({ artists: artistsProp = artists, darkM
       const mediumMatch = selected.medium.size === 0 || 
         artist.medium.some(m => selected.medium.has(m));
       
-      const curatorMatch = selected.curator.size === 0 || 
-        selected.curator.has(artist.curator);
+      const invisibleThreadMatch = selected.invisibleThread.size === 0 || 
+        artist.invisibleThread.some(thread => selected.invisibleThread.has(thread));
       
-      return locationMatch && mediumMatch && curatorMatch;
+      return locationMatch && mediumMatch && invisibleThreadMatch;
     });
   }, [artistsProp, selected]);
 
-  // 5) Toggle filter function
+  // 5) Toggle filter function - updated for invisibleThread
   const toggle = (filterType, value) => {
     setSelected(prev => {
       const newSelected = { ...prev };
@@ -153,17 +168,17 @@ export default function FilterArtistGrid({ artists: artistsProp = artists, darkM
     });
   };
 
-  // 6) Clear all filters function
+  // 6) Clear all filters function - updated for invisibleThread
   const clearAllFilters = () => {
     setSelected({
       location: new Set(),
       medium: new Set(),
-      curator: new Set()
+      invisibleThread: new Set()
     });
   };
 
-  // 7) Check if any filters are active
-  const hasActiveFilters = selected.location.size > 0 || selected.medium.size > 0 || selected.curator.size > 0;
+  // 7) Check if any filters are active - updated for invisibleThread
+  const hasActiveFilters = selected.location.size > 0 || selected.medium.size > 0 || selected.invisibleThread.size > 0;
 
   // Updated handleArtistClick for external Framer URLs
   const handleArtistClick = (artist) => {
@@ -180,8 +195,6 @@ export default function FilterArtistGrid({ artists: artistsProp = artists, darkM
     
     // Navigate to the artist page
     window.open(`${baseUrl}/artistpage/${artistSlug}`, '_blank'); // Opens in new tab
-    // OR use this for same tab:
-    // window.location.href = `${baseUrl}/artistpage/${artistSlug}`;
   };
 
   // Also trigger height update when filtered results change
@@ -234,7 +247,7 @@ export default function FilterArtistGrid({ artists: artistsProp = artists, darkM
         }
       `}</style>
       
-      <div className="p-4 max-w-7xl mx-auto"> {/* Reduced from p-6 to p-4 */}
+      <div className="p-4 max-w-7xl mx-auto">
         
         {/* Map */}
         <div className="mb-12">
@@ -281,18 +294,18 @@ export default function FilterArtistGrid({ artists: artistsProp = artists, darkM
               </div>
             </div>
 
-            {/* Curator Filters */}
+            {/* Invisible Thread Filters */}
             <div>
               <h3 className="text-lg font-medium mb-4 font-['Source_Serif_4','serif'] text-left tracking-wider" style={{color: '#B42C2C'}}>
-                curator
+                invisible thread
               </h3>
               <div className="flex flex-wrap gap-2 justify-start">
-                {filterOptions.curator.map(curator => (
+                {filterOptions.invisibleThread.map(thread => (
                   <FilterButton
-                    key={curator}
-                    label={curator}
-                    isActive={selected.curator.has(curator)}
-                    onClick={() => toggle('curator', curator)}
+                    key={thread}
+                    label={thread}
+                    isActive={selected.invisibleThread.has(thread)}
+                    onClick={() => toggle('invisibleThread', thread)}
                     darkMode={darkMode}
                   />
                 ))}

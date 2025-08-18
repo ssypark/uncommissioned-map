@@ -6,7 +6,7 @@ export const artists = [
     location: "USA",
     coordinates: { lat: 32.7767, lng: -96.7970 },
     medium: ["Installation", "Social Practice"],
-    curator: "",
+    invisibleThread: ["Bureaucratic Fantasy", "Absurd as Method"],
     thumbnailURL: "/artist-photos/alicia_eggert.jpg"
   },
   {
@@ -14,9 +14,9 @@ export const artists = [
     artistName: "Arzhel Prioul",
     artworkTitle: "Mixing Gender Icon",
     location: "France",
-    coordinates: { lat: 48.1173, lng: -1.6778 }, // Cesson-Sévigné, Brittany
+    coordinates: { lat: 48.1173, lng: -1.6778 },
     medium: ["Installation", "Mixed Media"],
-    curator: "",
+    invisibleThread: ["(Dis)placement"],
     thumbnailURL: "/artist-photos/arzhel_prioul.jpg"
   },
   {
@@ -26,7 +26,7 @@ export const artists = [
     location: "USA",
     coordinates: { lat: 34.0522, lng: -118.2437 },
     medium: ["Mixed Media"],
-    curator: "",
+    invisibleThread: ["(Dis)placement", "You Were Here"],
     thumbnailURL: "/artist-photos/azadeh_shladovsky.jpg"
   },
   {
@@ -36,7 +36,7 @@ export const artists = [
     location: "Australia",
     coordinates: { lat: -33.8688, lng: 151.2093 },
     medium: ["Installation"],
-    curator: "",
+    invisibleThread: ["Absurd as Method"],
     thumbnailURL: "/artist-photos/catherine_young.jpg"
   },
   {
@@ -46,7 +46,7 @@ export const artists = [
     location: "Thailand",
     coordinates: { lat: 13.7563, lng: 100.5018 },
     medium: ["Film", "Installation"],
-    curator: "",
+    invisibleThread: ["(Dis)placement"],
     thumbnailURL: "/artist-photos/chulayarnnon_siriphol.jpg"
   },
   {
@@ -56,7 +56,7 @@ export const artists = [
     location: "Germany",
     coordinates: { lat: 52.52, lng: 13.405 },
     medium: ["Mixed Media"],
-    curator: "",
+    invisibleThread: [],
     thumbnailURL: "/artist-photos/coco_bergholm.jpg"
   },
   {
@@ -66,7 +66,7 @@ export const artists = [
     location: "Mexico",
     coordinates: { lat: 19.4326, lng: -99.1332 },
     medium: ["Mixed Media", "Sculpture"],
-    curator: "",
+    invisibleThread: ["You Were Here"],
     thumbnailURL: "/artist-photos/danielle_firoozi.jpeg"
   },
   {
@@ -76,7 +76,7 @@ export const artists = [
     location: "France",
     coordinates: { lat: 48.5734, lng: 7.7521 },
     medium: ["Installation", "Performance", "Photography"],
-    curator: "",
+    invisibleThread: ["Soft Resistance"],
     thumbnailURL: "/artist-photos/deana_kolencikova.jpg"
   },
   {
@@ -86,7 +86,7 @@ export const artists = [
     location: "China",
     coordinates: { lat: 39.9042, lng: 116.4074 },
     medium: ["Conceptual", "Performance", "Social Practice"],
-    curator: "",
+    invisibleThread: [],
     thumbnailURL: "/artist-photos/yufeng_deng2.jpeg"
   },
   {
@@ -96,7 +96,7 @@ export const artists = [
     location: "Mexico",
     coordinates: { lat: 19.4326, lng: -99.1332 },
     medium: ["Photography", "Video", "Textile"],
-    curator: "",
+    invisibleThread: ["Wild Systems"],
     thumbnailURL: "/artist-photos/derzu_campos.jpg"
   },
   {
@@ -106,7 +106,7 @@ export const artists = [
     location: "Germany",
     coordinates: { lat: 52.5200, lng: 13.4050 },
     medium: ["Installation"],
-    curator: "",
+    invisibleThread: ["Absurd as Method"],
     thumbnailURL: "/artist-photos/enno_haar.jpg"
   },
   {
@@ -116,7 +116,7 @@ export const artists = [
     location: "Spain",
     coordinates: { lat: 39.4699, lng: -0.3763 },
     medium: ["Mural", "Conceptual"],
-    curator: "",
+    invisibleThread: ["Wild Systems", "Soft Resistance"],
     thumbnailURL: "/artist-photos/escif.jpg"
   },
   {
@@ -126,7 +126,7 @@ export const artists = [
     location: "Taiwan",
     coordinates: { lat: 25.033, lng: 121.5654 },
     medium: ["Mixed Media"],
-    curator: "",
+    invisibleThread: [],
     thumbnailURL: "/artist-photos/esther_lin.jpg"
   },
   {
@@ -136,7 +136,7 @@ export const artists = [
     location: "USA",
     coordinates: { lat: 33.749, lng: -84.388 },
     medium: ["Mixed Media"],
-    curator: "",
+    invisibleThread: ["Soft Resistance"],
     thumbnailURL: "/artist-photos/fabianwilliams.png"
   },
   {
@@ -146,7 +146,7 @@ export const artists = [
     location: "USA",
     coordinates: { lat: 34.0522, lng: -118.2437 },
     medium: ["Mixed Media"],
-    curator: "",
+    invisibleThread: ["Wild Systems"],
     thumbnailURL: "/artist-photos/fiona-chang.jpg"
   },
   {
@@ -156,7 +156,7 @@ export const artists = [
     location: "Qatar",
     coordinates: { lat: 25.2879, lng: 51.5615 },
     medium: ["Painting"],
-    curator: "",
+    invisibleThread: ["Feminist Body"],
     thumbnailURL: "/artist-photos/han_alsaadi.jpg"
   },
   {
@@ -166,7 +166,7 @@ export const artists = [
     location: "Switzerland",
     coordinates: { lat: 47.3515, lng: 7.9144 },
     medium: ["Installation"],
-    curator: "",
+    invisibleThread: ["Absurd as Method"],
     thumbnailURL: "/artist-photos/harmen_de_hoop.jpg"
   },
   {
@@ -176,7 +176,7 @@ export const artists = [
     location: "United Kingdom",
     coordinates: { lat: 51.3168, lng: 0.8919 },
     medium: ["Sculpture", "Installation"],
-    curator: "",
+    invisibleThread: ["Soft Resistance"],
     thumbnailURL: "/artist-photos/jason_taylor.jpg"
   },
   {
@@ -186,17 +186,17 @@ export const artists = [
     location: "USA",
     coordinates: { lat: 40.7128, lng: -74.0060 },
     medium: ["Mixed Media"],
-    curator: "",
+    invisibleThread: ["(Dis)placement"],
     thumbnailURL: "/artist-photos/jeffrey_meris.webp"
   },
   {
     id: 20,
     artistName: "Jenny Nijenhuis",
     artworkTitle: "Echo",
-    location: "South Africa",
+    location: "South Africa", // Changed back from "South America" to "South Africa"
     coordinates: { lat: -34.0522, lng: 23.0449 },
     medium: ["Sculpture", "Installation"],
-    curator: "",
+    invisibleThread: [],
     thumbnailURL: "/artist-photos/jenny_nijenhuis1.jpg"
   },
   {
@@ -206,7 +206,7 @@ export const artists = [
     location: "South Korea",
     coordinates: { lat: 37.5665, lng: 126.978 },
     medium: ["Painting"],
-    curator: "",
+    invisibleThread: ["You Were Here"],
     thumbnailURL: "/artist-photos/jodae.jpeg"
   },
   {
@@ -216,7 +216,7 @@ export const artists = [
     location: "USA",
     coordinates: { lat: 40.7128, lng: -74.0060 },
     medium: ["Installation"],
-    curator: "",
+    invisibleThread: ["Wild Systems"],
     thumbnailURL: "/artist-photos/julian_ties.jpg"
   },
   {
@@ -226,7 +226,7 @@ export const artists = [
     location: "Mexico",
     coordinates: { lat: 19.4326, lng: -99.1332 },
     medium: ["Performance", "Conceptual", "Textile"],
-    curator: "",
+    invisibleThread: ["Soft Resistance", "(Dis)placement"],
     thumbnailURL: "/artist-photos/kara_rooney1.jpg"
   },
   {
@@ -236,7 +236,7 @@ export const artists = [
     location: "USA",
     coordinates: { lat: 40.6782, lng: -73.9442 },
     medium: ["Installation"],
-    curator: "",
+    invisibleThread: ["Soft Resistance"],
     thumbnailURL: "/artist-photos/leon_reid.jpg"
   },
   {
@@ -246,7 +246,7 @@ export const artists = [
     location: "Iran",
     coordinates: { lat: 35.6892, lng: 51.389 },
     medium: ["Mixed Media"],
-    curator: "",
+    invisibleThread: ["Wild Systems"],
     thumbnailURL: "/artist-photos/majid_haghighi.jpg"
   },
   {
@@ -256,7 +256,7 @@ export const artists = [
     location: "USA",
     coordinates: { lat: 34.1478, lng: -118.1445 },
     medium: ["Mixed Media"],
-    curator: "",
+    invisibleThread: ["Bureaucratic Fantasy"],
     thumbnailURL: "/artist-photos/mayela_rodriguez.png"
   },
   {
@@ -266,7 +266,7 @@ export const artists = [
     location: "Lebanon",
     coordinates: { lat: 33.8938, lng: 35.5018 },
     medium: ["Curatorial", "Installation"],
-    curator: "",
+    invisibleThread: [],
     thumbnailURL: "/artist-photos/mayssa_fattouh.jpeg"
   },
   {
@@ -276,7 +276,7 @@ export const artists = [
     location: "USA",
     coordinates: { lat: 40.6782, lng: -73.9442 },
     medium: ["Mixed Media"],
-    curator: "",
+    invisibleThread: ["Absurd as Method"],
     thumbnailURL: "/artist-photos/nina_katchadourian.jpg"
   },
   {
@@ -286,7 +286,7 @@ export const artists = [
     location: "Taiwan",
     coordinates: { lat: 24.1477, lng: 120.6736 },
     medium: ["Installation", "Social Practice"],
-    curator: "",
+    invisibleThread: ["Bureaucratic Fantasy"],
     thumbnailURL: "/artist-photos/nung-hsinhu.jpeg"
   },
   {
@@ -296,7 +296,7 @@ export const artists = [
     location: "Germany",
     coordinates: { lat: 52.52, lng: 13.405 },
     medium: ["Installation"],
-    curator: "",
+    invisibleThread: ["Absurd as Method"],
     thumbnailURL: "/artist-photos/peter_behrbohm.jpg"
   },
   {
@@ -306,7 +306,7 @@ export const artists = [
     location: "Czech Republic",
     coordinates: { lat: 50.0755, lng: 14.4378 },
     medium: ["Mixed Media"],
-    curator: "",
+    invisibleThread: ["You Were Here"],
     thumbnailURL: "/artist-photos/petra_hudcova2.jpg"
   },
   {
@@ -316,7 +316,7 @@ export const artists = [
     location: "Mexico",
     coordinates: { lat: 19.4326, lng: -99.1332 },
     medium: ["Installation", "Performance"],
-    curator: "",
+    invisibleThread: ["Bureaucratic Fantasy"],
     thumbnailURL: "/artist-photos/pia_david.jpg"
   },
   {
@@ -326,7 +326,7 @@ export const artists = [
     location: "South Africa",
     coordinates: { lat: -26.2041, lng: 28.0473 },
     medium: ["Street Art", "Textile"],
-    curator: "",
+    invisibleThread: ["Soft Resistance"],
     thumbnailURL: "/artist-photos/r1.jpg"
   },
   {
@@ -336,7 +336,7 @@ export const artists = [
     location: "France",
     coordinates: { lat: 48.8566, lng: 2.3522 },
     medium: ["Tech-enabled"],
-    curator: "",
+    invisibleThread: ["Wild Systems"],
     thumbnailURL: "/artist-photos/recyclegroup.jpg"
   },
   {
@@ -346,7 +346,7 @@ export const artists = [
     location: "Iraq",
     coordinates: { lat: 35.5568, lng: 45.4329 },
     medium: ["Mixed Media"],
-    curator: "",
+    invisibleThread: ["Soft Resistance"],
     thumbnailURL: "/artist-photos/sherko_abbas.jpg"
   },
   {
@@ -356,7 +356,7 @@ export const artists = [
     location: "Sweden",
     coordinates: { lat: 59.3293, lng: 18.0686 },
     medium: ["Mixed Media"],
-    curator: "",
+    invisibleThread: ["Bureaucratic Fantasy"],
     thumbnailURL: "/artist-photos/siri_tolander.jpg"
   },
   {
@@ -366,7 +366,7 @@ export const artists = [
     location: "USA",
     coordinates: { lat: 41.7406, lng: -74.0833 },
     medium: ["Ecological"],
-    curator: "",
+    invisibleThread: ["Wild Systems"],
     thumbnailURL: "/artist-photos/matthew_friday.jpg"
   },
   {
@@ -376,7 +376,7 @@ export const artists = [
     location: "USA",
     coordinates: { lat: 33.749, lng: -84.388 },
     medium: ["Mixed Media", "Photography"],
-    curator: "",
+    invisibleThread: ["Soft Resistance"],
     thumbnailURL: "/artist-photos/stephanie_brown.jpg"
   },
   {
@@ -386,7 +386,7 @@ export const artists = [
     location: "South Africa",
     coordinates: { lat: -33.9321, lng: 18.8602 },
     medium: ["Land Art", "Ephemeral"],
-    curator: "",
+    invisibleThread: ["You Were Here"],
     thumbnailURL: "/artist-photos/strijdom_van_der_merwe.jpg"
   },
   {
@@ -396,7 +396,7 @@ export const artists = [
     location: "USA",
     coordinates: { lat: 34.0522, lng: -118.2437 },
     medium: ["Mixed Media"],
-    curator: "",
+    invisibleThread: ["(Dis)placement", "Soft Resistance"],
     thumbnailURL: "/artist-photos/terrick_gutierrez.jpg"
   },
   {
@@ -406,7 +406,7 @@ export const artists = [
     location: "Portugal",
     coordinates: { lat: 38.7223, lng: -9.1393 },
     medium: ["Street Art", "Sculpture"],
-    curator: "",
+    invisibleThread: ["Wild Systems"],
     thumbnailURL: "/artist-photos/vhils.jpg"
   },
   {
@@ -416,7 +416,7 @@ export const artists = [
     location: "China",
     coordinates: { lat: 22.5431, lng: 114.0579 },
     medium: ["Tech-enabled"],
-    curator: "",
+    invisibleThread: ["You Were Here"],
     thumbnailURL: "/artist-photos/wanzhuo_cheng.jpg"
   },
   {
@@ -426,7 +426,7 @@ export const artists = [
     location: "France",
     coordinates: { lat: 48.8566, lng: 2.3522 },
     medium: ["Performance", "Mixed Media"],
-    curator: "",
+    invisibleThread: ["(Dis)placement", "Absurd as Method"],
     thumbnailURL: "/artist-photos/yannos_majestikos.jpg"
   },
   {
@@ -434,9 +434,9 @@ export const artists = [
     artistName: "Yu Mingjing",
     artworkTitle: "Third Front Memories",
     location: "China",
-    coordinates: { lat: 29.5477, lng: 103.4845 }, // Ledu Town, Mount Emei, Sichuan coordinates
+    coordinates: { lat: 29.5477, lng: 103.4845 },
     medium: ["Performance", "Social Practice", "Video"],
-    curator: "",
+    invisibleThread: ["(Dis)placement"],
     thumbnailURL: "/artist-photos/mingjing_yu.jpg"
   },
   {
@@ -446,7 +446,7 @@ export const artists = [
     location: "Iran",
     coordinates: { lat: 35.6892, lng: 51.3890 },
     medium: ["Mixed Media", "Textile"],
-    curator: "",
+    invisibleThread: ["Feminist Body", "Soft Resistance"],
     thumbnailURL: "/artist-photos/zohreh_solati.jpg"
   },
   {
@@ -456,7 +456,7 @@ export const artists = [
     location: "Angola",
     coordinates: { lat: -8.8390, lng: 13.2894 },
     medium: ["Performance", "Installation", "Social Practice"],
-    curator: "",
+    invisibleThread: ["Feminist Body"],
     thumbnailURL: "/artist-photos/iris_buchholz_chocolate.jpg"
   },
   {
@@ -466,7 +466,7 @@ export const artists = [
     location: "France",
     coordinates: { lat: 48.5734, lng: 7.7521 },
     medium: ["Installation", "Performance", "Conceptual"],
-    curator: "",
+    invisibleThread: ["You Were Here"],
     thumbnailURL: "/artist-photos/matheiu_tremblin.jpg"
   },
   {
@@ -476,7 +476,7 @@ export const artists = [
     location: "Czech Republic",
     coordinates: { lat: 49.8209, lng: 18.2625 },
     medium: ["Installation", "Conceptual", "Street Art"],
-    curator: "",
+    invisibleThread: ["Bureaucratic Fantasy"],
     thumbnailURL: "/artist-photos/libor_novotny.jpg"
   },
   {
@@ -486,7 +486,7 @@ export const artists = [
     location: "Iran",
     coordinates: { lat: 35.6892, lng: 51.3890 },
     medium: ["Performance", "Sound-based", "Conceptual"],
-    curator: "",
+    invisibleThread: ["You Were Here"],
     thumbnailURL: "/artist-photos/erfan_ghiasi.jpg"
   },
   {
@@ -496,37 +496,37 @@ export const artists = [
     location: "Netherlands",
     coordinates: { lat: 51.9692, lng: 5.8997 },
     medium: ["Installation", "Textile", "Conceptual"],
-    curator: "",
+    invisibleThread: [],
     thumbnailURL: "/artist-photos/heimprofi.jpeg"
   },
-    {
+  {
     id: 51,
     artistName: "Aida Gomez",
     artworkTitle: "Untitled",
     location: "Spain",
-    coordinates: { lat: 41.4169, lng: 2.1581 }, // Parc del Guinardó, Barcelona coordinates
+    coordinates: { lat: 41.4169, lng: 2.1581 },
     medium: ["Installation", "Conceptual"],
-    curator: "",
+    invisibleThread: [],
     thumbnailURL: "/artist-photos/aida_gomez.jpg"
   },
-    {
+  {
     id: 52,
     artistName: "Nansi Guevara",
     artworkTitle: "Untitled",
     location: "USA",
-    coordinates: { lat: 25.9017, lng: -97.4975 }, // Downtown Brownsville, Texas coordinates
+    coordinates: { lat: 25.9017, lng: -97.4975 },
     medium: ["Digital Art", "Installation", "Street Art"],
-    curator: "",
+    invisibleThread: ["Bureaucratic Fantasy", "Wild Systems"],
     thumbnailURL: "/artist-photos/nansi_guevara.jpg"
   },
-    {
+  {
     id: 53,
     artistName: "Nomad Studio",
     artworkTitle: "Island of Certainty (ISLA DE CERTEZA)",
     location: "Spain",
-    coordinates: { lat: 42.0543, lng: -3.4825 }, // Parque Natural Sabinares del Arlanza - La Yecla, Castilla y León coordinates
+    coordinates: { lat: 42.0543, lng: -3.4825 },
     medium: ["Installation", "Ephemeral", "Conceptual"],
-    curator: "",
+    invisibleThread: ["Bureaucratic Fantasy", "Wild Systems"],
     thumbnailURL: "/artist-photos/nomad_studio.jpg"
   },
   {
@@ -534,9 +534,9 @@ export const artists = [
     artistName: "Valentina Guerrero Marín",
     artworkTitle: "Oktas",
     location: "Mexico",
-    coordinates: { lat: 19.4326, lng: -99.1332 }, // Historic center of Mexico City coordinates
+    coordinates: { lat: 19.4326, lng: -99.1332 },
     medium: ["Installation", "Conceptual", "Environmental"],
-    curator: "",
+    invisibleThread: ["Soft Resistance"],
     thumbnailURL: "/artist-photos/valentina_marin.jpg"
   },
   {
@@ -544,9 +544,9 @@ export const artists = [
     artistName: "Cannupa Hanska Luger",
     artworkTitle: "SURVIVA (Durational Performance)",
     location: "USA",
-    coordinates: { lat: 35.6870, lng: -105.9378 }, // New Mexico coordinates (Santa Fe area)
+    coordinates: { lat: 35.6870, lng: -105.9378 },
     medium: ["Performance", "Conceptual", "Social Practice"],
-    curator: "",
+    invisibleThread: ["You Were Here", "Wild Systems"],
     thumbnailURL: "/artist-photos/cannupa_hanska_luger.png"
   },
   {
@@ -554,9 +554,9 @@ export const artists = [
     artistName: "Odun Orimolade",
     artworkTitle: "Prescriptions for Rest",
     location: "Nigeria",
-    coordinates: { lat: 6.5244, lng: 3.3792 }, // Ojota, Lagos coordinates
+    coordinates: { lat: 6.5244, lng: 3.3792 },
     medium: ["Installation", "Social Practice", "Conceptual"],
-    curator: "",
+    invisibleThread: [],
     thumbnailURL: "/artist-photos/odun_orimolade.jpeg"
   },
   {
@@ -564,9 +564,9 @@ export const artists = [
     artistName: "Kweku Okokroko",
     artworkTitle: "The Iron Clad King Sits atop a high horse",
     location: "Austria",
-    coordinates: { lat: 48.2082, lng: 16.3738 }, // Vienna coordinates
+    coordinates: { lat: 48.2082, lng: 16.3738 },
     medium: ["Performance", "Literary", "Social Practice"],
-    curator: "",
+    invisibleThread: ["Soft Resistance"],
     thumbnailURL: "/artist-photos/kweku-okokroko.jpg"
   },
   {
@@ -574,9 +574,9 @@ export const artists = [
     artistName: "Juan Caicedo",
     artworkTitle: "Resistance Palm",
     location: "Colombia",
-    coordinates: { lat: 6.2442, lng: -75.5812 }, // Medellín coordinates
+    coordinates: { lat: 6.2442, lng: -75.5812 },
     medium: ["Installation", "Social Practice", "Conceptual"],
-    curator: "",
+    invisibleThread: ["Soft Resistance"],
     thumbnailURL: "/artist-photos/juan_caicedo.jpg"
   },
   {
@@ -584,9 +584,9 @@ export const artists = [
     artistName: "Hedy Torres",
     artworkTitle: "Completing Lino's Portrait",
     location: "USA",
-    coordinates: { lat: 34.0522, lng: -118.2437 }, // Los Angeles, California
+    coordinates: { lat: 34.0522, lng: -118.2437 },
     medium: ["Performance", "Social Practice", "Drawing"],
-    curator: "",
+    invisibleThread: [],
     thumbnailURL: "/artist-photos/hedy_torres.jpg"
   },
   {
@@ -594,9 +594,9 @@ export const artists = [
     artistName: "Pablo Delgado",
     artworkTitle: "Telephone Booth Messages",
     location: "Mexico",
-    coordinates: { lat: 18.9261, lng: -99.2307 }, // Cuernavaca, Morelos (between Cuernavaca and Mexico City)
+    coordinates: { lat: 18.9261, lng: -99.2307 },
     medium: ["Installation", "Interactive", "Social Practice"],
-    curator: "",
+    invisibleThread: ["Soft Resistance"],
     thumbnailURL: "/artist-photos/pablodelgado.jpeg"
   }
 ];
@@ -616,6 +616,12 @@ export const getUniqueLocations = () => {
   return [...new Set(artists.map(artist => artist.location))];
 };
 
-export const getUniqueCurators = () => {
-  return [...new Set(artists.map(artist => artist.curator).filter(Boolean))];
+export const getUniqueInvisibleThreads = () => {
+  const threadSet = new Set();
+  artists.forEach(artist => {
+    artist.invisibleThread.forEach(thread => {
+      threadSet.add(thread);
+    });
+  });
+  return [...threadSet];
 };
