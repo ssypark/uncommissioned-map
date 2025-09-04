@@ -16,7 +16,7 @@ export const artists = [
     location: "France",
     coordinates: { lat: 48.1173, lng: -1.6778 },
     medium: ["Installation", "Mixed Media"],
-    invisibleThread: ["(Dis)placement"],
+    invisibleThread: ["(Dis)placement", "Informal Monuments"],
     thumbnailURL: "/artist-photos/arzhel_prioul.jpg"
   },
   {
@@ -76,7 +76,7 @@ export const artists = [
     location: "France",
     coordinates: { lat: 48.5734, lng: 7.7521 },
     medium: ["Installation", "Performance", "Photography"],
-    invisibleThread: ["Soft Resistance"],
+    invisibleThread: ["Soft Resistance", "Informal Monuments"],
     thumbnailURL: "/artist-photos/deana_kolencikova.jpg"
   },
   {
@@ -96,7 +96,7 @@ export const artists = [
     location: "Mexico",
     coordinates: { lat: 19.4326, lng: -99.1332 },
     medium: ["Photography", "Video", "Textile"],
-    invisibleThread: ["Wild Systems"],
+    invisibleThread: ["Wild Systems", "Informal Monuments"],
     thumbnailURL: "/artist-photos/derzu_campos.jpg"
   },
   {
@@ -116,7 +116,7 @@ export const artists = [
     location: "Spain",
     coordinates: { lat: 39.4699, lng: -0.3763 },
     medium: ["Mural", "Conceptual"],
-    invisibleThread: ["Wild Systems", "Soft Resistance"],
+    invisibleThread: ["Wild Systems", "Soft Resistance", "Informal Monuments"],
     thumbnailURL: "/artist-photos/escif.jpg"
   },
   {
@@ -156,7 +156,7 @@ export const artists = [
     location: "Qatar",
     coordinates: { lat: 25.2879, lng: 51.5615 },
     medium: ["Painting"],
-    invisibleThread: ["Feminist Body"],
+    invisibleThread: ["Feminist Body", "Informal Monuments"],
     thumbnailURL: "/artist-photos/han_alsaadi.jpg"
   },
   {
@@ -176,7 +176,7 @@ export const artists = [
     location: "United Kingdom",
     coordinates: { lat: 51.3168, lng: 0.8919 },
     medium: ["Sculpture", "Installation"],
-    invisibleThread: ["Soft Resistance"],
+    invisibleThread: ["Soft Resistance", "Informal Monuments"],
     thumbnailURL: "/artist-photos/jason_taylor.jpg"
   },
   {
@@ -186,14 +186,14 @@ export const artists = [
     location: "USA",
     coordinates: { lat: 40.7128, lng: -74.0060 },
     medium: ["Mixed Media"],
-    invisibleThread: ["(Dis)placement"],
+    invisibleThread: ["(Dis)placement", "Informal Monuments"],
     thumbnailURL: "/artist-photos/jeffrey_meris.webp"
   },
   {
     id: 20,
     artistName: "Jenny Nijenhuis",
     artworkTitle: "Echo",
-    location: "South Africa", // Changed back from "South America" to "South Africa"
+    location: "South Africa",
     coordinates: { lat: -34.0522, lng: 23.0449 },
     medium: ["Sculpture", "Installation"],
     invisibleThread: [],
@@ -216,7 +216,7 @@ export const artists = [
     location: "USA",
     coordinates: { lat: 40.7128, lng: -74.0060 },
     medium: ["Installation"],
-    invisibleThread: ["Wild Systems"],
+    invisibleThread: ["Wild Systems", "Informal Monuments"],
     thumbnailURL: "/artist-photos/julian_ties.jpg"
   },
   {
@@ -236,7 +236,7 @@ export const artists = [
     location: "USA",
     coordinates: { lat: 40.6782, lng: -73.9442 },
     medium: ["Installation"],
-    invisibleThread: ["Soft Resistance"],
+    invisibleThread: ["Soft Resistance", "Informal Monuments"],
     thumbnailURL: "/artist-photos/leon_reid.jpg"
   },
   {
@@ -286,7 +286,7 @@ export const artists = [
     location: "Taiwan",
     coordinates: { lat: 24.1477, lng: 120.6736 },
     medium: ["Installation", "Social Practice"],
-    invisibleThread: ["Bureaucratic Fantasy"],
+    invisibleThread: ["Bureaucratic Fantasy", "Informal Monuments"],
     thumbnailURL: "/artist-photos/nung-hsinhu.jpeg"
   },
   {
@@ -346,7 +346,7 @@ export const artists = [
     location: "Iraq",
     coordinates: { lat: 35.5568, lng: 45.4329 },
     medium: ["Mixed Media"],
-    invisibleThread: ["Soft Resistance"],
+    invisibleThread: ["Soft Resistance", "Informal Monuments"],
     thumbnailURL: "/artist-photos/sherko_abbas.jpg"
   },
   {
@@ -356,7 +356,7 @@ export const artists = [
     location: "Sweden",
     coordinates: { lat: 59.3293, lng: 18.0686 },
     medium: ["Mixed Media"],
-    invisibleThread: ["Bureaucratic Fantasy"],
+    invisibleThread: ["Bureaucratic Fantasy", "Informal Monuments"],
     thumbnailURL: "/artist-photos/siri_tolander.jpg"
   },
   {
@@ -476,7 +476,7 @@ export const artists = [
     location: "Czech Republic",
     coordinates: { lat: 49.8209, lng: 18.2625 },
     medium: ["Installation", "Conceptual", "Street Art"],
-    invisibleThread: ["Bureaucratic Fantasy"],
+    invisibleThread: ["Bureaucratic Fantasy", "Informal Monuments"],
     thumbnailURL: "/artist-photos/libor_novotny.jpg"
   },
   {
@@ -546,7 +546,7 @@ export const artists = [
     location: "USA",
     coordinates: { lat: 35.6870, lng: -105.9378 },
     medium: ["Performance", "Conceptual", "Social Practice"],
-    invisibleThread: ["You Were Here", "Wild Systems"],
+    invisibleThread: ["You Were Here", "Wild Systems", "Informal Monuments"],
     thumbnailURL: "/artist-photos/cannupa_hanska_luger.png"
   },
   {
