@@ -239,16 +239,16 @@ export const artists = [
     invisibleThread: ["Soft Resistance", "Informal Monuments"],
     thumbnailURL: "/artist-photos/leon_reid.jpg"
   },
-  {
-    id: 25,
-    artistName: "Majid Haghighi",
-    artworkTitle: "Spec.99",
-    location: "Iran",
-    coordinates: { lat: 35.6892, lng: 51.389 },
-    medium: ["Mixed Media"],
-    invisibleThread: ["Wild Systems"],
-    thumbnailURL: "/artist-photos/majid_haghighi.jpg"
-  },
+  // {
+  //   id: 25,
+  //   artistName: "Majid Haghighi",
+  //   artworkTitle: "Spec.99",
+  //   location: "Iran",
+  //   coordinates: { lat: 35.6892, lng: 51.389 },
+  //   medium: ["Mixed Media"],
+  //   invisibleThread: ["Wild Systems"],
+  //   thumbnailURL: "/artist-photos/majid_haghighi.jpg"
+  // },
   {
     id: 26,
     artistName: "Mayela Rodriguez",
