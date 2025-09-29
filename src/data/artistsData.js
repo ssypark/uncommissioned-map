@@ -45,7 +45,7 @@ export const artists = [
     artworkTitle: "Monument to the Fourth International",
     location: "Thailand",
     coordinates: { lat: 13.7563, lng: 100.5018 },
-    medium: ["Film", "Installation"],
+    medium: ["Video", "Installation"], // Changed "Film" to "Video"
     invisibleThread: ["(Dis)placement"],
     thumbnailURL: "/artist-photos/chulayarnnon_siriphol.jpg"
   },
@@ -95,7 +95,7 @@ export const artists = [
     artworkTitle: "Untitled",
     location: "Mexico",
     coordinates: { lat: 19.4326, lng: -99.1332 },
-    medium: ["Photography", "Video", "Textile"],
+    medium: ["Photography", "Video"], // Removed "Textile"
     invisibleThread: ["Wild Systems", "Informal Monuments"],
     thumbnailURL: "/artist-photos/derzu_campos.jpg"
   },
@@ -115,7 +115,7 @@ export const artists = [
     artworkTitle: "British Garden",
     location: "Spain",
     coordinates: { lat: 39.4699, lng: -0.3763 },
-    medium: ["Mural", "Conceptual"],
+    medium: ["Installation", "Conceptual"], // Changed "Mural" to "Installation"
     invisibleThread: ["Wild Systems", "Soft Resistance", "Informal Monuments"],
     thumbnailURL: "/artist-photos/escif.jpg"
   },
@@ -155,7 +155,7 @@ export const artists = [
     artworkTitle: "Dress Code Series",
     location: "Qatar",
     coordinates: { lat: 25.2879, lng: 51.5615 },
-    medium: ["Painting"],
+    medium: ["Mixed Media"], // Changed "Painting" to "Mixed Media"
     invisibleThread: ["Feminist Body", "Informal Monuments"],
     thumbnailURL: "/artist-photos/han_alsaadi.jpg"
   },
@@ -205,7 +205,7 @@ export const artists = [
     artworkTitle: "Pieces of Luck",
     location: "South Korea",
     coordinates: { lat: 37.5665, lng: 126.978 },
-    medium: ["Painting"],
+    medium: ["Mixed Media"], // Changed "Painting" to "Mixed Media"
     invisibleThread: ["You Were Here"],
     thumbnailURL: "/artist-photos/jodae.jpeg"
   },
@@ -225,7 +225,7 @@ export const artists = [
     artworkTitle: "Todo Estaba Previsto",
     location: "Mexico",
     coordinates: { lat: 19.4326, lng: -99.1332 },
-    medium: ["Performance", "Conceptual", "Textile"],
+    medium: ["Performance", "Conceptual", "Social Practice", "Mixed Media"], // Removed "Textile"
     invisibleThread: ["Soft Resistance", "(Dis)placement"],
     thumbnailURL: "/artist-photos/kara_rooney1.jpg"
   },
@@ -239,16 +239,6 @@ export const artists = [
     invisibleThread: ["Soft Resistance", "Informal Monuments"],
     thumbnailURL: "/artist-photos/leon_reid.jpg"
   },
-  // {
-  //   id: 25,
-  //   artistName: "Majid Haghighi",
-  //   artworkTitle: "Spec.99",
-  //   location: "Iran",
-  //   coordinates: { lat: 35.6892, lng: 51.389 },
-  //   medium: ["Mixed Media"],
-  //   invisibleThread: ["Wild Systems"],
-  //   thumbnailURL: "/artist-photos/majid_haghighi.jpg"
-  // },
   {
     id: 26,
     artistName: "Mayela Rodriguez",
@@ -265,7 +255,7 @@ export const artists = [
     artworkTitle: "The Beginning of Memory",
     location: "Lebanon",
     coordinates: { lat: 33.8938, lng: 35.5018 },
-    medium: ["Curatorial", "Installation"],
+    medium: ["Installation"], // Removed "Curatorial"
     invisibleThread: [],
     thumbnailURL: "/artist-photos/mayssa_fattouh.jpeg"
   },
@@ -325,7 +315,7 @@ export const artists = [
     artworkTitle: "Untitled",
     location: "South Africa",
     coordinates: { lat: -26.2041, lng: 28.0473 },
-    medium: ["Street Art", "Textile"],
+    medium: ["Mixed Media"], // Changed "Street Art", removed "Textile"
     invisibleThread: ["Soft Resistance"],
     thumbnailURL: "/artist-photos/r1.jpg"
   },
@@ -365,7 +355,7 @@ export const artists = [
     artworkTitle: "Carbon Harvest",
     location: "USA",
     coordinates: { lat: 41.7406, lng: -74.0833 },
-    medium: ["Ecological"],
+    medium: ["Installation"], // Changed "Ecological" to "Installation"
     invisibleThread: ["Wild Systems"],
     thumbnailURL: "/artist-photos/matthew_friday.jpg"
   },
@@ -385,7 +375,7 @@ export const artists = [
     artworkTitle: "Untitled",
     location: "South Africa",
     coordinates: { lat: -33.9321, lng: 18.8602 },
-    medium: ["Land Art", "Ephemeral"],
+    medium: ["Installation"], // Changed "Land Art", removed "Ephemeral"
     invisibleThread: ["You Were Here"],
     thumbnailURL: "/artist-photos/strijdom_van_der_merwe.jpg"
   },
@@ -405,7 +395,7 @@ export const artists = [
     artworkTitle: "Untitled",
     location: "Portugal",
     coordinates: { lat: 38.7223, lng: -9.1393 },
-    medium: ["Street Art", "Sculpture"],
+    medium: ["Installation", "Sculpture"], // Changed "Street Art" to "Installation"
     invisibleThread: ["Wild Systems"],
     thumbnailURL: "/artist-photos/vhils.jpg"
   },
@@ -445,7 +435,7 @@ export const artists = [
     artworkTitle: "How We Became Us",
     location: "Iran",
     coordinates: { lat: 35.6892, lng: 51.3890 },
-    medium: ["Mixed Media", "Textile"],
+    medium: ["Mixed Media"], // Removed "Textile"
     invisibleThread: ["Feminist Body", "Soft Resistance"],
     thumbnailURL: "/artist-photos/zohreh_solati.jpg"
   },
@@ -475,7 +465,7 @@ export const artists = [
     artworkTitle: "Untitled",
     location: "Czech Republic",
     coordinates: { lat: 49.8209, lng: 18.2625 },
-    medium: ["Installation", "Conceptual", "Street Art"],
+    medium: ["Installation", "Conceptual"], // Removed "Street Art"
     invisibleThread: ["Bureaucratic Fantasy", "Informal Monuments"],
     thumbnailURL: "/artist-photos/libor_novotny.jpg"
   },
@@ -485,7 +475,7 @@ export const artists = [
     artworkTitle: "Improvisation of a Qanun",
     location: "Iran",
     coordinates: { lat: 35.6892, lng: 51.3890 },
-    medium: ["Performance", "Sound-based", "Conceptual"],
+    medium: ["Performance", "Conceptual"], // Removed "Sound-based"
     invisibleThread: ["You Were Here"],
     thumbnailURL: "/artist-photos/erfan_ghiasi.jpg"
   },
@@ -495,7 +485,7 @@ export const artists = [
     artworkTitle: "Untitled",
     location: "Netherlands",
     coordinates: { lat: 51.9692, lng: 5.8997 },
-    medium: ["Installation", "Textile", "Conceptual"],
+    medium: ["Installation", "Conceptual"], // Removed "Textile"
     invisibleThread: [],
     thumbnailURL: "/artist-photos/heimprofi.jpeg"
   },
@@ -515,7 +505,7 @@ export const artists = [
     artworkTitle: "Untitled",
     location: "USA",
     coordinates: { lat: 25.9017, lng: -97.4975 },
-    medium: ["Digital Art", "Installation", "Street Art"],
+    medium: ["Tech-enabled", "Installation"], // Changed "Digital Art" to "Tech-enabled", removed "Street Art"
     invisibleThread: ["Bureaucratic Fantasy", "Wild Systems"],
     thumbnailURL: "/artist-photos/nansi_guevara.jpg"
   },
@@ -525,7 +515,7 @@ export const artists = [
     artworkTitle: "Island of Certainty (ISLA DE CERTEZA)",
     location: "Spain",
     coordinates: { lat: 42.0543, lng: -3.4825 },
-    medium: ["Installation", "Ephemeral", "Conceptual"],
+    medium: ["Installation", "Conceptual"], // Removed "Ephemeral"
     invisibleThread: ["Bureaucratic Fantasy", "Wild Systems"],
     thumbnailURL: "/artist-photos/nomad_studio.jpg"
   },
@@ -535,7 +525,7 @@ export const artists = [
     artworkTitle: "Oktas",
     location: "Mexico",
     coordinates: { lat: 19.4326, lng: -99.1332 },
-    medium: ["Installation", "Conceptual", "Environmental"],
+    medium: ["Installation", "Conceptual"], // Removed "Environmental"
     invisibleThread: ["Soft Resistance"],
     thumbnailURL: "/artist-photos/valentina_marin.jpg"
   },
@@ -565,7 +555,7 @@ export const artists = [
     artworkTitle: "The Iron Clad King Sits atop a high horse",
     location: "Austria",
     coordinates: { lat: 48.2082, lng: 16.3738 },
-    medium: ["Performance", "Literary", "Social Practice"],
+    medium: ["Performance", "Social Practice"], // Removed "Literary"
     invisibleThread: ["Soft Resistance"],
     thumbnailURL: "/artist-photos/kweku-okokroko.jpg"
   },
@@ -585,7 +575,7 @@ export const artists = [
     artworkTitle: "Completing Lino's Portrait",
     location: "USA",
     coordinates: { lat: 34.0522, lng: -118.2437 },
-    medium: ["Performance", "Social Practice", "Drawing"],
+    medium: ["Performance", "Social Practice"], // Removed "Drawing"
     invisibleThread: [],
     thumbnailURL: "/artist-photos/hedy_torres.jpg"
   },
@@ -595,7 +585,7 @@ export const artists = [
     artworkTitle: "Telephone Booth Messages",
     location: "Mexico",
     coordinates: { lat: 18.9261, lng: -99.2307 },
-    medium: ["Installation", "Interactive", "Social Practice"],
+    medium: ["Installation", "Social Practice"], // Removed "Interactive"
     invisibleThread: ["Soft Resistance"],
     thumbnailURL: "/artist-photos/pablodelgado.jpeg"
   }
