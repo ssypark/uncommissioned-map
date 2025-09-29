@@ -71,27 +71,12 @@ export default function FilterArtistGrid({ artists: artistsProp = artists, darkM
       "Installation", 
       "Social Practice", 
       "Mixed Media", 
-      "Film", 
       "Sculpture", 
       "Performance", 
       "Photography", 
       "Conceptual", 
       "Video", 
-      "Mural", 
-      "Painting", 
-      "Street Art", 
-      "Textile",
-      "Curatorial", 
-      "Ecological", 
-      "Land Art", 
-      "Ephemeral", 
-      "Sound-based",
-      "Tech-enabled",
-      "Literary",
-      "Environmental",
-      "Interactive",
-      "Digital Art",
-      "Drawing"
+      "Tech-enabled"
     ],
     invisibleThread: [
       "Soft Resistance",
@@ -100,7 +85,8 @@ export default function FilterArtistGrid({ artists: artistsProp = artists, darkM
       "You Were Here",
       "Wild Systems",
       "(Dis)placement",
-      "Bureaucratic Fantasy"
+      "Bureaucratic Fantasy",
+      "Informal Monuments"
     ]
   };
 
