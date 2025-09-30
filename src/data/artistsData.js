@@ -27,7 +27,7 @@ export const artists = [
     coordinates: { lat: 30.0444, lng: 31.2357 },
     medium: ["Mixed Media"],
     invisibleThread: ["Informal Monuments"],
-    thumbnailURL: "/artist-photos/ammar_abo_bakr.jpg"
+    thumbnailURL: "/artist-photos/ammar-abo-bakr-dibbanah.jpg"
   },
   {
     id: 2,
@@ -137,7 +137,7 @@ export const artists = [
     coordinates: { lat: 5.6037, lng: -0.1870 },
     medium: ["Mixed Media"],
     invisibleThread: [],
-    thumbnailURL: "/artist-photos/emmanuel_tieku.jpg"
+    thumbnailURL: "/artist-photos/emmanuel-tieku.jpg"
   },
   {
     id: 11,
@@ -220,6 +220,26 @@ export const artists = [
     thumbnailURL: "/artist-photos/harmen_de_hoop.jpg"
   },
   {
+    id: 50,
+    artistName: "Heimprofi",
+    artworkTitle: "Untitled",
+    location: "Netherlands",
+    coordinates: { lat: 51.9692, lng: 5.8997 },
+    medium: ["Installation", "Conceptual"],
+    invisibleThread: [],
+    thumbnailURL: "/artist-photos/heimprofi.jpeg"
+  },
+  {
+    id: 46,
+    artistName: "Iris Buchholz Chocolate",
+    artworkTitle: "kialuela (kikongo: spiral)",
+    location: "Angola",
+    coordinates: { lat: -8.8390, lng: 13.2894 },
+    medium: ["Performance", "Installation", "Social Practice"],
+    invisibleThread: ["Feminist Body"],
+    thumbnailURL: "/artist-photos/iris_buchholz_chocolate.jpg"
+  },
+  {
     id: 18,
     artistName: "Jason deCaires Taylor",
     artworkTitle: "Golden Siren",
@@ -239,16 +259,6 @@ export const artists = [
     invisibleThread: ["(Dis)placement", "Informal Monuments"],
     thumbnailURL: "/artist-photos/jeffrey_meris.webp"
   },
-  // {
-  //   id: 20,
-  //   artistName: "Jenny Nijenhuis",
-  //   artworkTitle: "Echo",
-  //   location: "South Africa",
-  //   coordinates: { lat: -34.0522, lng: 23.0449 },
-  //   medium: ["Sculpture", "Installation"],
-  //   invisibleThread: [],
-  //   thumbnailURL: "/artist-photos/jenny_nijenhuis1.jpg"
-  // },
   {
     id: 21,
     artistName: "Jodae",
@@ -260,8 +270,18 @@ export const artists = [
     thumbnailURL: "/artist-photos/jodae.jpeg"
   },
   {
+    id: 58,
+    artistName: "Juan Caicedo",
+    artworkTitle: "Resistance Palm",
+    location: "Colombia",
+    coordinates: { lat: 6.2442, lng: -75.5812 },
+    medium: ["Installation", "Social Practice", "Conceptual"],
+    invisibleThread: ["Soft Resistance"],
+    thumbnailURL: "/artist-photos/juan_caicedo.jpg"
+  },
+  {
     id: 22,
-    artistName: "Julian Ties", // Kept as requested
+    artistName: "Julian",
     artworkTitle: "Edge States",
     location: "USA",
     coordinates: { lat: 40.7128, lng: -74.0060 },
@@ -280,6 +300,16 @@ export const artists = [
     thumbnailURL: "/artist-photos/kara_rooney1.jpg"
   },
   {
+    id: 25,
+    artistName: "Kweku Okokroko & Nico Schleicher",
+    artworkTitle: "The Iron Clad King Sits atop a high horse",
+    location: "Austria",
+    coordinates: { lat: 48.2082, lng: 16.3738 },
+    medium: ["Performance", "Social Practice"],
+    invisibleThread: ["Soft Resistance"],
+    thumbnailURL: "/artist-photos/kweku-okokroko.jpg"
+  },
+  {
     id: 24,
     artistName: "Leon Reid IV",
     artworkTitle: "Of a Free Will",
@@ -290,14 +320,24 @@ export const artists = [
     thumbnailURL: "/artist-photos/leon_reid.jpg"
   },
   {
-    id: 25,
-    artistName: "Kweku Okokroko & Nico Schleicher", // Fixed name
-    artworkTitle: "The Iron Clad King Sits atop a high horse",
-    location: "Austria",
-    coordinates: { lat: 48.2082, lng: 16.3738 },
-    medium: ["Performance", "Social Practice"],
-    invisibleThread: ["Soft Resistance"],
-    thumbnailURL: "/artist-photos/kweku-okokroko.jpg"
+    id: 48,
+    artistName: "Libor Novotny",
+    artworkTitle: "Untitled",
+    location: "Czech Republic",
+    coordinates: { lat: 49.8209, lng: 18.2625 },
+    medium: ["Installation", "Conceptual"],
+    invisibleThread: ["Bureaucratic Fantasy", "Informal Monuments"],
+    thumbnailURL: "/artist-photos/libor_novotny.jpg"
+  },
+  {
+    id: 47,
+    artistName: "Mathieu Tremblin",
+    artworkTitle: "Inscripcions",
+    location: "France",
+    coordinates: { lat: 48.5734, lng: 7.7521 },
+    medium: ["Installation", "Performance", "Conceptual"],
+    invisibleThread: ["You Were Here"],
+    thumbnailURL: "/artist-photos/matheiu_tremblin.jpg"
   },
   {
     id: 26,
@@ -309,16 +349,16 @@ export const artists = [
     invisibleThread: ["Bureaucratic Fantasy"],
     thumbnailURL: "/artist-photos/mayela_rodriguez.png"
   },
-  // {
-  //   id: 27,
-  //   artistName: "Mayssa Fattouh",
-  //   artworkTitle: "The Beginning of Memory",
-  //   location: "Lebanon",
-  //   coordinates: { lat: 33.8938, lng: 35.5018 },
-  //   medium: ["Installation"],
-  //   invisibleThread: [],
-  //   thumbnailURL: "/artist-photos/mayssa_fattouh.jpeg"
-  // },
+  {
+    id: 63,
+    artistName: "Moko Fukuyama & James Beckett",
+    artworkTitle: "Untitled",
+    location: "Netherlands",
+    coordinates: { lat: 52.3676, lng: 4.9041 },
+    medium: ["Installation"],
+    invisibleThread: [],
+    thumbnailURL: "/artist-photos/moko_fukayama.png"
+  },
   {
     id: 28,
     artistName: "Nina Katchadourian",
@@ -339,16 +379,16 @@ export const artists = [
     invisibleThread: ["Bureaucratic Fantasy", "Informal Monuments"],
     thumbnailURL: "/artist-photos/nung-hsinhu.jpeg"
   },
-  // {
-  //   id: 30,
-  //   artistName: "Peter Behrbohm",
-  //   artworkTitle: "Untitled",
-  //   location: "Germany",
-  //   coordinates: { lat: 52.52, lng: 13.405 },
-  //   medium: ["Installation"],
-  //   invisibleThread: ["Absurd as Method"],
-  //   thumbnailURL: "/artist-photos/peter_behrbohm.jpg"
-  // },
+  {
+    id: 60,
+    artistName: "Pablo Delgado",
+    artworkTitle: "Telephone Booth Messages",
+    location: "Mexico",
+    coordinates: { lat: 18.9261, lng: -99.2307 },
+    medium: ["Installation", "Social Practice"],
+    invisibleThread: ["Soft Resistance"],
+    thumbnailURL: "/artist-photos/pablodelgado.jpeg"
+  },
   {
     id: 31,
     artistName: "Petra Hudcova",
@@ -359,16 +399,6 @@ export const artists = [
     invisibleThread: ["You Were Here"],
     thumbnailURL: "/artist-photos/petra_hudcova2.jpg"
   },
-  // {
-  //   id: 32,
-  //   artistName: "Pia & David",
-  //   artworkTitle: "Ríos de Vida",
-  //   location: "Mexico",
-  //   coordinates: { lat: 19.4326, lng: -99.1332 },
-  //   medium: ["Installation", "Performance"],
-  //   invisibleThread: ["Bureaucratic Fantasy"],
-  //   thumbnailURL: "/artist-photos/pia_david.jpg"
-  // },
   {
     id: 33,
     artistName: "r1.",
@@ -388,6 +418,16 @@ export const artists = [
     medium: ["Tech-enabled"],
     invisibleThread: ["Wild Systems"],
     thumbnailURL: "/artist-photos/recyclegroup.jpg"
+  },
+  {
+    id: 64,
+    artistName: "Ronald Muchatuta",
+    artworkTitle: "Untitled",
+    location: "Zimbabwe",
+    coordinates: { lat: -17.8292, lng: 31.0522 },
+    medium: ["Mixed Media"],
+    invisibleThread: [],
+    thumbnailURL: "/artist-photos/ronald-muchatuta.jpeg"
   },
   {
     id: 35,
@@ -411,7 +451,7 @@ export const artists = [
   },
   {
     id: 37,
-    artistName: "SPURSE", // Fixed name
+    artistName: "SPURSE",
     artworkTitle: "Carbon Harvest",
     location: "USA",
     coordinates: { lat: 41.7406, lng: -74.0833 },
@@ -450,24 +490,14 @@ export const artists = [
     thumbnailURL: "/artist-photos/terrick_gutierrez.jpg"
   },
   {
-    id: 41,
-    artistName: "Alexandre Farto aka Vhils", // Fixed name
-    artworkTitle: "Untitled",
-    location: "Portugal",
-    coordinates: { lat: 38.7223, lng: -9.1393 },
-    medium: ["Installation", "Sculpture"],
-    invisibleThread: ["Wild Systems"],
-    thumbnailURL: "/artist-photos/vhils.jpg"
-  },
-  {
-    id: 42,
-    artistName: "Cheng Wanzhuo", // Fixed name order
-    artworkTitle: "/pop/",
-    location: "China",
-    coordinates: { lat: 22.5431, lng: 114.0579 },
-    medium: ["Tech-enabled"],
-    invisibleThread: ["You Were Here"],
-    thumbnailURL: "/artist-photos/wanzhuo_cheng.jpg"
+    id: 54,
+    artistName: "Valentina Guerrero Marin",
+    artworkTitle: "Oktas",
+    location: "Mexico",
+    coordinates: { lat: 19.4326, lng: -99.1332 },
+    medium: ["Installation", "Conceptual"],
+    invisibleThread: ["Soft Resistance"],
+    thumbnailURL: "/artist-photos/valentina_marin.jpg"
   },
   {
     id: 43,
@@ -498,57 +528,48 @@ export const artists = [
     medium: ["Mixed Media"],
     invisibleThread: ["Feminist Body", "Soft Resistance"],
     thumbnailURL: "/artist-photos/zohreh_solati.jpg"
-  },
-  {
-    id: 46,
-    artistName: "Iris Buchholz Chocolate",
-    artworkTitle: "kialuela (kikongo: spiral)",
-    location: "Angola",
-    coordinates: { lat: -8.8390, lng: 13.2894 },
-    medium: ["Performance", "Installation", "Social Practice"],
-    invisibleThread: ["Feminist Body"],
-    thumbnailURL: "/artist-photos/iris_buchholz_chocolate.jpg"
-  },
-  {
-    id: 47,
-    artistName: "Mathieu Tremblin",
-    artworkTitle: "Inscripcions",
-    location: "France",
-    coordinates: { lat: 48.5734, lng: 7.7521 },
-    medium: ["Installation", "Performance", "Conceptual"],
-    invisibleThread: ["You Were Here"],
-    thumbnailURL: "/artist-photos/matheiu_tremblin.jpg"
-  },
-  {
-    id: 48,
-    artistName: "Libor Novotny",
-    artworkTitle: "Untitled",
-    location: "Czech Republic",
-    coordinates: { lat: 49.8209, lng: 18.2625 },
-    medium: ["Installation", "Conceptual"],
-    invisibleThread: ["Bureaucratic Fantasy", "Informal Monuments"],
-    thumbnailURL: "/artist-photos/libor_novotny.jpg"
-  },
-  {
-    id: 49,
-    artistName: "Erfan Ghiasi",
-    artworkTitle: "Improvisation of a Qanun",
-    location: "Iran",
-    coordinates: { lat: 35.6892, lng: 51.3890 },
-    medium: ["Performance", "Conceptual"],
-    invisibleThread: ["You Were Here"],
-    thumbnailURL: "/artist-photos/erfan_ghiasi.jpg"
-  },
-  {
-    id: 50,
-    artistName: "Heimprofi",
-    artworkTitle: "Untitled",
-    location: "Netherlands",
-    coordinates: { lat: 51.9692, lng: 5.8997 },
-    medium: ["Installation", "Conceptual"],
-    invisibleThread: [],
-    thumbnailURL: "/artist-photos/heimprofi.jpeg"
-  },
+  }
+  // Commented out artists not in final list:
+  // {
+  //   id: 20,
+  //   artistName: "Jenny Nijenhuis",
+  //   artworkTitle: "Echo",
+  //   location: "South Africa",
+  //   coordinates: { lat: -34.0522, lng: 23.0449 },
+  //   medium: ["Sculpture", "Installation"],
+  //   invisibleThread: [],
+  //   thumbnailURL: "/artist-photos/jenny_nijenhuis1.jpg"
+  // },
+  // {
+  //   id: 27,
+  //   artistName: "Mayssa Fattouh",
+  //   artworkTitle: "The Beginning of Memory",
+  //   location: "Lebanon",
+  //   coordinates: { lat: 33.8938, lng: 35.5018 },
+  //   medium: ["Installation"],
+  //   invisibleThread: [],
+  //   thumbnailURL: "/artist-photos/mayssa_fattouh.jpeg"
+  // },
+  // {
+  //   id: 30,
+  //   artistName: "Peter Behrbohm",
+  //   artworkTitle: "Untitled",
+  //   location: "Germany",
+  //   coordinates: { lat: 52.52, lng: 13.405 },
+  //   medium: ["Installation"],
+  //   invisibleThread: ["Absurd as Method"],
+  //   thumbnailURL: "/artist-photos/peter_behrbohm.jpg"
+  // },
+  // {
+  //   id: 32,
+  //   artistName: "Pia & David",
+  //   artworkTitle: "Ríos de Vida",
+  //   location: "Mexico",
+  //   coordinates: { lat: 19.4326, lng: -99.1332 },
+  //   medium: ["Installation", "Performance"],
+  //   invisibleThread: ["Bureaucratic Fantasy"],
+  //   thumbnailURL: "/artist-photos/pia_david.jpg"
+  // },
   // {
   //   id: 51,
   //   artistName: "Aida Gomez",
@@ -579,26 +600,6 @@ export const artists = [
   //   invisibleThread: ["Bureaucratic Fantasy", "Wild Systems"],
   //   thumbnailURL: "/artist-photos/nomad_studio.jpg"
   // },
-  {
-    id: 54,
-    artistName: "Valentina Guerrero Marin", // Fixed name (removed accent)
-    artworkTitle: "Oktas",
-    location: "Mexico",
-    coordinates: { lat: 19.4326, lng: -99.1332 },
-    medium: ["Installation", "Conceptual"],
-    invisibleThread: ["Soft Resistance"],
-    thumbnailURL: "/artist-photos/valentina_marin.jpg"
-  },
-  {
-    id: 55,
-    artistName: "Cannupa Hanska Luger",
-    artworkTitle: "SURVIVA (Durational Performance)",
-    location: "USA",
-    coordinates: { lat: 35.6870, lng: -105.9378 },
-    medium: ["Performance", "Conceptual", "Social Practice"],
-    invisibleThread: ["You Were Here", "Wild Systems", "Informal Monuments"],
-    thumbnailURL: "/artist-photos/cannupa_hanska_luger.png"
-  },
   // {
   //   id: 56,
   //   artistName: "Odun Orimolade",
@@ -609,16 +610,6 @@ export const artists = [
   //   invisibleThread: [],
   //   thumbnailURL: "/artist-photos/odun_orimolade.jpeg"
   // },
-  {
-    id: 58,
-    artistName: "Juan Caicedo",
-    artworkTitle: "Resistance Palm",
-    location: "Colombia",
-    coordinates: { lat: 6.2442, lng: -75.5812 },
-    medium: ["Installation", "Social Practice", "Conceptual"],
-    invisibleThread: ["Soft Resistance"],
-    thumbnailURL: "/artist-photos/juan_caicedo.jpg"
-  },
   // {
   //   id: 59,
   //   artistName: "Hedy Torres",
@@ -628,58 +619,7 @@ export const artists = [
   //   medium: ["Performance", "Social Practice"],
   //   invisibleThread: [],
   //   thumbnailURL: "/artist-photos/hedy_torres.jpg"
-  // },
-  {
-    id: 60,
-    artistName: "Pablo Delgado",
-    artworkTitle: "Telephone Booth Messages",
-    location: "Mexico",
-    coordinates: { lat: 18.9261, lng: -99.2307 },
-    medium: ["Installation", "Social Practice"],
-    invisibleThread: ["Soft Resistance"],
-    thumbnailURL: "/artist-photos/pablodelgado.jpeg"
-  },
-  // NEW ARTISTS TO ADD
-  {
-    id: 61,
-    artistName: "Ammar Abo Bakr",
-    artworkTitle: "Untitled",
-    location: "Egypt", // Assumed location
-    coordinates: { lat: 30.0444, lng: 31.2357 }, // Cairo coordinates
-    medium: ["Mixed Media"],
-    invisibleThread: ["Informal Monuments"],
-    thumbnailURL: "/artist-photos/ammar_abo_bakr.jpg"
-  },
-  {
-    id: 62,
-    artistName: "Emmanuel Aggrey Tieku",
-    artworkTitle: "Untitled",
-    location: "Ghana", // Assumed location
-    coordinates: { lat: 5.6037, lng: -0.1870 }, // Accra coordinates
-    medium: ["Mixed Media"],
-    invisibleThread: [],
-    thumbnailURL: "/artist-photos/emmanuel_tieku.jpg"
-  },
-  {
-    id: 63,
-    artistName: "Moko Fukuyama & James Beckett",
-    artworkTitle: "Untitled",
-    location: "Netherlands", // Assumed location
-    coordinates: { lat: 52.3676, lng: 4.9041 }, // Amsterdam coordinates
-    medium: ["Installation"],
-    invisibleThread: [],
-    thumbnailURL: "/artist-photos/moko_james.jpg"
-  },
-  {
-    id: 64,
-    artistName: "Ronald Muchatuta",
-    artworkTitle: "Untitled",
-    location: "Zimbabwe", // Assumed location
-    coordinates: { lat: -17.8292, lng: 31.0522 }, // Harare coordinates
-    medium: ["Mixed Media"],
-    invisibleThread: [],
-    thumbnailURL: "/artist-photos/ronald_muchatuta.jpg"
-  }
+  // }
 ];
 
 // Helper functions for getting unique values
