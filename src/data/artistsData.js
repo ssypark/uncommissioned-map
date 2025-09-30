@@ -357,7 +357,7 @@ export const artists = [
     coordinates: { lat: 52.3676, lng: 4.9041 },
     medium: ["Installation"],
     invisibleThread: [],
-    thumbnailURL: "/artist-photos/moko_fukayama.png"
+    thumbnailURL: "/artist-photos/moko_fukuyama.png"
   },
   {
     id: 28,
