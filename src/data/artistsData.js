@@ -370,6 +370,16 @@ export const artists = [
     thumbnailURL: "/artist-photos/nina_katchadourian.jpg"
   },
   {
+    id: 53,
+    artistName: "Nomad Studio",
+    artworkTitle: "Island of Certainty (ISLA DE CERTEZA)",
+    location: "Spain",
+    coordinates: { lat: 42.0543, lng: -3.4825 },
+    medium: ["Installation", "Conceptual"],
+    invisibleThread: ["Bureaucratic Fantasy", "Wild Systems"],
+    thumbnailURL: "/artist-photos/nomad_studio.jpg"
+  },
+  {
     id: 29,
     artistName: "Nung-Hsin Hu",
     artworkTitle: "Untitled",
@@ -589,16 +599,6 @@ export const artists = [
   //   medium: ["Tech-enabled", "Installation"],
   //   invisibleThread: ["Bureaucratic Fantasy", "Wild Systems"],
   //   thumbnailURL: "/artist-photos/nansi_guevara.jpg"
-  // },
-  // {
-  //   id: 53,
-  //   artistName: "Nomad Studio",
-  //   artworkTitle: "Island of Certainty (ISLA DE CERTEZA)",
-  //   location: "Spain",
-  //   coordinates: { lat: 42.0543, lng: -3.4825 },
-  //   medium: ["Installation", "Conceptual"],
-  //   invisibleThread: ["Bureaucratic Fantasy", "Wild Systems"],
-  //   thumbnailURL: "/artist-photos/nomad_studio.jpg"
   // },
   // {
   //   id: 56,
