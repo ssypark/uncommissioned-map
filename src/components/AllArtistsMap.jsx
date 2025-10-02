@@ -22,7 +22,7 @@ const customIcon = L.icon({
 });
 
 export default function AllArtistsMap() {
-  // Handle artist click - navigate to external Framer website
+  // Handle artist click - navigate to correct artist pages
   const handleArtistClick = (artist) => {
     const artistSlug = artist.artistName
       .toLowerCase()
@@ -31,11 +31,10 @@ export default function AllArtistsMap() {
       .replace(/-+/g, '-')
       .trim();
     
-    // Base URL for your Framer website
     const baseUrl = "https://uncommissioned.art";
     
-    // Navigate to the artist page
-    window.open(`${baseUrl}/artistpage/${artistSlug}`, '_blank');
+    // Use the correct URL structure: /artists/{artist-slug}
+    window.open(`${baseUrl}/artists/${artistSlug}`, '_blank');
   };
 
   // Better responsive zoom levels to show all countries
@@ -49,25 +48,23 @@ export default function AllArtistsMap() {
       background: "#F7F2E8",
       padding: "0",
       margin: "0",
-      overflow: "hidden" // Prevent any overflow
+      overflow: "hidden"
     }}>
       <MapContainer
-        center={[20, 0]} // More centered to show all continents
-        zoom={isMobile ? 1 : isTablet ? 2 : 2} // Lower zoom for better global view
+        center={[20, 0]}
+        zoom={isMobile ? 1 : isTablet ? 2 : 2}
         style={{ height: '100%', width: '100%' }}
-        scrollWheelZoom={false} // Disabled to prevent scroll hijacking
+        scrollWheelZoom={false}
         dragging={true}
         zoomControl={true}
-        worldCopyJump={false} // Disabled to prevent world repetition
-        // Remove maxBounds to let map fill naturally
-        minZoom={1} // Lower minimum zoom to show full world
+        worldCopyJump={false}
+        minZoom={1}
         maxZoom={18}
       >
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           className="grayscale-map-tiles"
-          
         />
         
         {/* Artist markers */}
@@ -97,7 +94,7 @@ export default function AllArtistsMap() {
                       font: 'inherit'
                     }}
                   >
-                    View artwork →
+                    View artist page →
                   </button>
                 </div>
               </Popup>

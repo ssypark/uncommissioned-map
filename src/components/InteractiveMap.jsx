@@ -26,17 +26,19 @@ const InteractiveMap = ({ artists, filteredArtists }) => {
     ? artists || []
     : filteredArtists || [];
 
-  // Handle artist click - same logic as FilterArtistGrid
+  // Handle artist click - navigate to correct artist pages
   const handleArtistClick = (artist) => {
     const artistSlug = artist.artistName
       .toLowerCase()
-      .replace(/[^a-z0-9\s-]/g, '') // Remove special characters
-      .replace(/\s+/g, '-') // Replace spaces with hyphens
-      .replace(/-+/g, '-') // Replace multiple hyphens with single
+      .replace(/[^a-z0-9\s-]/g, '')
+      .replace(/\s+/g, '-')
+      .replace(/-+/g, '-')
       .trim();
     
     const baseUrl = "https://uncommissioned.art";
-    window.open(`${baseUrl}/artistpage/${artistSlug}`, '_blank');
+    
+    // Use the correct URL structure: /artists/{artist-slug}
+    window.open(`${baseUrl}/artists/${artistSlug}`, '_blank');
   };
 
   // Remove or modify mobile detection like this:
@@ -87,7 +89,7 @@ const InteractiveMap = ({ artists, filteredArtists }) => {
                     {artist.medium.join(', ')}
                   </span><br/>
                   <small className="text-blue-600 underline mt-2 block">
-                    View artist page
+                    View artist page →
                   </small>
                 </div>
               </Popup>
