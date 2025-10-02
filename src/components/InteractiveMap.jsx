@@ -37,8 +37,8 @@ const InteractiveMap = ({ artists, filteredArtists }) => {
     
     const baseUrl = "https://uncommissioned.art";
     
-    // Use the correct URL structure: /artists/{artist-slug}
-    window.open(`${baseUrl}/artists/${artistSlug}`, '_blank');
+    // Use the correct URL structure: /artistpage/{artist-slug}
+    window.open(`${baseUrl}/artistpage/${artistSlug}`, '_blank');
   };
 
   // Remove or modify mobile detection like this:
@@ -57,11 +57,11 @@ const InteractiveMap = ({ artists, filteredArtists }) => {
         zoom={isMobile ? 0 : 2}
         style={{ height: '100%', width: '100%' }}
         scrollWheelZoom={false}
-        worldCopyJump={false} // Prevents jumping between world copies
-        maxBounds={[[-85, -180], [85, 180]]} // Limits map bounds (slightly less than full world to prevent edge issues)
-        maxBoundsViscosity={1.0} // Makes bounds hard (prevents panning outside)
-        minZoom={1} // Prevents zooming out too far
-        maxZoom={10} // Limits maximum zoom
+        worldCopyJump={false}
+        maxBounds={[[-85, -180], [85, 180]]}
+        maxBoundsViscosity={1.0}
+        minZoom={1}
+        maxZoom={10}
       >
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'

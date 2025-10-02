@@ -33,8 +33,8 @@ export default function AllArtistsMap() {
     
     const baseUrl = "https://uncommissioned.art";
     
-    // Use the correct URL structure: /artists/{artist-slug}
-    window.open(`${baseUrl}/artists/${artistSlug}`, '_blank');
+    // Use the correct URL structure: /artistpage/{artist-slug}
+    window.open(`${baseUrl}/artistpage/${artistSlug}`, '_blank');
   };
 
   // Better responsive zoom levels to show all countries
