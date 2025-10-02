@@ -55,7 +55,7 @@ export default function EmbedMap() {
       .trim();
     
     const baseUrl = "https://uncommissioned.art";
-    window.open(`${baseUrl}/artistpage/${artistSlug}`, '_blank');
+    window.open(`${baseUrl}/artists/${artistSlug}`, '_blank');
   };
 
   const mapRef = useRef(null);

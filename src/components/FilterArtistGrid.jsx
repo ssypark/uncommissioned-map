@@ -180,7 +180,7 @@ export default function FilterArtistGrid({ artists: artistsProp = artists, darkM
     const baseUrl = "https://uncommissioned.art";
     
     // Navigate to the artist page
-    window.open(`${baseUrl}/artistpage/${artistSlug}`, '_blank'); // Opens in new tab
+    window.open(`${baseUrl}/artists/${artistSlug}`, '_blank'); // Opens in new tab
   };
 
   // Also trigger height update when filtered results change
