@@ -38,7 +38,7 @@ const InteractiveMap = ({ artists, filteredArtists }) => {
     const baseUrl = "https://uncommissioned.art";
     
     // Use the correct URL structure: /artistpage/{artist-slug}
-    window.open(`${baseUrl}/artistpage/${artistSlug}`, '_blank');
+    window.open(`${baseUrl}/artists/${artistSlug}`, '_blank');
   };
 
   // Remove or modify mobile detection like this:
