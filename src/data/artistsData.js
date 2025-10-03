@@ -14,7 +14,7 @@ export const artists = [
     artistName: "Alexandre Farto aka Vhils",
     artworkTitle: "Antennas, 2025",
     location: "Portugal",
-    coordinates: { lat: 48.1351, lng: 11.5820 }, // Munich coordinates
+    coordinates: { lat: 48.1737, lng: 11.5016 }, // KUNSTLABOR 2, Munich coordinates
     medium: ["Installation"],
     invisibleThread: ["Wild Systems"],
     thumbnailURL: "/artist-photos/vhils.jpg"
@@ -34,7 +34,7 @@ export const artists = [
     artistName: "Arzhel Prioul",
     artworkTitle: "Mixing Gender Icon",
     location: "France",
-    coordinates: { lat: 48.1173, lng: -1.6778 }, // Cesson-Sévigné coordinates
+    coordinates: { lat: 48.1198, lng: -1.6005 }, // Abandonned Hotel 14 Avenue des Peupliers, 35510 Cesson-Sévigné, France
     medium: ["Installation", "Mixed Media"],
     invisibleThread: ["(Dis)placement", "Informal Monuments"],
     thumbnailURL: "/artist-photos/arzhel_prioul.jpg"
@@ -94,7 +94,7 @@ export const artists = [
     artistName: "Danielle Firoozi",
     artworkTitle: "Untitled",
     location: "Mexico",
-    coordinates: { lat: 19.4326, lng: -99.1332 }, // Mexico City coordinates
+    coordinates: { lat: 19.4154, lng: -99.1590 }, // Garden at Cozumel 86, Roma Nte. Mexico City coordinates
     medium: ["Sculpture"],
     invisibleThread: ["You Were Here"],
     thumbnailURL: "/artist-photos/danielle_firoozi.jpeg"
@@ -214,7 +214,7 @@ export const artists = [
     artistName: "Hana Al-Saadi",
     artworkTitle: "Dress Code Series",
     location: "Qatar",
-    coordinates: { lat: 25.2879, lng: 51.5615 }, // Doha coordinates
+    coordinates: { lat: 25.2760, lng: 51.5200 }, // Doha Zone 23 coordinates
     medium: ["Mixed Media"],
     invisibleThread: ["Feminist Body", "Informal Monuments"],
     thumbnailURL: "/artist-photos/han_alsaadi.jpg"
@@ -252,7 +252,7 @@ export const artists = [
   {
     id: 18,
     artistName: "Jason deCaires Taylor",
-    artworkTitle: "Golden Siren",
+    artworkTitle: "Enshitification",
     location: "United Kingdom",
     coordinates: { lat: 51.3172, lng: 0.8919 }, // Faversham coordinates
     medium: ["Sculpture", "Installation"],
@@ -294,7 +294,7 @@ export const artists = [
     artistName: "Julian",
     artworkTitle: "Edge States",
     location: "USA",
-    coordinates: { lat: 40.7128, lng: -74.0060 }, // New York coordinates
+    coordinates: { lat: 40.7589, lng: -73.9851 }, // New York, Seoul - using Manhattan coordinates
     medium: ["Installation"],
     invisibleThread: ["Wild Systems", "Informal Monuments"],
     thumbnailURL: "/artist-photos/julian_ties.jpg"
@@ -304,7 +304,7 @@ export const artists = [
     artistName: "Kara Rooney",
     artworkTitle: "Todo Estaba Previsto",
     location: "Mexico",
-    coordinates: { lat: 19.4326, lng: -99.1332 }, // Mexico City coordinates
+    coordinates: { lat: 19.4326, lng: -99.1454 }, // Colonia San Rafael area, Mexico City coordinates
     medium: ["Performance", "Conceptual"],
     invisibleThread: ["Soft Resistance", "(Dis)placement"],
     thumbnailURL: "/artist-photos/kara_rooney1.jpg"
@@ -314,7 +314,7 @@ export const artists = [
     artistName: "Kweku Okokroko & Nico Schleicher",
     artworkTitle: "The Iron Clad King Sits atop a high horse",
     location: "Austria",
-    coordinates: { lat: 48.2082, lng: 16.3738 }, // Vienna coordinates
+    coordinates: { lat: 48.2003, lng: 16.3668 }, // Schillerplatz 3, Vienna (Akademie of Fine Arts) coordinates
     medium: ["Performance", "Social Practice"],
     invisibleThread: ["Soft Resistance"],
     thumbnailURL: "/artist-photos/kweku-okokroko.jpg"
@@ -324,7 +324,7 @@ export const artists = [
     artistName: "Leon Reid IV",
     artworkTitle: "Of a Free Will",
     location: "USA",
-    coordinates: { lat: 40.6782, lng: -73.9442 }, // Brooklyn coordinates
+    coordinates: { lat: 40.6892, lng: -73.9442 }, // Bedford-Stuyvesant, Brooklyn coordinates
     medium: ["Installation"],
     invisibleThread: ["Soft Resistance", "Informal Monuments"],
     thumbnailURL: "/artist-photos/leon_reid.jpg"
@@ -364,7 +364,7 @@ export const artists = [
     artistName: "Moko Fukuyama & James Beckett",
     artworkTitle: "Untitled",
     location: "Netherlands",
-    coordinates: { lat: 40.6782, lng: -73.9442 }, // Brooklyn coordinates (per CSV)
+    coordinates: { lat: 40.7178, lng: -73.9442 }, // 539 Driggs Avenue, Brooklyn coordinates
     medium: ["Installation"],
     invisibleThread: [],
     thumbnailURL: "/artist-photos/moko_fukuyama.png"
@@ -444,7 +444,7 @@ export const artists = [
     artistName: "Ronald Muchatuta",
     artworkTitle: "Untitled",
     location: "Zimbabwe",
-    coordinates: { lat: -33.9249, lng: 18.4241 }, // Cape Town coordinates (per CSV)
+    coordinates: { lat: -33.9185, lng: 18.4796 }, // Salt River, Cape Town coordinates
     medium: ["Mixed Media"],
     invisibleThread: [],
     thumbnailURL: "/artist-photos/ronald-muchatuta.jpeg"
@@ -474,7 +474,7 @@ export const artists = [
     artistName: "SPURSE",
     artworkTitle: "Carbon Harvest",
     location: "USA",
-    coordinates: { lat: 41.7406, lng: -74.0833 }, // New Paltz coordinates
+    coordinates: { lat: 41.7406, lng: -74.0833 }, // State University of New York, New Paltz coordinates
     medium: ["Installation"],
     invisibleThread: ["Wild Systems"],
     thumbnailURL: "/artist-photos/matthew_friday.jpg"
@@ -484,7 +484,7 @@ export const artists = [
     artistName: "Stephanie Brown",
     artworkTitle: "Untitled",
     location: "USA",
-    coordinates: { lat: 33.749, lng: -84.388 }, // Atlanta coordinates
+    coordinates: { lat: 33.8059, lng: -84.1557 }, // Stone Mountain, Atlanta coordinates
     medium: ["Mixed Media", "Photography"],
     invisibleThread: ["Soft Resistance"],
     thumbnailURL: "/artist-photos/stephanie_brown.jpg"
@@ -514,7 +514,7 @@ export const artists = [
     artistName: "Valentina Guerrero Marin",
     artworkTitle: "Oktas",
     location: "Mexico",
-    coordinates: { lat: 19.4326, lng: -99.1332 }, // Mexico City coordinates
+    coordinates: { lat: 19.4326, lng: -99.1381 }, // National Museum of Art, Mexico City coordinates
     medium: ["Installation", "Conceptual"],
     invisibleThread: ["Soft Resistance"],
     thumbnailURL: "/artist-photos/valentina_marin.jpg"
@@ -524,7 +524,7 @@ export const artists = [
     artistName: "Yannos Majestikos",
     artworkTitle: "Yé",
     location: "France",
-    coordinates: { lat: 48.8566, lng: 2.3522 }, // Paris coordinates
+    coordinates: { lat: 48.8619, lng: 2.3465 }, // Chatelet Les Halles, Paris coordinates
     medium: ["Performance", "Mixed Media"],
     invisibleThread: ["(Dis)placement", "Absurd as Method"],
     thumbnailURL: "/artist-photos/yannos_majestikos.jpg"
