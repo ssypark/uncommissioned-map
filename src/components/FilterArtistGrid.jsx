@@ -73,10 +73,11 @@ export default function FilterArtistGrid({ artists: artistsProp = artists, darkM
       "Mixed Media", 
       "Sculpture", 
       "Performance", 
-      "Photography", 
+      "Mural",           // Added Mural
       "Conceptual", 
       "Video", 
       "Tech-enabled"
+      // Removed "Photography"
     ],
     invisibleThread: [
       "Soft Resistance",
