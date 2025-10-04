@@ -5,7 +5,7 @@ export const artists = [
     artworkTitle: "Now v. Never, 2025",
     location: "USA",
     coordinates: { lat: 32.7767, lng: -96.7970 }, // Dallas coordinates
-    medium: ["Installation", "Social Practice"],
+    medium: ["Social Practice", "Conceptual"],
     invisibleThread: ["Bureaucratic Fantasy", "Absurd as Method"],
     thumbnailURL: "/artist-photos/alicia_eggert.jpg"
   },
@@ -25,8 +25,8 @@ export const artists = [
     artworkTitle: "Untitled",
     location: "Egypt",
     coordinates: { lat: 30.0444, lng: 31.2357 }, // Cairo coordinates
-    medium: ["Mixed Media"],
-    invisibleThread: ["Informal Monuments"],
+    medium: ["Mural", "Mixed Media"],
+    invisibleThread: ["Wild Systems"],
     thumbnailURL: "/artist-photos/ammar-abo-bakr-dibbanah.jpg"
   },
   {
@@ -45,7 +45,7 @@ export const artists = [
     artworkTitle: "Sidewalk Sale",
     location: "USA",
     coordinates: { lat: 34.0522, lng: -118.2437 }, // Los Angeles coordinates
-    medium: ["Mixed Media"],
+    medium: ["Installation", "Social Practice"],
     invisibleThread: ["(Dis)placement", "You Were Here"],
     thumbnailURL: "/artist-photos/azadeh_shladovsky.jpg"
   },
@@ -55,8 +55,8 @@ export const artists = [
     artworkTitle: "SURVIVA (Durational Performance)",
     location: "USA",
     coordinates: { lat: 35.6870, lng: -105.9378 }, // New Mexico coordinates
-    medium: ["Performance", "Conceptual", "Social Practice"],
-    invisibleThread: ["You Were Here", "Wild Systems", "Informal Monuments"],
+    medium: ["Performance"],
+    invisibleThread: ["You Were Here", "Wild Systems"],
     thumbnailURL: "/artist-photos/cannupa_hanska_luger.png"
   },
   {
@@ -65,7 +65,7 @@ export const artists = [
     artworkTitle: "Deep Sea Mining Claw Machine",
     location: "Australia",
     coordinates: { lat: -34.9285, lng: 138.6007 }, // Adelaide coordinates
-    medium: ["Installation"],
+    medium: ["Social Practice", "Mixed Media"],
     invisibleThread: ["Absurd as Method"],
     thumbnailURL: "/artist-photos/catherine_young.jpg"
   },
@@ -85,7 +85,7 @@ export const artists = [
     artworkTitle: "Monument to the Fourth International",
     location: "Thailand",
     coordinates: { lat: 13.7563, lng: 100.5018 }, // Bangkok coordinates
-    medium: ["Video", "Installation"],
+    medium: ["Installation", "Mixed Media"],
     invisibleThread: ["(Dis)placement"],
     thumbnailURL: "/artist-photos/chulayarnnon_siriphol.jpg"
   },
@@ -95,7 +95,7 @@ export const artists = [
     artworkTitle: "Untitled",
     location: "Mexico",
     coordinates: { lat: 19.4154, lng: -99.1590 }, // Garden at Cozumel 86, Roma Nte. Mexico City coordinates
-    medium: ["Sculpture"],
+    medium: ["Sculpture", "Mixed Media"],
     invisibleThread: ["You Were Here"],
     thumbnailURL: "/artist-photos/danielle_firoozi.jpeg"
   },
@@ -105,7 +105,7 @@ export const artists = [
     artworkTitle: "Mirage",
     location: "France",
     coordinates: { lat: 48.5734, lng: 7.7521 }, // Strasbourg coordinates
-    medium: ["Installation", "Performance", "Photography"],
+    medium: ["Social Practice"],
     invisibleThread: ["Soft Resistance", "Informal Monuments"],
     thumbnailURL: "/artist-photos/deana_kolencikova.jpg"
   },
@@ -115,8 +115,8 @@ export const artists = [
     artworkTitle: "Smuggled Journey",
     location: "China",
     coordinates: { lat: 39.9042, lng: 116.4074 }, // Beijing coordinates
-    medium: ["Conceptual", "Performance", "Social Practice"],
-    invisibleThread: [],
+    medium: ["Social Practice"],
+    invisibleThread: ["Soft Resistance"],
     thumbnailURL: "/artist-photos/yufeng_deng2.jpeg"
   },
   {
@@ -125,7 +125,7 @@ export const artists = [
     artworkTitle: "Untitled",
     location: "Mexico",
     coordinates: { lat: 19.4326, lng: -99.1332 }, // Mexico City coordinates
-    medium: ["Photography", "Video"],
+    medium: ["Installation", "Mixed Media"],
     invisibleThread: ["Wild Systems", "Informal Monuments"],
     thumbnailURL: "/artist-photos/derzu_campos.jpg"
   },
@@ -135,8 +135,8 @@ export const artists = [
     artworkTitle: "Untitled",
     location: "Ghana",
     coordinates: { lat: 5.6037, lng: -0.1870 }, // Accra coordinates
-    medium: ["Mixed Media"],
-    invisibleThread: [],
+    medium: ["Installation"],
+    invisibleThread: ["Soft Resistance", "(Dis)placement"],
     thumbnailURL: "/artist-photos/emmanuel-tieku.jpg"
   },
   {
@@ -145,7 +145,7 @@ export const artists = [
     artworkTitle: "Urban Rescue",
     location: "Germany",
     coordinates: { lat: 52.5200, lng: 13.4050 }, // Berlin coordinates
-    medium: ["Installation"],
+    medium: ["Conceptual"],
     invisibleThread: ["Absurd as Method"],
     thumbnailURL: "/artist-photos/enno_haar.jpg"
   },
@@ -165,8 +165,8 @@ export const artists = [
     artworkTitle: "British Garden",
     location: "Spain",
     coordinates: { lat: 39.4699, lng: -0.3763 }, // Valencia coordinates
-    medium: ["Installation", "Conceptual"],
-    invisibleThread: ["Wild Systems", "Soft Resistance", "Informal Monuments"],
+    medium: ["Mural"],
+    invisibleThread: ["Wild Systems", "Soft Resistance"],
     thumbnailURL: "/artist-photos/escif.jpg"
   },
   {
@@ -175,8 +175,8 @@ export const artists = [
     artworkTitle: "Untitled",
     location: "Taiwan",
     coordinates: { lat: 25.033, lng: 121.5654 }, // Taipei coordinates
-    medium: ["Mixed Media"],
-    invisibleThread: [],
+    medium: ["Social Practice"],
+    invisibleThread: ["You Were Here"],
     thumbnailURL: "/artist-photos/esther_lin.jpg"
   },
   {
@@ -185,7 +185,7 @@ export const artists = [
     artworkTitle: "Untitled",
     location: "USA",
     coordinates: { lat: 33.749, lng: -84.388 }, // Atlanta coordinates
-    medium: ["Mixed Media"],
+    medium: ["Video"],
     invisibleThread: ["Soft Resistance"],
     thumbnailURL: "/artist-photos/fabianwilliams.png"
   },
@@ -195,7 +195,7 @@ export const artists = [
     artworkTitle: "Untitled",
     location: "USA",
     coordinates: { lat: 34.0522, lng: -118.2437 }, // Los Angeles coordinates
-    medium: ["Mixed Media"],
+    medium: ["Social Practice"],
     invisibleThread: ["Wild Systems"],
     thumbnailURL: "/artist-photos/fiona-chang.jpg"
   },
@@ -205,8 +205,8 @@ export const artists = [
     artworkTitle: "Untitled",
     location: "Spain",
     coordinates: { lat: 34.0522, lng: -118.2437 }, // Los Angeles coordinates (per CSV)
-    medium: ["Installation"],
-    invisibleThread: [],
+    medium: ["Sculpture", "Mixed Media"],
+    invisibleThread: ["Absurd as Method", "Bureaucratic Fantasy"],
     thumbnailURL: "/artist-photos/glazed_paradise.jpg"
   },
   {
@@ -215,8 +215,8 @@ export const artists = [
     artworkTitle: "Dress Code Series",
     location: "Qatar",
     coordinates: { lat: 25.2760, lng: 51.5200 }, // Doha Zone 23 coordinates
-    medium: ["Mixed Media"],
-    invisibleThread: ["Feminist Body", "Informal Monuments"],
+    medium: ["Installation"],
+    invisibleThread: ["Feminist Body"],
     thumbnailURL: "/artist-photos/han_alsaadi.jpg"
   },
   {
@@ -235,8 +235,8 @@ export const artists = [
     artworkTitle: "Untitled",
     location: "Netherlands",
     coordinates: { lat: 51.9801, lng: 5.9113 }, // Arnhem coordinates
-    medium: ["Installation", "Conceptual"],
-    invisibleThread: [],
+    medium: ["Installation", "Mixed Media"],
+    invisibleThread: ["(Dis)placement"],
     thumbnailURL: "/artist-photos/heimprofi.jpeg"
   },
   {
@@ -245,18 +245,18 @@ export const artists = [
     artworkTitle: "kialuela (kikongo: spiral)",
     location: "Angola",
     coordinates: { lat: -8.8390, lng: 13.2894 }, // Luanda coordinates
-    medium: ["Performance", "Installation", "Social Practice"],
+    medium: ["Performance"],
     invisibleThread: ["Feminist Body"],
     thumbnailURL: "/artist-photos/iris_buchholz_chocolate.jpg"
   },
   {
     id: 18,
     artistName: "Jason deCaires Taylor",
-    artworkTitle: "Enshitification",
+    artworkTitle: "Golden Siren",
     location: "United Kingdom",
     coordinates: { lat: 51.3172, lng: 0.8919 }, // Faversham coordinates
-    medium: ["Sculpture", "Installation"],
-    invisibleThread: ["Soft Resistance", "Informal Monuments"],
+    medium: ["Sculpture"],
+    invisibleThread: ["Soft Resistance"],
     thumbnailURL: "/artist-photos/jason_taylor.jpg"
   },
   {
@@ -265,8 +265,8 @@ export const artists = [
     artworkTitle: "We Once Told Tales By Fire And The Quiet Drop Of Rain",
     location: "USA",
     coordinates: { lat: 40.7128, lng: -74.0060 }, // Global/Virtual - keeping NYC coordinates
-    medium: ["Mixed Media"],
-    invisibleThread: ["(Dis)placement", "Informal Monuments"],
+    medium: ["Social Practice", "Conceptual"],
+    invisibleThread: ["(Dis)placement", "Soft Resistance"],
     thumbnailURL: "/artist-photos/jeffrey_meris.webp"
   },
   {
@@ -275,7 +275,7 @@ export const artists = [
     artworkTitle: "Pieces of Luck",
     location: "South Korea",
     coordinates: { lat: 37.5665, lng: 126.978 }, // Seoul coordinates
-    medium: ["Mixed Media"],
+    medium: ["Mural"],
     invisibleThread: ["You Were Here"],
     thumbnailURL: "/artist-photos/jodae.jpeg"
   },
@@ -285,7 +285,7 @@ export const artists = [
     artworkTitle: "Resistance Palm",
     location: "Colombia",
     coordinates: { lat: 6.2476, lng: -75.5658 }, // Medellín coordinates
-    medium: ["Installation", "Social Practice", "Conceptual"],
+    medium: ["Installation", "Mixed Media"],
     invisibleThread: ["Soft Resistance"],
     thumbnailURL: "/artist-photos/juan_caicedo.jpg"
   },
@@ -296,7 +296,7 @@ export const artists = [
     location: "USA",
     coordinates: { lat: 40.7589, lng: -73.9851 }, // New York, Seoul - using Manhattan coordinates
     medium: ["Installation"],
-    invisibleThread: ["Wild Systems", "Informal Monuments"],
+    invisibleThread: ["Wild Systems"],
     thumbnailURL: "/artist-photos/julian_ties.jpg"
   },
   {
@@ -305,7 +305,7 @@ export const artists = [
     artworkTitle: "Todo Estaba Previsto",
     location: "Mexico",
     coordinates: { lat: 19.4326, lng: -99.1454 }, // Colonia San Rafael area, Mexico City coordinates
-    medium: ["Performance", "Conceptual"],
+    medium: ["Performance"],
     invisibleThread: ["Soft Resistance", "(Dis)placement"],
     thumbnailURL: "/artist-photos/kara_rooney1.jpg"
   },
@@ -315,7 +315,7 @@ export const artists = [
     artworkTitle: "The Iron Clad King Sits atop a high horse",
     location: "Austria",
     coordinates: { lat: 48.2003, lng: 16.3668 }, // Schillerplatz 3, Vienna (Akademie of Fine Arts) coordinates
-    medium: ["Performance", "Social Practice"],
+    medium: ["Performance"],
     invisibleThread: ["Soft Resistance"],
     thumbnailURL: "/artist-photos/kweku-okokroko.jpg"
   },
@@ -325,8 +325,8 @@ export const artists = [
     artworkTitle: "Of a Free Will",
     location: "USA",
     coordinates: { lat: 40.6892, lng: -73.9442 }, // Bedford-Stuyvesant, Brooklyn coordinates
-    medium: ["Installation"],
-    invisibleThread: ["Soft Resistance", "Informal Monuments"],
+    medium: ["Sculpture"],
+    invisibleThread: ["Soft Resistance"],
     thumbnailURL: "/artist-photos/leon_reid.jpg"
   },
   {
@@ -335,8 +335,8 @@ export const artists = [
     artworkTitle: "Untitled",
     location: "Czech Republic",
     coordinates: { lat: 50.0755, lng: 14.4378 }, // Prague coordinates
-    medium: ["Installation", "Conceptual"],
-    invisibleThread: ["Bureaucratic Fantasy", "Informal Monuments"],
+    medium: ["Installation"],
+    invisibleThread: ["Bureaucratic Fantasy"],
     thumbnailURL: "/artist-photos/libor_novotny.jpg"
   },
   {
@@ -345,7 +345,7 @@ export const artists = [
     artworkTitle: "Inscripcions",
     location: "France",
     coordinates: { lat: 48.5734, lng: 7.7521 }, // Strasbourg coordinates
-    medium: ["Installation", "Performance", "Conceptual"],
+    medium: ["Conceptual"],
     invisibleThread: ["You Were Here"],
     thumbnailURL: "/artist-photos/matheiu_tremblin.jpg"
   },
@@ -355,7 +355,7 @@ export const artists = [
     artworkTitle: "HyperCare!",
     location: "USA",
     coordinates: { lat: 34.1478, lng: -118.1445 }, // Pasadena coordinates
-    medium: ["Mixed Media"],
+    medium: ["Installation", "Social Practice"],
     invisibleThread: ["Bureaucratic Fantasy"],
     thumbnailURL: "/artist-photos/mayela_rodriguez.png"
   },
@@ -365,8 +365,8 @@ export const artists = [
     artworkTitle: "Untitled",
     location: "Netherlands",
     coordinates: { lat: 40.7178, lng: -73.9442 }, // 539 Driggs Avenue, Brooklyn coordinates
-    medium: ["Installation"],
-    invisibleThread: [],
+    medium: ["Installation", "Mixed Media"],
+    invisibleThread: ["You Were Here"],
     thumbnailURL: "/artist-photos/moko_fukuyama.png"
   },
   {
@@ -375,7 +375,7 @@ export const artists = [
     artworkTitle: "Perfect Shot",
     location: "USA",
     coordinates: { lat: 40.6782, lng: -73.9442 }, // Brooklyn coordinates
-    medium: ["Mixed Media"],
+    medium: ["Installation"],
     invisibleThread: ["Absurd as Method"],
     thumbnailURL: "/artist-photos/nina_katchadourian.jpg"
   },
@@ -385,7 +385,7 @@ export const artists = [
     artworkTitle: "Island of Certainty (ISLA DE CERTEZA)",
     location: "Spain",
     coordinates: { lat: 41.8155, lng: -3.4825 }, // Santo Domingo de Silos coordinates
-    medium: ["Installation", "Conceptual"],
+    medium: ["Installation"],
     invisibleThread: ["Bureaucratic Fantasy", "Wild Systems"],
     thumbnailURL: "/artist-photos/nomad_studio.jpg"
   },
@@ -395,8 +395,8 @@ export const artists = [
     artworkTitle: "Untitled",
     location: "Taiwan",
     coordinates: { lat: 24.1477, lng: 120.6736 }, // Taichung coordinates
-    medium: ["Installation", "Social Practice"],
-    invisibleThread: ["Bureaucratic Fantasy", "Informal Monuments"],
+    medium: ["Installation"],
+    invisibleThread: ["Bureaucratic Fantasy"],
     thumbnailURL: "/artist-photos/nung-hsinhu.jpeg"
   },
   {
@@ -405,7 +405,7 @@ export const artists = [
     artworkTitle: "Telephone Booth Messages",
     location: "Mexico",
     coordinates: { lat: 19.4326, lng: -99.1332 }, // Mexico City coordinates
-    medium: ["Installation", "Social Practice"],
+    medium: ["Mixed Media"],
     invisibleThread: ["Soft Resistance"],
     thumbnailURL: "/artist-photos/pablodelgado.jpeg"
   },
@@ -445,8 +445,8 @@ export const artists = [
     artworkTitle: "Untitled",
     location: "Zimbabwe",
     coordinates: { lat: -33.9185, lng: 18.4796 }, // Salt River, Cape Town coordinates
-    medium: ["Mixed Media"],
-    invisibleThread: [],
+    medium: ["Performance", "Mixed Media"],
+    invisibleThread: ["(Dis)placement"],
     thumbnailURL: "/artist-photos/ronald-muchatuta.jpeg"
   },
   {
@@ -455,8 +455,8 @@ export const artists = [
     artworkTitle: "Phantom Museum",
     location: "Iraq",
     coordinates: { lat: 33.3152, lng: 44.3661 }, // Baghdad coordinates
-    medium: ["Mixed Media"],
-    invisibleThread: ["Soft Resistance", "Informal Monuments"],
+    medium: ["Video"],
+    invisibleThread: ["Soft Resistance"],
     thumbnailURL: "/artist-photos/sherko_abbas.jpg"
   },
   {
@@ -465,8 +465,8 @@ export const artists = [
     artworkTitle: "Untitled",
     location: "Sweden",
     coordinates: { lat: 59.3293, lng: 18.0686 }, // Stockholm coordinates
-    medium: ["Mixed Media"],
-    invisibleThread: ["Bureaucratic Fantasy", "Informal Monuments"],
+    medium: ["Installation"],
+    invisibleThread: ["Bureaucratic Fantasy"],
     thumbnailURL: "/artist-photos/siri_tolander.jpg"
   },
   {
@@ -475,7 +475,7 @@ export const artists = [
     artworkTitle: "Carbon Harvest",
     location: "USA",
     coordinates: { lat: 41.7406, lng: -74.0833 }, // State University of New York, New Paltz coordinates
-    medium: ["Installation"],
+    medium: ["Social Practice", "Mural"],
     invisibleThread: ["Wild Systems"],
     thumbnailURL: "/artist-photos/matthew_friday.jpg"
   },
@@ -485,7 +485,7 @@ export const artists = [
     artworkTitle: "Untitled",
     location: "USA",
     coordinates: { lat: 33.8059, lng: -84.1557 }, // Stone Mountain, Atlanta coordinates
-    medium: ["Mixed Media", "Photography"],
+    medium: ["Installation"],
     invisibleThread: ["Soft Resistance"],
     thumbnailURL: "/artist-photos/stephanie_brown.jpg"
   },
@@ -505,7 +505,7 @@ export const artists = [
     artworkTitle: "Why Is There A Liquor Store On Almost Every Corner?",
     location: "USA",
     coordinates: { lat: 34.0522, lng: -118.2437 }, // Los Angeles coordinates
-    medium: ["Mixed Media"],
+    medium: ["Installation"],
     invisibleThread: ["(Dis)placement", "Soft Resistance"],
     thumbnailURL: "/artist-photos/terrick_gutierrez.jpg"
   },
@@ -515,7 +515,7 @@ export const artists = [
     artworkTitle: "Oktas",
     location: "Mexico",
     coordinates: { lat: 19.4326, lng: -99.1381 }, // National Museum of Art, Mexico City coordinates
-    medium: ["Installation", "Conceptual"],
+    medium: ["Mixed Media"],
     invisibleThread: ["Soft Resistance"],
     thumbnailURL: "/artist-photos/valentina_marin.jpg"
   },
@@ -525,7 +525,7 @@ export const artists = [
     artworkTitle: "Yé",
     location: "France",
     coordinates: { lat: 48.8619, lng: 2.3465 }, // Chatelet Les Halles, Paris coordinates
-    medium: ["Performance", "Mixed Media"],
+    medium: ["Performance"],
     invisibleThread: ["(Dis)placement", "Absurd as Method"],
     thumbnailURL: "/artist-photos/yannos_majestikos.jpg"
   },
@@ -535,7 +535,7 @@ export const artists = [
     artworkTitle: "Third Front Memories",
     location: "China",
     coordinates: { lat: 28.4594, lng: 103.7870 }, // Leduzhen coordinates
-    medium: ["Performance", "Social Practice", "Video"],
+    medium: ["Social Practice"],
     invisibleThread: ["(Dis)placement"],
     thumbnailURL: "/artist-photos/mingjing_yu.jpg"
   },
@@ -545,7 +545,7 @@ export const artists = [
     artworkTitle: "How We Became Us",
     location: "Iran",
     coordinates: { lat: 35.6892, lng: 51.3890 }, // Tehran coordinates
-    medium: ["Mixed Media"],
+    medium: ["Performance"],
     invisibleThread: ["Feminist Body", "Soft Resistance"],
     thumbnailURL: "/artist-photos/zohreh_solati.jpg"
   }
