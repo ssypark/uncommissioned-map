@@ -387,7 +387,7 @@ export const artists = [
     coordinates: { lat: 41.9625, lng: -3.4189 }, // Parque Natural Sabinares del Arlanza - La Yecla, Castilla y Leon, Spain
     medium: ["Installation"],
     invisibleThread: ["Bureaucratic Fantasy", "Wild Systems"],
-    thumbnailURL: "/artist-photos/nomad_studio.jpg"
+    thumbnailURL: "/artist-photos/nomad_studio.jpeg"
   },
   {
     id: 29,
