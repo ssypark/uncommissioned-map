@@ -382,7 +382,7 @@ export const artists = [
   {
     id: 53,
     artistName: "Nomad Studio",
-    artworkTitle: "Island of Certainty (ISLA DE CERTEZA)",
+    artworkTitle: "Socarrado", // Changed from "Island of Certainty (ISLA DE CERTEZA)"
     location: "Spain",
     coordinates: { lat: 41.8155, lng: -3.4825 }, // Santo Domingo de Silos coordinates
     medium: ["Installation"],
