@@ -382,9 +382,9 @@ export const artists = [
   {
     id: 53,
     artistName: "Nomad Studio",
-    artworkTitle: "Socarrado", // Changed from "Island of Certainty (ISLA DE CERTEZA)"
+    artworkTitle: "Socarrado",
     location: "Spain",
-    coordinates: { lat: 41.8155, lng: -3.4825 }, // Santo Domingo de Silos coordinates
+    coordinates: { lat: 41.9625, lng: -3.4189 }, // Parque Natural Sabinares del Arlanza - La Yecla, Castilla y Leon, Spain
     medium: ["Installation"],
     invisibleThread: ["Bureaucratic Fantasy", "Wild Systems"],
     thumbnailURL: "/artist-photos/nomad_studio.jpg"
