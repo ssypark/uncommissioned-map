@@ -207,7 +207,7 @@ export const artists = [
     coordinates: { lat: 34.0522, lng: -118.2437 }, // Los Angeles coordinates (per CSV)
     medium: ["Sculpture", "Mixed Media"],
     invisibleThread: ["Absurd as Method", "Bureaucratic Fantasy"],
-    thumbnailURL: "/artist-photos/glazed_paradise.jpg"
+    thumbnailURL: "/artist-photos/glazed-paradise.jpg"
   },
   {
     id: 16,
