@@ -13,7 +13,7 @@ export const artists = [
     id: 41,
     artistName: "Alexandre Farto aka Vhils",
     artworkTitle: "Antennas, 2025",
-    location: "Germany",
+    location: "Portugal",
     coordinates: { lat: 48.1737, lng: 11.5016 }, // KUNSTLABOR 2, Munich coordinates
     medium: ["Installation"],
     invisibleThread: ["Wild Systems"],
@@ -36,7 +36,7 @@ export const artists = [
     location: "France",
     coordinates: { lat: 48.1198, lng: -1.6005 }, // Abandonned Hotel 14 Avenue des Peupliers, 35510 Cesson-Sévigné, France
     medium: ["Installation", "Mixed Media"],
-    invisibleThread: ["(Dis)placement", "Informal Monuments"],
+    invisibleThread: ["(Dis)placement", "Informal Memorials"],
     thumbnailURL: "/artist-photos/arzhel_prioul.jpg"
   },
   {
@@ -92,7 +92,7 @@ export const artists = [
   {
     id: 7,
     artistName: "Danielle Firoozi",
-    artworkTitle: "Cassius V.",
+    artworkTitle: "Untitled",
     location: "Mexico",
     coordinates: { lat: 19.4154, lng: -99.1590 }, // Garden at Cozumel 86, Roma Nte. Mexico City coordinates
     medium: ["Sculpture", "Mixed Media"],
@@ -102,17 +102,17 @@ export const artists = [
   {
     id: 8,
     artistName: "Deana Kolencikova",
-    artworkTitle: "Room for Chat",
+    artworkTitle: "Mirage",
     location: "France",
     coordinates: { lat: 48.5734, lng: 7.7521 }, // Strasbourg coordinates
     medium: ["Social Practice"],
-    invisibleThread: ["Soft Resistance", "Informal Monuments"],
+    invisibleThread: ["Soft Resistance", "Informal Memorials"],
     thumbnailURL: "/artist-photos/deana_kolencikova.jpg"
   },
   {
     id: 9,
     artistName: "Deng Yufeng",
-    artworkTitle: "Your",
+    artworkTitle: "Smuggled Journey",
     location: "China",
     coordinates: { lat: 39.9042, lng: 116.4074 }, // Beijing coordinates
     medium: ["Social Practice"],
@@ -122,17 +122,17 @@ export const artists = [
   {
     id: 10,
     artistName: "Derzu Campos",
-    artworkTitle: "Katamari",
+    artworkTitle: "Untitled",
     location: "Mexico",
     coordinates: { lat: 19.4326, lng: -99.1332 }, // Mexico City coordinates
     medium: ["Installation", "Mixed Media"],
-    invisibleThread: ["Wild Systems", "Informal Monuments"],
+    invisibleThread: ["Wild Systems", "Informal Memorials"],
     thumbnailURL: "/artist-photos/derzu_campos.jpg"
   },
   {
     id: 62,
     artistName: "Emmanuel Aggrey Tieku",
-    artworkTitle: "Cemetery of Belongings See The Unseen",
+    artworkTitle: "Untitled",
     location: "Ghana",
     coordinates: { lat: 5.6037, lng: -0.1870 }, // Accra coordinates
     medium: ["Installation"],
@@ -162,7 +162,7 @@ export const artists = [
   {
     id: 12,
     artistName: "Escif",
-    artworkTitle: "Infinite Still Life",
+    artworkTitle: "British Garden",
     location: "Spain",
     coordinates: { lat: 39.4699, lng: -0.3763 }, // Valencia coordinates
     medium: ["Mural"],
@@ -192,7 +192,7 @@ export const artists = [
   {
     id: 15,
     artistName: "Fiona Yun-Jui Chang",
-    artworkTitle: "Note Passing",
+    artworkTitle: "Untitled",
     location: "USA",
     coordinates: { lat: 34.0522, lng: -118.2437 }, // Los Angeles coordinates
     medium: ["Social Practice"],
@@ -202,7 +202,7 @@ export const artists = [
   {
     id: 65,
     artistName: "Glazed Paradise",
-    artworkTitle: "Everything Gold Will Stay",
+    artworkTitle: "Untitled",
     location: "Spain",
     coordinates: { lat: 34.0522, lng: -118.2437 }, // Los Angeles coordinates (per CSV)
     medium: ["Sculpture", "Mixed Media"],
@@ -212,7 +212,7 @@ export const artists = [
   {
     id: 16,
     artistName: "Hana Al-Saadi",
-    artworkTitle: "Third Skin",
+    artworkTitle: "Dress Code Series",
     location: "Qatar",
     coordinates: { lat: 25.2760, lng: 51.5200 }, // Doha Zone 23 coordinates
     medium: ["Installation"],
@@ -222,7 +222,7 @@ export const artists = [
   {
     id: 17,
     artistName: "Harmen de Hoop",
-    artworkTitle: "Public Telephone",
+    artworkTitle: "Progress",
     location: "Switzerland",
     coordinates: { lat: 47.3683, lng: 7.9104 }, // Obergösgen coordinates
     medium: ["Installation"],
@@ -242,7 +242,7 @@ export const artists = [
   {
     id: 46,
     artistName: "Iris Buchholz Chocolate",
-    artworkTitle: "kusanguluka (Kimbundu: joy)",
+    artworkTitle: "kialuela (kikongo: spiral)",
     location: "Angola",
     coordinates: { lat: -8.8390, lng: 13.2894 }, // Luanda coordinates
     medium: ["Performance"],
@@ -252,7 +252,7 @@ export const artists = [
   {
     id: 18,
     artistName: "Jason deCaires Taylor",
-    artworkTitle: "Enshitification",
+    artworkTitle: "Golden Siren",
     location: "United Kingdom",
     coordinates: { lat: 51.3172, lng: 0.8919 }, // Faversham coordinates
     medium: ["Sculpture"],
@@ -282,7 +282,7 @@ export const artists = [
   {
     id: 58,
     artistName: "Juan Caicedo",
-    artworkTitle: "Windward",
+    artworkTitle: "Resistance Palm",
     location: "Colombia",
     coordinates: { lat: 6.2476, lng: -75.5658 }, // Medellín coordinates
     medium: ["Installation", "Mixed Media"],
@@ -292,7 +292,7 @@ export const artists = [
   {
     id: 22,
     artistName: "Julian",
-    artworkTitle: "Cities Under Tension",
+    artworkTitle: "Edge States",
     location: "USA",
     coordinates: { lat: 40.7589, lng: -73.9851 }, // New York, Seoul - using Manhattan coordinates
     medium: ["Installation"],
@@ -302,7 +302,7 @@ export const artists = [
   {
     id: 23,
     artistName: "Kara Rooney",
-    artworkTitle: "Todo Estaba Previsto(Everything Was Predetermined)",
+    artworkTitle: "Todo Estaba Previsto",
     location: "Mexico",
     coordinates: { lat: 19.4326, lng: -99.1454 }, // Colonia San Rafael area, Mexico City coordinates
     medium: ["Performance"],
@@ -332,9 +332,9 @@ export const artists = [
   {
     id: 48,
     artistName: "Libor Novotny",
-    artworkTitle: "Stolen Light",
+    artworkTitle: "Untitled",
     location: "Czech Republic",
-    coordinates: { lat: 49.820923, lng: 18.262524 }, // Ostrava coordinates
+    coordinates: { lat: 50.0755, lng: 14.4378 }, // Prague coordinates
     medium: ["Installation"],
     invisibleThread: ["Bureaucratic Fantasy"],
     thumbnailURL: "/artist-photos/libor_novotny.jpg"
@@ -342,7 +342,7 @@ export const artists = [
   {
     id: 47,
     artistName: "Mathieu Tremblin",
-    artworkTitle: "Inscriptions",
+    artworkTitle: "Inscripcions",
     location: "France",
     coordinates: { lat: 48.5734, lng: 7.7521 }, // Strasbourg coordinates
     medium: ["Conceptual"],
@@ -363,7 +363,7 @@ export const artists = [
     id: 63,
     artistName: "Moko Fukuyama & James Beckett",
     artworkTitle: "Untitled",
-    location: "Williamsburg",
+    location: "Netherlands",
     coordinates: { lat: 40.7178, lng: -73.9442 }, // 539 Driggs Avenue, Brooklyn coordinates
     medium: ["Installation", "Mixed Media"],
     invisibleThread: ["You Were Here"],
@@ -382,7 +382,7 @@ export const artists = [
   {
     id: 53,
     artistName: "Nomad Studio",
-    artworkTitle: "Socarrado(Scorched)",
+    artworkTitle: "Socarrado",
     location: "Spain",
     coordinates: { lat: 41.9625, lng: -3.4189 }, // Parque Natural Sabinares del Arlanza - La Yecla, Castilla y Leon, Spain
     medium: ["Installation"],
@@ -412,7 +412,7 @@ export const artists = [
   {
     id: 31,
     artistName: "Petra Hudcova",
-    artworkTitle: "Mapping the Unseen",
+    artworkTitle: "Alternative Cartography",
     location: "Czech Republic",
     coordinates: { lat: 50.0843, lng: 14.4166 }, // Krejcárek park, Prague coordinates
     medium: ["Mixed Media"],
@@ -442,7 +442,7 @@ export const artists = [
   {
     id: 64,
     artistName: "Ronald Muchatuta",
-    artworkTitle: "Borderless Bodies",
+    artworkTitle: "Untitled",
     location: "Zimbabwe",
     coordinates: { lat: -33.9185, lng: 18.4796 }, // Salt River, Cape Town coordinates
     medium: ["Performance", "Mixed Media"],
@@ -482,7 +482,7 @@ export const artists = [
   {
     id: 38,
     artistName: "Stephanie Brown",
-    artworkTitle: "Swinging Into Reality",
+    artworkTitle: "Untitled",
     location: "USA",
     coordinates: { lat: 33.8059, lng: -84.1557 }, // Stone Mountain, Atlanta coordinates
     medium: ["Installation"],
@@ -492,7 +492,7 @@ export const artists = [
   {
     id: 39,
     artistName: "Strijdom van der Merwe",
-    artworkTitle: "Shadow Words",
+    artworkTitle: "Untitled",
     location: "South Africa",
     coordinates: { lat: -33.9321, lng: 18.8602 }, // Stellenbosch coordinates
     medium: ["Installation"],
@@ -512,7 +512,7 @@ export const artists = [
   {
     id: 54,
     artistName: "Valentina Guerrero Marin",
-    artworkTitle: "Estación Meteorológica de Paso",
+    artworkTitle: "Oktas",
     location: "Mexico",
     coordinates: { lat: 19.4326, lng: -99.1381 }, // National Museum of Art, Mexico City coordinates
     medium: ["Mixed Media"],
@@ -532,7 +532,7 @@ export const artists = [
   {
     id: 44,
     artistName: "Yu Mingjing",
-    artworkTitle: "Enclave Playground",
+    artworkTitle: "Third Front Memories",
     location: "China",
     coordinates: { lat: 28.4594, lng: 103.7870 }, // Leduzhen coordinates
     medium: ["Social Practice"],
@@ -542,7 +542,7 @@ export const artists = [
   {
     id: 45,
     artistName: "Zohreh Solati",
-    artworkTitle: "How We Became Us – A Feminist Intervention in Public Space",
+    artworkTitle: "How We Became Us",
     location: "Iran",
     coordinates: { lat: 35.6892, lng: 51.3890 }, // Tehran coordinates
     medium: ["Performance"],
