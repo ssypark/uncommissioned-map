@@ -87,7 +87,7 @@ export default function FilterArtistGrid({ artists: artistsProp = artists, darkM
       "Wild Systems",
       "(Dis)placement",
       "Bureaucratic Fantasy",
-      "Informal Monuments"
+      "Informal Memorials"
     ]
   };
 
