@@ -234,7 +234,7 @@ export const artists = [
     artistName: "Heimprofi",
     artworkTitle: "Untitled",
     location: "Netherlands",
-    coordinates: { lat: 51.9801, lng: 5.9113 }, // Arnhem coordinates
+    coordinates: { lat: 51.9801, lng: 5.8987 }, // Arnhem coordinates
     medium: ["Installation", "Mixed Media"],
     invisibleThread: ["(Dis)placement"],
     thumbnailURL: "/artist-photos/heimprofi.jpeg"
