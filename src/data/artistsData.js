@@ -12,7 +12,7 @@ export const artists = [
   {
     id: 41,
     artistName: "Alexandre Farto aka Vhils",
-    artworkTitle: "Antennas, 2025",
+    artworkTitle: "Latency Installation, 2025",
     location: "Portugal",
     coordinates: { lat: 48.1737, lng: 11.5016 }, // KUNSTLABOR 2, Munich coordinates
     medium: ["Installation"],
@@ -292,7 +292,7 @@ export const artists = [
   {
     id: 22,
     artistName: "Julian",
-    artworkTitle: "Edge States",
+    artworkTitle: "Cities Under Tension",
     location: "USA",
     coordinates: { lat: 40.7589, lng: -73.9851 }, // New York, Seoul - using Manhattan coordinates
     medium: ["Installation"],
