@@ -87,7 +87,7 @@ export const artists = [
     coordinates: { lat: 13.7563, lng: 100.5018 }, // Bangkok coordinates
     medium: ["Installation", "Mixed Media"],
     invisibleThread: ["(Dis)placement"],
-    thumbnailURL: "/artist-photos/chulayarnnon_siriphol_thumbnail.png"
+    thumbnailURL: "chulayarnnon_siriphol_thumbnail.png"
   },
   {
     id: 7,
@@ -97,7 +97,7 @@ export const artists = [
     coordinates: { lat: 19.4154, lng: -99.1590 }, // Garden at Cozumel 86, Roma Nte. Mexico City coordinates
     medium: ["Sculpture", "Mixed Media"],
     invisibleThread: ["You Were Here"],
-    thumbnailURL: "/artist-photos/danielle_firoozi_thumbnail.jpg"
+    thumbnailURL: "danielle_firoozi_thumbnail.jpg"
   },
   {
     id: 8,
@@ -107,7 +107,7 @@ export const artists = [
     coordinates: { lat: 48.5734, lng: 7.7521 }, // Strasbourg coordinates
     medium: ["Social Practice"],
     invisibleThread: ["Soft Resistance", "Informal Memorials"],
-    thumbnailURL: "/artist-photos/deana_kolencikova_thumbnail.jpg"
+    thumbnailURL: "deana_kolencikova_thumbnail.jpg"
   },
   {
     id: 9,
