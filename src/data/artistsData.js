@@ -112,7 +112,7 @@ export const artists = [
   {
     id: 9,
     artistName: "Deng Yufeng",
-    artworkTitle: "Smuggled Journey",
+    artworkTitle: "Your",
     location: "China",
     coordinates: { lat: 39.9042, lng: 116.4074 }, // Beijing coordinates
     medium: ["Social Practice"],
@@ -150,16 +150,6 @@ export const artists = [
     thumbnailURL: "/artist-photos/enno_haar.jpg"
   },
   {
-    id: 49,
-    artistName: "Erfan Ghiasi",
-    artworkTitle: "Improvisation of a Qanun",
-    location: "Iran",
-    coordinates: { lat: 35.6892, lng: 51.3890 }, // Tehran coordinates
-    medium: ["Performance", "Conceptual"],
-    invisibleThread: ["You Were Here"],
-    thumbnailURL: "/artist-photos/erfan_ghiasi.jpg"
-  },
-  {
     id: 12,
     artistName: "Escif",
     artworkTitle: "Infinite Still Life",
@@ -168,26 +158,6 @@ export const artists = [
     medium: ["Mural"],
     invisibleThread: ["Wild Systems", "Soft Resistance", "Informal Memorials"],
     thumbnailURL: "/artist-photos/escif.jpg"
-  },
-  {
-    id: 13,
-    artistName: "Esther Yi-Chun Lin",
-    artworkTitle: "Untitled",
-    location: "Taiwan",
-    coordinates: { lat: 25.033, lng: 121.5654 }, // Taipei coordinates
-    medium: ["Social Practice"],
-    invisibleThread: ["You Were Here"],
-    thumbnailURL: "/artist-photos/esther_lin.jpg"
-  },
-  {
-    id: 14,
-    artistName: "Fabian Williams",
-    artworkTitle: "Untitled",
-    location: "USA",
-    coordinates: { lat: 33.749, lng: -84.388 }, // Atlanta coordinates
-    medium: ["Video"],
-    invisibleThread: ["Soft Resistance"],
-    thumbnailURL: "/artist-photos/fabianwilliams.png"
   },
   {
     id: 15,
@@ -420,16 +390,6 @@ export const artists = [
     thumbnailURL: "/artist-photos/petra_hudcova2.jpg"
   },
   {
-    id: 33,
-    artistName: "r1.",
-    artworkTitle: "Untitled",
-    location: "South Africa",
-    coordinates: { lat: -26.2041, lng: 28.0473 }, // Johannesburg coordinates
-    medium: ["Mixed Media"],
-    invisibleThread: ["Soft Resistance"],
-    thumbnailURL: "/artist-photos/r1.jpg"
-  },
-  {
     id: 34,
     artistName: "Recycle Group",
     artworkTitle: "No Way Guide",
@@ -498,16 +458,6 @@ export const artists = [
     medium: ["Installation"],
     invisibleThread: ["You Were Here"],
     thumbnailURL: "/artist-photos/strijdom_van_der_merwe.jpg"
-  },
-  {
-    id: 40,
-    artistName: "Terrick Gutierrez",
-    artworkTitle: "Why Is There A Liquor Store On Almost Every Corner?",
-    location: "USA",
-    coordinates: { lat: 34.0522, lng: -118.2437 }, // Los Angeles coordinates
-    medium: ["Installation"],
-    invisibleThread: ["(Dis)placement", "Soft Resistance"],
-    thumbnailURL: "/artist-photos/terrick_gutierrez.jpg"
   },
   {
     id: 54,
