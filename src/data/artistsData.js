@@ -17,7 +17,7 @@ export const artists = [
     coordinates: { lat: 48.1737, lng: 11.5016 }, // KUNSTLABOR 2, Munich coordinates
     medium: ["Installation"],
     invisibleThread: ["Wild Systems"],
-    thumbnailURL: "/artist-photos/vhils.jpg"
+    thumbnailURL: "public/artist-photos/:artist-photos:vhils.jpeg"
   },
   {
     id: 61,
