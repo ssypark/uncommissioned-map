@@ -17,7 +17,7 @@ export const artists = [
     coordinates: { lat: 48.1737, lng: 11.5016 }, // KUNSTLABOR 2, Munich coordinates
     medium: ["Installation"],
     invisibleThread: ["Wild Systems"],
-    thumbnailURL: "public/artist-photos/Alexandre_Farto_aka_Vhils_thumbnail.jpeg"
+    thumbnailURL: "/artist-photos/Alexandre_Farto_aka_Vhils_thumbnail.jpeg"
   },
   {
     id: 61,
