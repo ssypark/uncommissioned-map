@@ -197,7 +197,7 @@ export const artists = [
     coordinates: { lat: 47.3683, lng: 7.9104 }, // Obergösgen coordinates
     medium: ["Installation"],
     invisibleThread: ["Absurd as Method"],
-    thumbnailURL: "/artist-photos/harmen_de_hoop.jpg"
+    thumbnailURL: "public/artist-photos/Harmen artwork thumbnail.jpeg"
   },
   {
     id: 50,
