@@ -26,7 +26,7 @@ export const artists = [
     location: "Egypt",
     coordinates: { lat: 30.0444, lng: 31.2357 }, // Cairo coordinates
     medium: ["Mural", "Mixed Media"],
-    invisibleThread: ["Wild Systems"],
+    invisibleThread: ["Wild Systems", "Informal Memorials"],
     thumbnailURL: "/artist-photos/ammar-abo-bakr-dibbanah.jpg"
   },
   {
@@ -56,7 +56,7 @@ export const artists = [
     location: "USA",
     coordinates: { lat: 35.6870, lng: -105.9378 }, // New Mexico coordinates
     medium: ["Performance"],
-    invisibleThread: ["You Were Here", "Wild Systems"],
+    invisibleThread: ["You Were Here", "Wild Systems", "Informal Memorials"],
     thumbnailURL: "/artist-photos/cannupa_hanska_luger.png"
   },
   {
@@ -166,7 +166,7 @@ export const artists = [
     location: "Spain",
     coordinates: { lat: 39.4699, lng: -0.3763 }, // Valencia coordinates
     medium: ["Mural"],
-    invisibleThread: ["Wild Systems", "Soft Resistance"],
+    invisibleThread: ["Wild Systems", "Soft Resistance", "Informal Memorials"],
     thumbnailURL: "/artist-photos/escif.jpg"
   },
   {
@@ -216,7 +216,7 @@ export const artists = [
     location: "Qatar",
     coordinates: { lat: 25.2760, lng: 51.5200 }, // Doha Zone 23 coordinates
     medium: ["Installation"],
-    invisibleThread: ["Feminist Body"],
+    invisibleThread: ["Feminist Body", "Informal Memorials"],
     thumbnailURL: "/artist-photos/han_alsaadi.jpg"
   },
   {
@@ -252,11 +252,11 @@ export const artists = [
   {
     id: 18,
     artistName: "Jason deCaires Taylor",
-    artworkTitle: "Golden Siren",
+    artworkTitle: "Enshittification",
     location: "United Kingdom",
     coordinates: { lat: 51.3172, lng: 0.8919 }, // Faversham coordinates
     medium: ["Sculpture"],
-    invisibleThread: ["Soft Resistance"],
+    invisibleThread: ["Soft Resistance", "Informal Memorials"],
     thumbnailURL: "/artist-photos/jason_taylor.jpg"
   },
   {
@@ -266,7 +266,7 @@ export const artists = [
     location: "USA",
     coordinates: { lat: 40.7128, lng: -74.0060 }, // Global/Virtual - keeping NYC coordinates
     medium: ["Social Practice", "Conceptual"],
-    invisibleThread: ["(Dis)placement", "Soft Resistance"],
+    invisibleThread: ["(Dis)placement", "Soft Resistance", "Informal Memorials"],
     thumbnailURL: "/artist-photos/jeffrey_meris.webp"
   },
   {
@@ -296,7 +296,7 @@ export const artists = [
     location: "USA",
     coordinates: { lat: 40.7589, lng: -73.9851 }, // New York, Seoul - using Manhattan coordinates
     medium: ["Installation"],
-    invisibleThread: ["Wild Systems"],
+    invisibleThread: ["Wild Systems", "Informal Memorials"],
     thumbnailURL: "/artist-photos/julian_ties.jpg"
   },
   {
@@ -326,7 +326,7 @@ export const artists = [
     location: "USA",
     coordinates: { lat: 40.6892, lng: -73.9442 }, // Bedford-Stuyvesant, Brooklyn coordinates
     medium: ["Sculpture"],
-    invisibleThread: ["Soft Resistance"],
+    invisibleThread: ["Soft Resistance", "Informal Memorials"],
     thumbnailURL: "/artist-photos/leon_reid.jpg"
   },
   {
@@ -336,7 +336,7 @@ export const artists = [
     location: "Czech Republic",
     coordinates: { lat: 50.0755, lng: 14.4378 }, // Prague coordinates
     medium: ["Installation"],
-    invisibleThread: ["Bureaucratic Fantasy"],
+    invisibleThread: ["Bureaucratic Fantasy", "Informal Memorials"],
     thumbnailURL: "/artist-photos/libor_novotny.jpg"
   },
   {
@@ -396,7 +396,7 @@ export const artists = [
     location: "Taiwan",
     coordinates: { lat: 24.1477, lng: 120.6736 }, // Taichung coordinates
     medium: ["Installation"],
-    invisibleThread: ["Bureaucratic Fantasy"],
+    invisibleThread: ["Bureaucratic Fantasy", "Informal Memorials"],
     thumbnailURL: "/artist-photos/nung-hsinhu.jpeg"
   },
   {
@@ -456,7 +456,7 @@ export const artists = [
     location: "Iraq",
     coordinates: { lat: 33.3152, lng: 44.3661 }, // Baghdad coordinates
     medium: ["Video"],
-    invisibleThread: ["Soft Resistance"],
+    invisibleThread: ["Soft Resistance", "Informal Memorials"],
     thumbnailURL: "/artist-photos/sherko_abbas.jpg"
   },
   {
@@ -466,7 +466,7 @@ export const artists = [
     location: "Sweden",
     coordinates: { lat: 59.3293, lng: 18.0686 }, // Stockholm coordinates
     medium: ["Installation"],
-    invisibleThread: ["Bureaucratic Fantasy"],
+    invisibleThread: ["Bureaucratic Fantasy", "Informal Memorials"],
     thumbnailURL: "/artist-photos/siri_tolander.jpg"
   },
   {
