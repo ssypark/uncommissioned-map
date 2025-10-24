@@ -47,7 +47,7 @@ export const artists = [
     coordinates: { lat: 34.0522, lng: -118.2437 }, // Los Angeles coordinates
     medium: ["Installation", "Social Practice"],
     invisibleThread: ["(Dis)placement", "You Were Here"],
-    thumbnailURL: "/artist-photos/azadeh_shladovsky.jpg"
+    thumbnailURL: "/artist-photos/azadeh_shladovsky_thumbnail.JPG"
   },
   {
     id: 55,
@@ -57,7 +57,7 @@ export const artists = [
     coordinates: { lat: 35.6870, lng: -105.9378 }, // New Mexico coordinates
     medium: ["Performance"],
     invisibleThread: ["You Were Here", "Wild Systems", "Informal Memorials"],
-    thumbnailURL: "/artist-photos/cannupa_hanska_luger.png"
+    thumbnailURL: "/artist-photos/cannupa_hanska_luger_thumbnail.jpeg"
   },
   {
     id: 4,
@@ -67,7 +67,7 @@ export const artists = [
     coordinates: { lat: -34.9285, lng: 138.6007 }, // Adelaide coordinates
     medium: ["Social Practice", "Mixed Media"],
     invisibleThread: ["Absurd as Method"],
-    thumbnailURL: "/artist-photos/catherine_young.jpg"
+    thumbnailURL: "/artist-photos/catherine_young_thumbnail.png"
   },
   {
     id: 42,
@@ -77,7 +77,7 @@ export const artists = [
     coordinates: { lat: 22.5431, lng: 114.0579 }, // Shenzhen coordinates
     medium: ["Tech-enabled"],
     invisibleThread: ["You Were Here"],
-    thumbnailURL: "/artist-photos/wanzhuo_cheng.jpg"
+    thumbnailURL: "/artist-photos/wanzhuo_cheng_thumbnail.jpg"
   },
   {
     id: 5,
@@ -87,7 +87,7 @@ export const artists = [
     coordinates: { lat: 13.7563, lng: 100.5018 }, // Bangkok coordinates
     medium: ["Installation", "Mixed Media"],
     invisibleThread: ["(Dis)placement"],
-    thumbnailURL: "/artist-photos/chulayarnnon_siriphol.jpg"
+    thumbnailURL: "/artist-photos/chulayarnnon_siriphol_thumbnail.png"
   },
   {
     id: 7,
@@ -97,7 +97,7 @@ export const artists = [
     coordinates: { lat: 19.4154, lng: -99.1590 }, // Garden at Cozumel 86, Roma Nte. Mexico City coordinates
     medium: ["Sculpture", "Mixed Media"],
     invisibleThread: ["You Were Here"],
-    thumbnailURL: "/artist-photos/danielle_firoozi.jpeg"
+    thumbnailURL: "/artist-photos/danielle_firoozi_thumbnail.jpg"
   },
   {
     id: 8,
@@ -107,7 +107,7 @@ export const artists = [
     coordinates: { lat: 48.5734, lng: 7.7521 }, // Strasbourg coordinates
     medium: ["Social Practice"],
     invisibleThread: ["Soft Resistance", "Informal Memorials"],
-    thumbnailURL: "/artist-photos/deana_kolencikova.jpg"
+    thumbnailURL: "/artist-photos/deana_kolencikova_thumbnail.jpg"
   },
   {
     id: 9,
