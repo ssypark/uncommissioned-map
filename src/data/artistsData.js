@@ -7,7 +7,7 @@ export const artists = [
     coordinates: { lat: 32.7767, lng: -96.7970 }, // Dallas coordinates
     medium: ["Social Practice", "Conceptual"],
     invisibleThread: ["Bureaucratic Fantasy", "Absurd as Method"],
-    thumbnailURL: "public/artist-photos/:artist-photos:alicia_eggert.jpg.png"
+    thumbnailURL: ":artist-photos:alicia_eggert.jpg.png"
   },
   {
     id: 41,
