@@ -37,7 +37,7 @@ export const artists = [
     coordinates: { lat: 48.1198, lng: -1.6005 }, // Abandonned Hotel 14 Avenue des Peupliers, 35510 Cesson-Sévigné, France
     medium: ["Installation", "Mixed Media"],
     invisibleThread: ["(Dis)placement", "Informal Memorials"],
-    thumbnailURL: "/artist-photos/arzhel_prioul.jpg"
+    thumbnailURL: "/artist-photos/Arzhel_prioul_thumbnail.jpg.jpg"
   },
   {
     id: 3,
