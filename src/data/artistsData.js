@@ -377,7 +377,7 @@ export const artists = [
     coordinates: { lat: 19.4326, lng: -99.1332 }, // Mexico City coordinates
     medium: ["Mixed Media"],
     invisibleThread: ["Soft Resistance"],
-    thumbnailURL: "/artist-photos/pablodelgado.jpeg"
+    thumbnailURL: "/artist-photos/Pablo_Delgado_thumbnail.png"
   },
   {
     id: 31,
@@ -387,7 +387,7 @@ export const artists = [
     coordinates: { lat: 50.0843, lng: 14.4166 }, // Krejcárek park, Prague coordinates
     medium: ["Mixed Media"],
     invisibleThread: ["You Were Here"],
-    thumbnailURL: "/artist-photos/petra_hudcova2.jpg"
+    thumbnailURL: "/artist-photos/Petra_thumbnail.jpg"
   },
   {
     id: 34,
@@ -407,7 +407,7 @@ export const artists = [
     coordinates: { lat: -33.9185, lng: 18.4796 }, // Salt River, Cape Town coordinates
     medium: ["Performance", "Mixed Media"],
     invisibleThread: ["(Dis)placement"],
-    thumbnailURL: "/artist-photos/ronald-muchatuta.jpeg"
+    thumbnailURL: "/artist-photos/Roland_thumbnail.png"
   },
   {
     id: 35,
@@ -427,7 +427,7 @@ export const artists = [
     coordinates: { lat: 59.3293, lng: 18.0686 }, // Stockholm coordinates
     medium: ["Installation"],
     invisibleThread: ["Bureaucratic Fantasy", "Informal Memorials"],
-    thumbnailURL: "/artist-photos/siri_tolander.jpg"
+    thumbnailURL: "/artist-photos/Siri_tolander_thumbnail.jpg"
   },
   {
     id: 37,
