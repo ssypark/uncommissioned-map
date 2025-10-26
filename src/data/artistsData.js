@@ -4,7 +4,7 @@ export const artists = [
     artistName: "Alicia Eggert",
     artworkTitle: "Now v. Never, 2025",
     location: "USA",
-    coordinates: { lat: 33.2166, lng: 97.1324 }, // Denton coordinates
+    coordinates: { lat: 33.2166, lng: -97.1324 }, // Denton coordinates
     medium: ["Social Practice", "Conceptual"],
     invisibleThread: ["Bureaucratic Fantasy", "Absurd as Method"],
     thumbnailURL: "/artist-photos/Alicia_eggert_Thumbnail.jpg.png"
