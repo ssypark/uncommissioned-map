@@ -314,7 +314,7 @@ export const artists = [
     artistName: "Mathieu Tremblin",
     artworkTitle: "Inscripcions",
     location: "France",
-    coordinates: { lat: 48.580917, lng: 7.728222 }, // Strasbourg coordinates
+    coordinates: { lat: 48.5809, lng: 7.7282 }, // Strasbourg coordinates
     medium: ["Conceptual"],
     invisibleThread: ["You Were Here"],
     thumbnailURL: "/artist-photos/matheiu_tremblin_thumbnail.jpeg"
