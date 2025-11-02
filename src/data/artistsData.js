@@ -344,10 +344,10 @@ export const artists = [
     artistName: "Nina Katchadourian",
     artworkTitle: "Perfect Shot",
     location: "USA",
-    coordinates: { lat: 40.6782, lng: -73.9442 }, // Brooklyn coordinates
+    coordinates: { lat: 40.6795, lng: -73.9883 }, // Brooklyn coordinates
     medium: ["Installation"],
     invisibleThread: ["Absurd as Method"],
-    thumbnailURL: "/artist-photos/nina_katchadourian_thumbnail.jpeg"
+    thumbnailURL: "/artist-photos/Nina_Thumbnail.jpeg"
   },
   {
     id: 53,
