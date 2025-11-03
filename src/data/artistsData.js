@@ -311,8 +311,8 @@ export const artists = [
   },
   {
     id: 47,
-    artistName: "Mathieu Tremblin",
-    artworkTitle: "Inscriptions",
+    artistName: "Mathieu Tremblin & Co.",
+    artworkTitle: "Inscriptions & Interpretations",
     location: "France",
     coordinates: { lat: 48.5809, lng: 7.7282 }, // Strasbourg coordinates
     medium: ["Conceptual"],
