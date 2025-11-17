@@ -114,7 +114,7 @@ export const artists = [
     artistName: "Deng Yufeng",
     artworkTitle: "Your",
     location: "China",
-    coordinates: { lat: 39.9042, lng: 116.4074 }, // Beijing coordinates
+    coordinates: { lat: 39.7486, lng: 116.5629 }, // Beijing coordinates
     medium: ["Social Practice"],
     invisibleThread: ["Soft Resistance"],
     thumbnailURL: "/artist-photos/yufeng_deng_thumbnail.jpeg"
